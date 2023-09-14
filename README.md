@@ -1,4 +1,4 @@
-![HC_patch_preview](https://github.com/ManlyMarco/HC-HF_Patch/assets/39247311/1f6e8e54-cac2-4974-add1-d8626712f287)
+![HC_patch_preview](https://github.com/ManlyMarco/HC-HF_Patch/assets/39247311/f8f4e44e-28d8-46e0-be9f-e6c0877a983f)
 
 # HF Patch for HoneyCome!
 An unofficial patch for [HoneyCome](http://www.illusion.jp/preview/roomgirl/) (HoneyCome come come Party / ハニカム) with all free updates, fan-made English translations and essential mods. It will allow you to load all character cards and scenes and give you countless gameplay improvements while still keeping the original, uncluttered and clean feel of the game. All content is tested and fixed (or removed) as needed before each update. HF Patch can repair many common problems, try it if you have issues with your game or mod setup.
