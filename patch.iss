@@ -32,8 +32,8 @@ CloseApplicationsFilter=*.exe,*.dll
 Compression=lzma2/ultra64
 ;lzma2/ultra64 | zip | lzma2/fast
 LZMAUseSeparateProcess=yes
-LZMADictionarySize=108576
-;LZMADictionarySize=262144
+;LZMADictionarySize=108576
+LZMADictionarySize=262144
 LZMANumFastBytes=273
 LZMANumBlockThreads=14
 DiskSpanning=no
@@ -64,52 +64,16 @@ Name: "custom";   Description: "{cm:customInstall}"; Flags: iscustom
 Name: "Patch";                    Description: "All free updates, Steam version unlock, and common issue repair"                   ; Types: full_en full extra_en extra custom bare none; Flags: fixed
 ;Name: "Patch\VR";                 Description: "Install/Update VR Module"                                                         ; Types: extra_en extra
 ;-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-;Name: "Modpack"                 ; Description: "Sideloader Modpacks {#CurrentDate} (Add additional content to the game, needs at least BepisPlugins to work)"
-;#ifndef LITE
-;Name: "Modpack\General"         ; Description: "General (Content for making characters, always recommended)"                      ; Types: full_en full extra_en extra
-;Name: "Modpack\Studio"          ; Description: "Studio (Additional content for making Studio scenes)"                           ; Types: full_en full extra_en extra
-;;Name: "Modpack\MapsStudio"      ; Description: "Maps for use in Studio (Add > Map)"
-;Name: "Modpack\MapsGame"        ; Description: "Maps for use in main game (H scenes)"                                             ; Types: full_en full extra_en extra
-;;Name: "Modpack\Animations"      ; Description: "Animations (Additional adnimations for use in Studio and H scenes)"               ; Types: full_en full extra_en extra                          ; Types: full_en full extra_en extra
-;#endif
-;;Name: "Modpack\Fixes"           ; Description: "Fixes (Fixes to some of the official content, always recommended)"              ; Types: full_en full extra_en extra
-;Name: "Modpack\MaterialEditor"  ; Description: "MaterialEditor (Materials for use with MaterialEditor)"                      ; Types: full_en full extra_en extra
-;Name: "Modpack\UncensorSelector"; Description: "UncensorSelector (Uncensors for use with UncensorSelector)"                  ; Types: full_en full extra_en extra
-;-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 [Files]
 Source: "HelperLib.dll";                  DestDir: "{app}";                       Flags: dontcopy
 #ifndef DEBUG
 Source: "Plugin Readme.md";               DestDir: "{app}"
 ; -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-;Source: "Input\_Patch\empty_ud\*";                 DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs solidbreak; Components: Patch
-;Source: "Input\_Patch\empty_ud_eng\*";             DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs;            Components: Patch; Languages: en
 Source: "Input\_Patch\1_base\*";                   DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs;            Components: Patch
 Source: "Input\_Patch\2_0908-full\*";              DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs;            Components: Patch
-
-Source: "Input\_Patch\9_interop-libs\*";           DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs;            Components: Patch
-
-; -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-; Solidbreak at the start to split off the modpacks from other files in case they don't have to be installed. solidbreak splits before the files entry with it is processed
-;#ifndef LITE
-;Source: "{#ModsDir}\Sideloader Modpack\*"                          ; DestDir: "{app}\mods\Sideloader Modpack"                         ; Flags: ignoreversion recursesubdirs solidbreak; Components: Modpack\General;        
-;Source: "{#ModsDir}\Sideloader Modpack - Exclusive HS2\*"          ; DestDir: "{app}\mods\Sideloader Modpack - Exclusive HS2"         ; Flags: ignoreversion recursesubdirs; Components: Modpack\General
-;;Source: "{#ModsDir}\Sideloader Modpack - Bleeding Edge\*"         ; DestDir: "{app}\mods\Sideloader Modpack - Bleeding Edge"         ; Flags: ignoreversion recursesubdirs; Components: Modpack\Bleeding
-;Source: "{#ModsDir}\Sideloader Modpack - Studio\*"                ; DestDir: "{app}\mods\Sideloader Modpack - Studio"                ; Flags: ignoreversion recursesubdirs; Components: Modpack\Studio
-;;Source: "{#ModsDir}\Sideloader Modpack - Maps\*"                  ; DestDir: "{app}\mods\Sideloader Modpack - Maps"                  ; Flags: ignoreversion recursesubdirs; Components: Modpack\MapsStudio
-;Source: "{#ModsDir}\Sideloader Modpack - Maps (HS2 Game)\*"       ; DestDir: "{app}\mods\Sideloader Modpack - Maps (HS2 Game)"       ; Flags: ignoreversion recursesubdirs; Components: Modpack\MapsGame
-;#endif
-;Source: "{#ModsDir}\Sideloader Modpack - MaterialEditor Shaders\*"; DestDir: "{app}\mods\Sideloader Modpack - MaterialEditor Shaders"; Flags: ignoreversion recursesubdirs solidbreak; Components: Modpack\MaterialEditor
-;Source: "{#ModsDir}\Sideloader Modpack - Uncensor Selector\*"     ; DestDir: "{app}\mods\Sideloader Modpack - Uncensor Selector"     ; Flags: ignoreversion recursesubdirs; Components: Modpack\UncensorSelector
-; -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-;; Make sure this is never missing in case the plugin archive doesn't have it included. Also solidbreak to split off the modpacks
-;Source: "Input\_Plugins\HS2_UncensorSelector Base.zipmod"; DestDir: "{app}\mods"; Flags: ignoreversion; Components: UNC\Selector
-;; Always install critical fixes
-;Source: "Input\_Plugins\_out\IllusionFixes_RoomGirl\BepInEx\patchers\*"; DestDir: "{app}\BepInEx\patchers"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Patch
-;; If BP isn't installed, exclude BP uncensors from the random selection
-;Source: "Input\US_config_noBP.cfg"; DestDir: "{app}\BepInEx\config"; DestName: "com.deathweasel.bepinex.uncensorselector.cfg"; Flags: solidbreak
-;; This config only allows BP uncensors to be chosen by random
-;Source: "Input\US_config_BP.cfg";   DestDir: "{app}\BepInEx\config"; DestName: "com.deathweasel.bepinex.uncensorselector.cfg"; Flags: solidbreak; Components: UNC\Selector\BetterPenetration
+Source: "Input\_Patch\8_man\*";                    DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs;            Components: Patch
+Source: "Input\_Patch\9_unhollowed-0908\*";        DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs;            Components: Patch
 #endif
 
 ; -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -124,9 +88,11 @@ Source: "Input\Default_configs\*"; DestDir: "{app}\BepInEx\config"; Flags: ignor
 ;-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Source: "Input\Config_eng\*";      DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Languages: en
 Source: "Input\Config_jap\*";      DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Languages: jp
+
+Source: "Input\_TL\*";              DestDir: "{app}"; Flags: ignoreversion recursesubdirs; Components: AT
 ;-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Source: "Input\Launcher_branding\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs; Components: IllusionLaunchers
-;-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 Source: "Input\SteamPassthrough\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs; Components: Patch; Check: IsSteam
 
 #endif

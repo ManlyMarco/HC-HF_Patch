@@ -30,6 +30,7 @@ Name: "Feature\HC_DisplayofThumbnails";        Description: "DisplayofThumbnails
 Name: "Feature\GraphicsSettings";              Description: "Graphics Settings v0.7 (More graphics settings, access from plugin settings)"         ; Types: extra extra_en
 Name: "Feature\EnableResize";                  Description: "Enable Resize v0.7 (Enable resizing of game window)"                                  ; Types: extra extra_en
 Name: "Feature\EnableFullScreenToggle";        Description: "Enable Full Screen Toggle v0.7 (Allow toggling full screen with Alt+Enter)"           ; Types: extra extra_en
+Name: "Feature\LoveMachine";                   Description: "LoveMachine v3.14.0 (Adds support for some computer-controlled sex toys)"             
 ; -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Name: "MISC";                                  Description: "{cm:CompMISC}"                                                                        
 Name: "MISC\FullSave";                         Description: "Full Save (Save file with everything unlocked in main game. Overwrites your current progress!)"
@@ -51,6 +52,7 @@ Source: "Input\_Plugins\_out\MessageCenterIL2CPP_net6\*";   DestDir: "{app}"; Fl
 Source: "Input\_Plugins\_out\MuteInBackgroundIL2CPP_net6\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Feature\MuteInBackground; Excludes: "manifest.xml"
 Source: "Input\_Plugins\_out\HC_DisplayofThumbnails\*";     DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Feature\HC_DisplayofThumbnails; Excludes: "manifest.xml"
 Source: "Input\_Plugins\_out\HC_FixationalEyeMovement\*";   DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Feature\HC_FixationalEyeMovement; Excludes: "manifest.xml"
+Source: "Input\_Plugins\_out\LoveMachine_for_HoneyCome\*";  DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Feature\LoveMachine; Excludes: "manifest.xml"
 Source: "Input\_Plugins\_out\Uncensor_Hardmod_zodgame\*";   DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: UNC\UncensorHardmod; Excludes: "manifest.xml"
 Source: "Input\_Plugins\_out\WebRequestBlocker\*";          DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: FIX\WebRequestBlocker; Excludes: "manifest.xml"
 Source: "Input\_Plugins\_out\XUnity.AutoTranslator-BepInEx-IL2CPP\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: AT; Excludes: "manifest.xml"

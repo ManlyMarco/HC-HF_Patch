@@ -8,6 +8,11 @@
 - Author(s):         https://github.com/BepInEx
 - More information:  https://github.com/BepInEx/BepInEx
 
+# DisplayofThumbnails v0.1.0
+- Short description: Increase size of character and clothing save/load window in maker
+- Author(s):         サバカン
+- More information:  Koikatsu discord server
+
 # Enable Full Screen Toggle v0.7
 - Short description: Allow toggling full screen with Alt+Enter
 - Author(s):         SpockBauru, ManlyMarco
@@ -17,6 +22,11 @@
 - Short description: Enable resizing of game window
 - Author(s):         SpockBauru, ManlyMarco
 - More information:  https://github.com/SpockBauru/SpockPlugins_BepInEx
+
+# FixationalEyeMovement v1.0.0
+- Short description: Makes eyes slightly move around to mimic eyes focusing on different things
+- Author(s):         サバカン
+- More information:  Koikatsu discord server
 
 # Full Save
 - Short description: Save file with everything unlocked in main game. Overwrites your current progress!
@@ -62,6 +72,11 @@
 - Short description: Manage and update mods, browse cards
 - Author(s):         https://github.com/IllusionMods
 - More information:  https://github.com/IllusionMods/KKManager
+
+# LoveMachine v3.14.0
+- Short description: Adds support for some computer-controlled sex toys
+- Author(s):         Sauceke
+- More information:  https://github.com/Sauceke/LoveMachine
 
 # Message Center v0.7
 - Short description: Allows plugins to show messages in top left corner of the game
