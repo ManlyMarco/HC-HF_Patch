@@ -3,10 +3,20 @@
 - Author(s):         BepInEx (anonymous IL2CPP port)
 - More information:  https://github.com/BepInEx/BepInEx.ConfigurationManager
 
+# BepInEx.SplashScreen_BepInEx6 v2.0.0.0
+- Short description: A loading screen on game startup with information about patchers and plugins being currently loaded
+- Author(s):         BepInEx
+- More information:  https://github.com/BepInEx/BepInEx.SplashScreen
+
 # BepInEx-Unity.IL2CPP-win-x64 v6.0.0.0
 - Short description: Plugin framework
 - Author(s):         https://github.com/BepInEx
 - More information:  https://github.com/BepInEx/BepInEx
+
+# CrossFader v0.1.1
+- Short description: Replaces fades between animations with animated transitions
+- Author(s):         Sabakan
+- More information:  ???
 
 # DisplayofThumbnails v0.1.0
 - Short description: Increase size of character and clothing save/load window in maker
@@ -23,7 +33,7 @@
 - Author(s):         SpockBauru, ManlyMarco
 - More information:  https://github.com/SpockBauru/SpockPlugins_BepInEx
 
-# FixationalEyeMovement v1.0.0
+# FixationalEyeMovement v1.0.1
 - Short description: Makes eyes slightly move around to mimic eyes focusing on different things
 - Author(s):         サバカン
 - More information:  Koikatsu discord server
@@ -43,6 +53,11 @@
 - Author(s):         Unknown, from zodgame forum
 - More information:  zodgame
 
+# Hardmods 2023/10/17
+- Short description: Numerous hardmods
+- Author(s):         Multiple
+- More information:  ???
+
 # HC_ConfigurationManager v19.1
 - Short description: Adds 'Plugin Settings' button inside the game settings screen
 - Author(s):         Anonymous (ported from BepisPlugins)
@@ -53,12 +68,22 @@
 - Author(s):         Ported to HC by anonymous
 - More information:  https://github.com/bogus-things/RG_PovX
 
+# HGaugeCtrl v0.3.0
+- Short description: Plugin to get operation similar to KK's H auto mode
+- Author(s):         Sabakan
+- More information:  ???
+
+# Hide language selection in title menu v1.0
+- Short description: Hides Language button from title menu, use the launcher to change language instead
+- Author(s):         ManlyMarco
+- More information:  ???
+
 # IllusionFixes_IL2CPP v21.0.1
 - Short description: A collection of essential fixes and improvements
 - Author(s):         https://github.com/IllusionMods
 - More information:  https://github.com/IllusionMods/IllusionFixes
 
-# IllusionLaunchers_HoneyCome v3.4.0.0
+# IllusionLaunchers_HoneyCome v3.4.1.22526
 - Short description: Custom game launcher
 - Author(s):         https://github.com/IllusionMods
 - More information:  https://github.com/IllusionMods/IllusionLaunchers

@@ -7,11 +7,11 @@
 ;-------------Full game name for naming patch itself and desktop icons
 #define NAME "HoneyCome"
 ;---------------------------------------------Current HF Patch version
-#define VERSION "1.0"
+#define VERSION "1.1"
 ;--Don't include any files in the build to make it go fast for testing
 ;#define DEBUG
 ;---Skip file verification for easier testing, COMMENT OUT FOR RELEASE
-#define NOVERIFY
+;#define NOVERIFY
 ;------------Don't include general, studio and map sideloader modpacks
 ;#define LITE
 ;---------------------------------------------------------------------
@@ -35,7 +35,7 @@ LZMAUseSeparateProcess=yes
 ;LZMADictionarySize=108576
 LZMADictionarySize=262144
 LZMANumFastBytes=273
-LZMANumBlockThreads=14
+LZMANumBlockThreads=18
 DiskSpanning=no
 DefaultDirName={code:GetDefaultDirName}
 
@@ -71,9 +71,9 @@ Source: "HelperLib.dll";                  DestDir: "{app}";                     
 Source: "Plugin Readme.md";               DestDir: "{app}"
 ; -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Source: "Input\_Patch\1_base\*";                   DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs;            Components: Patch
-Source: "Input\_Patch\2_0908-full\*";              DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs;            Components: Patch
+Source: "Input\_Patch\2_1013-full\*";              DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs;            Components: Patch
 Source: "Input\_Patch\8_man\*";                    DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs;            Components: Patch
-Source: "Input\_Patch\9_unhollowed-0908\*";        DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs;            Components: Patch
+Source: "Input\_Patch\9_unhollowed-1013\*";        DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs;            Components: Patch
 #endif
 
 ; -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
