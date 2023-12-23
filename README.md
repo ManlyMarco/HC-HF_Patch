@@ -13,10 +13,12 @@ You can support development of HF Patch and many of the included plugins through
 Check the [Releases](https://github.com/ManlyMarco/HC-HF_Patch/releases) page for download links. To get mail updates for each new release you can watch this repositiory (top right) or watch the linked patreon page.
 
 ## How to install
-1. Install the game and any paid expansions that you want.
-2. Download the latest HF Patch from the [releases page](https://github.com/ManlyMarco/HC-HF_Patch/releases) to any directory and run it.
-3. You can customize the install but for beginners it's recommended to use the default settings.
-4. Wait until it's done and enjoy the game!
+1. Install the game.
+2. (Optional) Install any paid expansions that you have (e.g. Dolce). You must install them before running the patch.
+3. Download the latest HF Patch from the [releases page](https://github.com/ManlyMarco/HC-HF_Patch/releases) to any directory. Do not download it to the game directory!
+4. Once all parts are downloaded, run the patch .exe file.
+5. You can customize the install but for beginners it's recommended to use the default settings.
+6. Wait until it's done (verification can take a long time) and enjoy the game!
 
 *Note: If you want to run the game under Wine/Proton (Linux, SteamOS, macOS, etc.), read [this](https://github.com/Mantas-2155X/illusion-wine-guide) and [this](https://docs.bepinex.dev/articles/advanced/proton_wine.html).*
 
@@ -29,7 +31,7 @@ If you need any help, [check the wiki](https://wiki.anime-sharing.com/hgames/ind
 ## Important notes, please read
 - HF Patch does not contain the full game, paid expansions or any other pirated content. The full game needs to be already installed for the patch to work.
 - If you have installed a previous HF Patch or separate mods it is recommended to remove ALL mods when prompted. This will prevent any potential mod conflicts or outdated mods causing problems.
-- All free patches and DLC are included. Paid and limited-access DLCs are not included, but they are optional and not required. 
+- All free patches and DLC are included. Paid and limited-access DLCs are not included, but they are not required for the patch to work. 
 - You can run this patch as many times as you want and nothing will break. All mods are optional to install, and most can be removed by running the patch again.
 - Steam users: Before installing this patch it’s best to run “Verify local game files” in Steam (find HoneyCome in your library > Properties > Local files > Verify). This will avoid any potential issues with modified or broken game files, and will ensure the game is up to date.
 - Steam users: This patch will convert your game into the uncut version (DLsite/DMM). Essentially it will greatly mod compatibility and unlock everything, but if Steam ever updates the game it will most likely break it until you install HF Patch again.
