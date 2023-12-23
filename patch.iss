@@ -7,7 +7,7 @@
 ;-------------Full game name for naming patch itself and desktop icons
 #define NAME "HoneyCome"
 ;---------------------------------------------Current HF Patch version
-#define VERSION "1.1"
+#define VERSION "1.2"
 ;--Don't include any files in the build to make it go fast for testing
 ;#define DEBUG
 ;---Skip file verification for easier testing, COMMENT OUT FOR RELEASE
@@ -58,7 +58,7 @@ Name: "bare";     Description: "{cm:bareInstall}"
 Name: "none";     Description: "{cm:noneInstall}"
 Name: "custom";   Description: "{cm:customInstall}"; Flags: iscustom
 
-#define CurrentDate GetDateTimeString('yyyy-mm-dd', '-', ':');
+;#define CurrentDate GetDateTimeString('yyyy-mm-dd', '-', ':');
 
 [Components]
 Name: "Patch";                    Description: "All free updates, Steam version unlock, and common issue repair"                   ; Types: full_en full extra_en extra custom bare none; Flags: fixed
@@ -70,10 +70,13 @@ Source: "HelperLib.dll";                  DestDir: "{app}";                     
 #ifndef DEBUG
 Source: "Plugin Readme.md";               DestDir: "{app}"
 ; -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-Source: "Input\_Patch\1_base\*";                   DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs;            Components: Patch
-Source: "Input\_Patch\2_1013-full\*";              DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs;            Components: Patch
-Source: "Input\_Patch\8_man\*";                    DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs;            Components: Patch
-Source: "Input\_Patch\9_unhollowed-1013\*";        DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs;            Components: Patch
+Source: "Input\_Patch\1_base\*";                   DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Patch;
+Source: "Input\_Patch\2_1215-full\*";              DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Patch;
+Source: "Input\_Patch\4_dolce_diff\*";             DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Patch; Check: DolceInstalled
+Source: "Input\_Patch\5_dolce_1222-full\*";        DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Patch; Check: DolceInstalled
+Source: "Input\_Patch\8_man\*";                    DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Patch;
+Source: "Input\_Patch\9_unhollowed-1215\*";        DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Patch;
+Source: "Input\_Patch\9_unhollowed-dolce_1222\*";  DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Patch; Check: DolceInstalled
 #endif
 
 ; -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -82,7 +85,8 @@ Source: "Input\_Patch\9_unhollowed-1013\*";        DestDir: "{app}"; Flags: igno
 
 [Files]
 #ifndef DEBUG
-Source: "Input\BepInEx_config\*";  DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs solidbreak; Components: BepInEx
+Source: "Input\BepInEx_config\*";         DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs solidbreak; Components: BepInEx
+Source: "Input\BepInEx_config_dolce\*";   DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs solidbreak; Components: BepInEx; Check: DolceInstalled
 ;Source: "Input\BepInEx_Dev\*";     DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs;            Components: BepInEx\Dev
 Source: "Input\Default_configs\*"; DestDir: "{app}\BepInEx\config"; Flags: ignoreversion recursesubdirs onlyifdoesntexist; Components: BepInEx
 ;-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -123,6 +127,12 @@ Type: filesandordirs; Name: "{app}\zh-TW"; Components: IllusionLaunchers
 ;Type: filesandordirs; Name: "{app}\mods\Sideloader Modpack - Studio"              ; Components: Modpack\Studio
 ;Type: filesandordirs; Name: "{app}\mods\Sideloader Modpack - Uncensor Selector"   ; Components: Modpack\UncensorSelector
 #endif
+
+; Remove incompatible / broken old mods
+Type: files; Name: "{app}\BepInEx\patchers\IMGUIModule.Il2Cpp.CoreCLR.Patcher.dll"
+Type: files; Name: "{app}\BepInEx\plugins\ConfigurationManager.dll"
+Type: files; Name: "{app}\BepInEx\plugins\BepInEx.KeyboardShortcut.dll"
+Type: files; Name: "{app}\abdata\list\characustom\300_50_tofusalomoto.unity3d"
 
 ; Clean up old patches and packs
 Type: files; Name: "{app}\start.bat"
@@ -171,11 +181,12 @@ Type: filesandordirs; Name: "{app}\dotnet"; Components: BepInEx
 Type: files; Name: "{app}\version.dll"; Components: BepInEx
 Type: files; Name: "{app}\winhttp.dll"; Components: BepInEx
 Type: files; Name: "{app}\doorstop_config.ini"; Components: BepInEx
-;Type: filesandordirs; Name: "{app}\Studio\BepInEx"; Components: BepInEx
-;Type: filesandordirs; Name: "{app}\Studio\mono"; Components: BepInEx
-;Type: files; Name: "{app}\Studio\version.dll"; Components: BepInEx
-;Type: files; Name: "{app}\Studio\winhttp.dll"; Components: BepInEx
-;Type: files; Name: "{app}\Studio\doorstop_config.ini"; Components: BepInEx
+Type: filesandordirs; Name: "{app}\DigitalCraft\BepInEx"; Components: BepInEx
+Type: filesandordirs; Name: "{app}\DigitalCraft\dotnet"; Components: BepInEx
+Type: files; Name: "{app}\DigitalCraft\version.dll"; Components: BepInEx
+Type: files; Name: "{app}\DigitalCraft\winhttp.dll"; Components: BepInEx
+Type: files; Name: "{app}\DigitalCraft\doorstop_config.ini"; Components: BepInEx
+Type: files; Name: "{app}\DigitalCraft\.doorstop_version"; Components: BepInEx
 
 ; Convert steam ver to global ver
 Type: filesandordirs; Name: "{app}\DefaultData";       Components: Patch; Check: IsUnconvertedSteam
@@ -253,9 +264,9 @@ external 'RemoveSideloaderDuplicates@files:HelperLib.dll stdcall';
 procedure RemoveModsExceptModpacks(path: String);
 external 'RemoveModsExceptModpacks@files:HelperLib.dll stdcall';
 
-function ParadiseInstalled(): Boolean;
+function DolceInstalled(): Boolean;
 begin
-  Result := FileExists(ExpandConstant('{app}\abdata\add030_00'));
+  Result := FileExists(ExpandConstant('{app}\DigitalCraft\DigitalCraft.exe'));
 end;
 
 function GetDefaultDirName(Param: string): string;
@@ -313,6 +324,9 @@ begin
     // Always clean up sideloader mods in case user already messed up
     //if IsTaskSelected('fixSideloaderDupes') then
     //    RemoveSideloaderDuplicates(ExpandConstant('{app}'));
+    
+    if DolceInstalled() then
+        FileCopy(ExpandConstant('{app}\winhttp.dll'), ExpandConstant('{app}\DigitalCraft\winhttp.dll'), false);
 
     FixConfig(ExpandConstant('{app}'));
     WriteVersionFile(ExpandConstant('{app}'), '{#VERSION}');
@@ -399,9 +413,9 @@ begin
 
     if Result = True then
     begin
-      if (FileExists(ExpandConstant('{app}\RoomStudio.exe'))) then
+      if (FileExists(ExpandConstant('{app}\DigitalCraft.exe'))) then
       begin
-        MsgBox('It looks like the Studio is installed to the same directory as the game, most likely breaking the game install. Studio executable should be in a "Studio" subfolder. You will have to reinstall the game and run this patch again.', mbError, MB_OK);
+        MsgBox('It looks like the Studio is installed to the same directory as the game, most likely breaking the game install. Studio executable should be in a "DigitalCraft" subfolder. You will have to reinstall the game and run this patch again.', mbError, MB_OK);
         Result := False;
       end
     end;
@@ -418,11 +432,11 @@ begin
       end
       else
       begin
-        //// Check for missing paid DLC
-        //if not ParadiseInstalled() then
-        //begin
-        //  SuppressibleMsgBox(ExpandConstant('{cm:MsgMissingDLC1}'), mbInformation, MB_OK, 0);
-        //end;
+        // Check for missing paid DLC
+        if not DolceInstalled() then
+        begin
+          SuppressibleMsgBox(ExpandConstant('{cm:MsgMissingDLC1}'), mbInformation, MB_OK, 0);
+        end;
       end;
     end;
 
@@ -485,6 +499,7 @@ begin
       // Close the game if it's running
       Exec('taskkill', '/F /IM HoneyCome.exe', ExpandConstant('{app}'), SW_HIDE, ewWaitUntilTerminated, ResultCode);
       Exec('taskkill', '/F /IM HoneyComeccp.exe', ExpandConstant('{app}'), SW_HIDE, ewWaitUntilTerminated, ResultCode);
+      Exec('taskkill', '/F /IM DigitalCraft.exe', ExpandConstant('{app}'), SW_HIDE, ewWaitUntilTerminated, ResultCode);
       Exec('taskkill', '/F /IM InitSetting.exe', ExpandConstant('{app}'), SW_HIDE, ewWaitUntilTerminated, ResultCode);
       Exec('taskkill', '/F /IM KKManager.exe', ExpandConstant('{app}'), SW_HIDE, ewWaitUntilTerminated, ResultCode);
       Exec('taskkill', '/F /IM StandaloneUpdater.exe', ExpandConstant('{app}'), SW_HIDE, ewWaitUntilTerminated, ResultCode);

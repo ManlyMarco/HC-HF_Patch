@@ -1,4 +1,4 @@
-# BepInEx.ConfigurationManager v18.0
+# BepInEx.ConfigurationManager v18.1
 - Short description: Can change plugin settings. Press F1 to open
 - Author(s):         BepInEx (anonymous IL2CPP port)
 - More information:  https://github.com/BepInEx/BepInEx.ConfigurationManager
@@ -12,6 +12,11 @@
 - Short description: Plugin framework
 - Author(s):         https://github.com/BepInEx
 - More information:  https://github.com/BepInEx/BepInEx
+
+# Character and outfit cards
+- Short description: A lot of extra cards that came included with the hardmods. Will fill up your character list!
+- Author(s):         Multiple
+- More information:  Koikatsu discord server
 
 # CrossFader v0.1.1
 - Short description: Replaces fades between animations with animated transitions
@@ -33,6 +38,11 @@
 - Author(s):         SpockBauru, ManlyMarco
 - More information:  https://github.com/SpockBauru/SpockPlugins_BepInEx
 
+# Fix_CraftWindow v1.0
+- Short description: Enlarge some studio menus to show more items
+- Author(s):         サバカン
+- More information:  Koikatsu discord server
+
 # FixationalEyeMovement v1.0.1
 - Short description: Makes eyes slightly move around to mimic eyes focusing on different things
 - Author(s):         サバカン
@@ -48,20 +58,30 @@
 - Author(s):         SpockBauru, ManlyMarco
 - More information:  https://github.com/SpockBauru/SpockPlugins_BepInEx
 
+# Hardmod pack 2023/12/23
+- Short description: Numerous clothing and accessory mods. Can't be uninstalled!
+- Author(s):         Multiple
+- More information:  Koikatsu discord server
+
 # Hardmod Uncensor 2023/09/08
 - Short description: Basic male and female uncensor, scrunchy
 - Author(s):         Unknown, from zodgame forum
 - More information:  zodgame
 
-# Hardmods 2023/10/17
-- Short description: Numerous hardmods
-- Author(s):         Multiple
-- More information:  ???
+# HC_BepisPlugins v19.3.3
+- Short description: Essential plugins required by many other plugins to function
+- Author(s):         https://github.com/IllusionMods
+- More information:  https://github.com/IllusionMods/BepisPlugins
 
-# HC_ConfigurationManager v19.1
-- Short description: Adds 'Plugin Settings' button inside the game settings screen
-- Author(s):         Anonymous (ported from BepisPlugins)
-- More information:  N/A
+# HC_FXsettings v1.1.1
+- Short description: Edit Unity and Beautify post processing settings in HoneyCome through ConfigurationManager
+- Author(s):         https://github.com/TonWonton
+- More information:  https://github.com/TonWonton/HC_FXsettings
+
+# HC_Hair v0.0.1
+- Short description: Make hair partially transparent when eyes are set to show on top of hair. Warning: Breaks with some modded hair!
+- Author(s):         HC_Hair
+- More information:  Koikatsu discord server
 
 # HC_PovX v1.0.0
 - Short description: Adds first-person view in H scenes, check hotkeys in plugin settings
@@ -73,25 +93,25 @@
 - Author(s):         Sabakan
 - More information:  ???
 
-# Hide language selection in title menu v1.0
-- Short description: Hides Language button from title menu, use the launcher to change language instead
-- Author(s):         ManlyMarco
-- More information:  ???
+# Hide language selection in studio title menu v1.0
+- Short description: Prevents translation issues. Use the launcher to change language instead
+- Author(s):         IllusionMods
+- More information:  https://github.com/IllusionMods/HC_Plugins
+
+# Hide language selection in title menu v1.1
+- Short description: Prevents translation issues. Use the launcher to change language instead
+- Author(s):         IllusionMods
+- More information:  https://github.com/IllusionMods/HC_Plugins
 
 # IllusionFixes_IL2CPP v21.0.1
 - Short description: A collection of essential fixes and improvements
 - Author(s):         https://github.com/IllusionMods
 - More information:  https://github.com/IllusionMods/IllusionFixes
 
-# IllusionLaunchers_HoneyCome v3.4.1.22526
+# IllusionLaunchers_HoneyCome v3.4.1.36297
 - Short description: Custom game launcher
 - Author(s):         https://github.com/IllusionMods
 - More information:  https://github.com/IllusionMods/IllusionLaunchers
-
-# IMGUIModule.Il2Cpp.CoreCLR.Patcher v1.0.0.0
-- Short description: Fixes some plugin interfaces not working correctly
-- Author(s):         Anonymous
-- More information:  N/A
 
 # KKManager v0.23.0.0
 - Short description: Manage and update mods, browse cards
@@ -112,6 +132,16 @@
 - Short description: Mute the game when it's not in focus, configure in plugin settings
 - Author(s):         SpockBauru, ManlyMarco
 - More information:  https://github.com/SpockBauru/SpockPlugins_BepInEx
+
+# Runtime Unity Editor v5.2
+- Short description: Debugging tool for applications made with Unity3D game engine (IL2CPP runtime)
+- Author(s):         ManlyMarco
+- More information:  https://github.com/ManlyMarco/RuntimeUnityEditor
+
+# Skip title screen in studio v1.0
+- Short description: Skip title screen in studio
+- Author(s):         IllusionMods
+- More information:  https://github.com/IllusionMods/HC_Plugins
 
 # Web Request Blocker v1.0.0
 - Short description: Fixes the game requiring internet connection to start
