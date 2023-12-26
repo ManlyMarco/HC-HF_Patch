@@ -387,7 +387,7 @@ icacls ""%target%"" /grant *S-1-1-0:(OI)(CI)F /T /C /L /Q
         {
             try
             {
-                foreach (var subdir in new[] { @"abdata\list\characustom", @"abdata\studio\info", @"abdata\anime" })
+                foreach (var subdir in new[] { @"abdata\list\characustom", @"abdata\craft\info" })
                 {
                     var ld = Path.Combine(path, subdir);
                     if (Directory.Exists(ld))

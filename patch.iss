@@ -7,7 +7,7 @@
 ;-------------Full game name for naming patch itself and desktop icons
 #define NAME "HoneyCome"
 ;---------------------------------------------Current HF Patch version
-#define VERSION "1.2"
+#define VERSION "1.3"
 ;--Don't include any files in the build to make it go fast for testing
 ;#define DEBUG
 ;---Skip file verification for easier testing, COMMENT OUT FOR RELEASE
@@ -129,10 +129,11 @@ Type: filesandordirs; Name: "{app}\zh-TW"; Components: IllusionLaunchers
 #endif
 
 ; Remove incompatible / broken old mods
-Type: files; Name: "{app}\BepInEx\patchers\IMGUIModule.Il2Cpp.CoreCLR.Patcher.dll"
-Type: files; Name: "{app}\BepInEx\plugins\ConfigurationManager.dll"
-Type: files; Name: "{app}\BepInEx\plugins\BepInEx.KeyboardShortcut.dll"
-Type: files; Name: "{app}\abdata\list\characustom\300_50_tofusalomoto.unity3d"
+Type: files; Name: "{app}\BepInEx\patchers\IMGUIModule.Il2Cpp.CoreCLR.Patcher.dll"; Components: BepInEx\ConfigurationManager_Il2Cpp
+Type: files; Name: "{app}\BepInEx\plugins\ConfigurationManager.dll";                Components: BepInEx\ConfigurationManager_Il2Cpp
+Type: files; Name: "{app}\BepInEx\plugins\BepInEx.KeyboardShortcut.dll";            Components: BepInEx\ConfigurationManager_Il2Cpp
+Type: files; Name: "{app}\abdata\list\characustom\300_50_tofusalomoto.unity3d";     Components: Content\Hardmods
+Type: files; Name: "{app}\abdata\list\characustom\1600_*";                          Components: Content\Hardmods
 
 ; Clean up old patches and packs
 Type: files; Name: "{app}\start.bat"
@@ -193,9 +194,21 @@ Type: filesandordirs; Name: "{app}\DefaultData";       Components: Patch; Check:
 Type: filesandordirs; Name: "{app}\abdata\list";       Components: Patch; Check: IsUnconvertedSteam
 Type: files;          Name: "{app}\abdata\abdata*";    Components: Patch; Check: IsUnconvertedSteam
 Type: files;          Name: "{app}\abdata\add0";       Components: Patch; Check: IsUnconvertedSteam
+Type: files;          Name: "{app}\abdata\add012_00";  Components: Patch; Check: IsUnconvertedSteam
+Type: files;          Name: "{app}\abdata\add012_02";  Components: Patch; Check: IsUnconvertedSteam
+Type: files;          Name: "{app}\abdata\craft012_00";Components: Patch; Check: IsUnconvertedSteam
+Type: files;          Name: "{app}\abdata\craft012_01";Components: Patch; Check: IsUnconvertedSteam
 Type: files;          Name: "{app}\abdata\lang*";      Components: Patch; Check: IsUnconvertedSteam
 Type: filesandordirs; Name: "{app}\HoneyComeccp_Data"; Components: Patch; Check: IsUnconvertedSteam
 
+; Bad default settings in older versions of the plugin
+Type: files;          Name: "{app}\BepInEx\config\HC_FXsettings.cfg"; Components: Feature\HC_FXsettings
+; version in filename
+Type: files;          Name: "{app}\BepInEx\plugins\HC_Hair_*"; Components: Feature\HC_Hair
+; Incompatible
+Type: files;          Name: "{app}\BepInEx\plugins\HC_HGaugeCtrl.dll"; Components: Feature\HC_HGaugeAndSpeedCtrl
+; Disabled by launcher
+Type: files;          Name: "{app}\BepInEx\plugins\WebRequestBlocker.dl_"; Components: FIX\WebRequestBlocker
 
 [Registry]
 Root: HKCU; Subkey: "Software\ILLGAMES"

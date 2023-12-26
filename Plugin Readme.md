@@ -8,7 +8,7 @@
 - Author(s):         BepInEx
 - More information:  https://github.com/BepInEx/BepInEx.SplashScreen
 
-# BepInEx-Unity.IL2CPP-win-x64 v6.0.0.0
+# BepInEx-Unity.IL2CPP win-x64 v6.0.0 be.682
 - Short description: Plugin framework
 - Author(s):         https://github.com/BepInEx
 - More information:  https://github.com/BepInEx/BepInEx
@@ -18,7 +18,7 @@
 - Author(s):         Multiple
 - More information:  Koikatsu discord server
 
-# CrossFader v0.1.1
+# CrossFader v0.1.2
 - Short description: Replaces fades between animations with animated transitions
 - Author(s):         Sabakan
 - More information:  ???
@@ -38,7 +38,7 @@
 - Author(s):         SpockBauru, ManlyMarco
 - More information:  https://github.com/SpockBauru/SpockPlugins_BepInEx
 
-# Fix_CraftWindow v1.0
+# Fix_CraftWindow v1.0.1
 - Short description: Enlarge some studio menus to show more items
 - Author(s):         サバカン
 - More information:  Koikatsu discord server
@@ -58,7 +58,7 @@
 - Author(s):         SpockBauru, ManlyMarco
 - More information:  https://github.com/SpockBauru/SpockPlugins_BepInEx
 
-# Hardmod pack 2023/12/23
+# Hardmod pack 2023/12/25
 - Short description: Numerous clothing and accessory mods. Can't be uninstalled!
 - Author(s):         Multiple
 - More information:  Koikatsu discord server
@@ -73,25 +73,30 @@
 - Author(s):         https://github.com/IllusionMods
 - More information:  https://github.com/IllusionMods/BepisPlugins
 
-# HC_FXsettings v1.1.1
+# HC_FXsettings v1.3.1
 - Short description: Edit Unity and Beautify post processing settings in HoneyCome through ConfigurationManager
 - Author(s):         https://github.com/TonWonton
 - More information:  https://github.com/TonWonton/HC_FXsettings
 
-# HC_Hair v0.0.1
-- Short description: Make hair partially transparent when eyes are set to show on top of hair. Warning: Breaks with some modded hair!
-- Author(s):         HC_Hair
+# HC_Hair v0.0.2
+- Short description: When eyes are set to show on top of hair, do not draw them over the hair but instead make the hair partially transparent. Doesn't work on some modded hair
+- Author(s):         ekibun
 - More information:  Koikatsu discord server
+
+# HC_HGaugeAndSpeedCtrl v1.0.0
+- Short description: Modifies how H scene gauges, speeds and climaxes work, check plugin settings
+- Author(s):         サバカン(Sabakan), TonWonton
+- More information:  https://github.com/TonWonton/HC_HSceneCtrl
+
+# HC_HSceneBreastJiggle v1.0.0
+- Short description: Temporarily change breast softness and weight in H scenes
+- Author(s):         TonWonton
+- More information:  https://github.com/TonWonton/HC_HSceneCtrl
 
 # HC_PovX v1.0.0
 - Short description: Adds first-person view in H scenes, check hotkeys in plugin settings
 - Author(s):         Ported to HC by anonymous
 - More information:  https://github.com/bogus-things/RG_PovX
-
-# HGaugeCtrl v0.3.0
-- Short description: Plugin to get operation similar to KK's H auto mode
-- Author(s):         Sabakan
-- More information:  ???
 
 # Hide language selection in studio title menu v1.0
 - Short description: Prevents translation issues. Use the launcher to change language instead
@@ -108,7 +113,7 @@
 - Author(s):         https://github.com/IllusionMods
 - More information:  https://github.com/IllusionMods/IllusionFixes
 
-# IllusionLaunchers_HoneyCome v3.4.1.36297
+# IllusionLaunchers_HoneyCome v3.4.1.36298
 - Short description: Custom game launcher
 - Author(s):         https://github.com/IllusionMods
 - More information:  https://github.com/IllusionMods/IllusionLaunchers
@@ -143,7 +148,7 @@
 - Author(s):         IllusionMods
 - More information:  https://github.com/IllusionMods/HC_Plugins
 
-# Web Request Blocker v1.0.0
+# Web Request Blocker v1.1.1
 - Short description: Fixes the game requiring internet connection to start
 - Author(s):         Unknown
 - More information:  Koikatsu Discord Server
