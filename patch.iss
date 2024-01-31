@@ -7,7 +7,7 @@
 ;-------------Full game name for naming patch itself and desktop icons
 #define NAME "HoneyCome"
 ;---------------------------------------------Current HF Patch version
-#define VERSION "1.4"
+#define VERSION "1.5"
 ;--Don't include any files in the build to make it go fast for testing
 ;#define DEBUG
 ;---Skip file verification for easier testing, COMMENT OUT FOR RELEASE
@@ -35,7 +35,7 @@ LZMAUseSeparateProcess=yes
 ;LZMADictionarySize=108576
 LZMADictionarySize=262144
 LZMANumFastBytes=273
-LZMANumBlockThreads=18
+LZMANumBlockThreads=16
 DiskSpanning=no
 DefaultDirName={code:GetDefaultDirName}
 
@@ -73,10 +73,10 @@ Source: "Plugin Readme.md";               DestDir: "{app}"
 Source: "Input\_Patch\1_base\*";                   DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Patch;
 Source: "Input\_Patch\2_1215-full\*";              DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Patch;
 Source: "Input\_Patch\4_dolce_diff\*";             DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Patch; Check: DolceInstalled
-Source: "Input\_Patch\5_dolce_1222-full\*";        DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Patch; Check: DolceInstalled
+Source: "Input\_Patch\5_dolce_0126-full\*";        DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Patch; Check: DolceInstalled
 Source: "Input\_Patch\8_man\*";                    DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Patch;
 Source: "Input\_Patch\9_unhollowed-1215\*";        DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Patch;
-Source: "Input\_Patch\9_unhollowed-dolce_1222\*";  DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Patch; Check: DolceInstalled
+Source: "Input\_Patch\9_unhollowed-dolce_0126\*";  DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Patch; Check: DolceInstalled
 #endif
 
 ; -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------

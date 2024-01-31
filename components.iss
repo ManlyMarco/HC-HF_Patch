@@ -20,7 +20,7 @@ Name: "UNC\UncensorHardmod";                   Description: "Hardmod Uncensor 20
 ; -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #ifndef LITE
 Name: "Content";                               Description: "Additional content (Needed to properly load most character cards and scenes)"         ; Types: full_en full extra extra_en
-Name: "Content\Hardmods";                      Description: "Hardmod pack 2024/01/15 (Numerous clothing and accessory mods. Can't be uninstalled!)"; Types: extra extra_en
+Name: "Content\Hardmods";                      Description: "Hardmod pack 2024/01/30 (Numerous clothing and accessory mods. Can't be uninstalled!)"; Types: extra extra_en
 Name: "Content\Hardmods\HardmodCards";         Description: "Character and outfit cards (A lot of extra cards that came included with the hardmods. Will fill up your character list!)"
 #endif 
 ; -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -32,20 +32,20 @@ Name: "FIX\HC_Fix_CraftWindow";                Description: "Fix_CraftWindow v1.
 Name: "Feature";                               Description: "Improvements and additional features"                                                 
 Name: "Feature\HC_PovX";                       Description: "HC_PovX v1.0.0 (Adds first-person view in H scenes, check hotkeys in plugin settings)"; Types: full_en full extra extra_en
 Name: "Feature\MuteInBackground";              Description: "Mute In Background v0.7 (Mute the game when it's not in focus, configure in plugin settings)"; Types: full_en full extra extra_en
-Name: "Feature\HC_HGaugeAndSpeedCtrl";         Description: "HC_HGaugeAndSpeedCtrl v1.1.1 (Modifies how H scene gauges, speeds and climaxes work, check plugin settings)"; Types: full_en full extra extra_en
+Name: "Feature\HC_HGaugeAndSpeedCtrl";         Description: "HC_HGaugeAndSpeedCtrl v1.2.0 (Modifies how H scene gauges, speeds and climaxes work, check plugin settings)"; Types: full_en full extra extra_en
 Name: "Feature\HC_HSceneBreastJiggle";         Description: "HC_HSceneBreastJiggle v1.0.1 (Temporarily change breast softness and weight in H scenes)"; Types: full_en full extra extra_en
+Name: "Feature\HC_LogoRemover";                Description: "HC_LogoRemover v1.0.0 (Toggle the logo that appears on screenshots on or off)"        ; Types: full_en full extra extra_en
 Name: "Feature\GraphicsSettings";              Description: "Graphics Settings v0.7 (More graphics settings, access from plugin settings)"         ; Types: extra extra_en
 Name: "Feature\HC_FXsettings";                 Description: "HC_FXsettings v1.3.1 (Edit Unity and Beautify post processing settings in HoneyCome through ConfigurationManager)"; Types: extra extra_en
-Name: "Feature\HC_FixationalEyeMovement";      Description: "FixationalEyeMovement v1.0.1 (Makes eyes slightly move around to mimic eyes focusing on different things)"; Types: extra extra_en
-Name: "Feature\HC_DisplayofThumbnails";        Description: "DisplayofThumbnails v0.1.0 (Increase size of character and clothing save/load window in maker)"; Types: extra extra_en
+Name: "Feature\HC_FixationalEyeMovement";      Description: "FixationalEyeMovement v1.0.1.1 (Makes eyes slightly move around to mimic eyes focusing on different things)"; Types: extra extra_en
+Name: "Feature\HC_DisplayofThumbnails";        Description: "DisplayofThumbnails v0.1.0.1 (Increase size of character and clothing save/load window in maker)"; Types: extra extra_en
 Name: "Feature\EnableResize";                  Description: "Enable Resize v0.7 (Enable resizing of game window)"                                  ; Types: extra extra_en
 Name: "Feature\EnableFullScreenToggle";        Description: "Enable Full Screen Toggle v0.7 (Allow toggling full screen with Alt+Enter)"           ; Types: extra extra_en
 Name: "Feature\HC_CrossFader";                 Description: "CrossFader v0.1.2 (Replaces fades between animations with animated transitions)"      ; Types: extra extra_en
 Name: "Feature\HC_Studio_TitleSkip";           Description: "Skip title screen in studio v1.0 (Skip title screen in studio)"                       ; Types: extra extra_en
+Name: "Feature\HC_Ahegao";                     Description: "HC_Ahegao v1.0.0 (Allows changing various parameters for orgasms and faces during H)" ; Types: extra extra_en
 Name: "Feature\HC_Hair";                       Description: "HC_Hair v0.0.2 (When eyes are set to show on top of hair, do not draw them over the hair but instead make the hair partially transparent. Doesn't work on some modded hair)"
 Name: "Feature\LoveMachine";                   Description: "LoveMachine v3.16.2 (Adds support for some computer-controlled sex toys)"             
-Name: "Feature\HC_LogoRemover";                Description: "HC_LogoRemover v1.0.0 (Toggle the logo that appears on screenshots on or off)"        ; Types: full_en full extra extra_en
-Name: "Feature\HC_Ahegao";                     Description: "HC_Ahegao v1.0.0 (Allows changing various parameters for orgasms and faces during H)" ; Types: extra extra_en
 ; -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Name: "MISC";                                  Description: "{cm:CompMISC}"                                                                        
 Name: "MISC\FullSave";                         Description: "Full Save (Save file with everything unlocked in main game. Overwrites your current progress!)"
