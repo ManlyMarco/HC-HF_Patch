@@ -1,9 +1,9 @@
-# BepInEx.ConfigurationManager v18.1
+# BepInEx.ConfigurationManager v18.2.1
 - Short description: Can change plugin settings. Press F1 to open
 - Author(s):         BepInEx (anonymous IL2CPP port)
 - More information:  https://github.com/BepInEx/BepInEx.ConfigurationManager
 
-# BepInEx.SplashScreen_BepInEx6 v2.0.0.0
+# BepInEx.SplashScreen_BepInEx6 v2.2.0.0
 - Short description: A loading screen on game startup with information about patchers and plugins being currently loaded
 - Author(s):         BepInEx
 - More information:  https://github.com/BepInEx/BepInEx.SplashScreen
@@ -18,12 +18,17 @@
 - Author(s):         Multiple
 - More information:  Koikatsu discord server
 
+# Cheat Tools v3.3.1.1
+- Short description: Trainer, press F12 to open, it's in the bottom left corner
+- Author(s):         ManlyMarco
+- More information:  https://github.com/ManlyMarco/IllusionCheatTools
+
 # CrossFader v0.1.2
 - Short description: Replaces fades between animations with animated transitions
 - Author(s):         Sabakan
 - More information:  ???
 
-# DisplayofThumbnails v0.1.0
+# DisplayofThumbnails v0.1.0.1
 - Short description: Increase size of character and clothing save/load window in maker
 - Author(s):         サバカン
 - More information:  Koikatsu discord server
@@ -43,7 +48,7 @@
 - Author(s):         サバカン
 - More information:  Koikatsu discord server
 
-# FixationalEyeMovement v1.0.1
+# FixationalEyeMovement v1.0.1.1
 - Short description: Makes eyes slightly move around to mimic eyes focusing on different things
 - Author(s):         サバカン
 - More information:  Koikatsu discord server
@@ -58,7 +63,7 @@
 - Author(s):         SpockBauru, ManlyMarco
 - More information:  https://github.com/SpockBauru/SpockPlugins_BepInEx
 
-# Hardmod pack 2023/12/25
+# Hardmod pack 2024/02/20
 - Short description: Numerous clothing and accessory mods. Can't be uninstalled!
 - Author(s):         Multiple
 - More information:  Koikatsu discord server
@@ -68,7 +73,12 @@
 - Author(s):         Unknown, from zodgame forum
 - More information:  zodgame
 
-# HC_BepisPlugins v19.3.3
+# HC_Ahegao v1.0.0
+- Short description: Allows changing various parameters for orgasms and faces during H
+- Author(s):         TonWonton
+- More information:  https://github.com/TonWonton/HC_HSceneCtrl
+
+# HC_BepisPlugins v19.4
 - Short description: Essential plugins required by many other plugins to function
 - Author(s):         https://github.com/IllusionMods
 - More information:  https://github.com/IllusionMods/BepisPlugins
@@ -83,15 +93,20 @@
 - Author(s):         ekibun
 - More information:  Koikatsu discord server
 
-# HC_HGaugeAndSpeedCtrl v1.0.0
+# HC_HGaugeAndSpeedCtrl v1.2.0
 - Short description: Modifies how H scene gauges, speeds and climaxes work, check plugin settings
 - Author(s):         サバカン(Sabakan), TonWonton
 - More information:  https://github.com/TonWonton/HC_HSceneCtrl
 
-# HC_HSceneBreastJiggle v1.0.0
+# HC_HSceneBreastJiggle v1.0.1
 - Short description: Temporarily change breast softness and weight in H scenes
 - Author(s):         TonWonton
 - More information:  https://github.com/TonWonton/HC_HSceneCtrl
+
+# HC_LogoRemover v1.0.0
+- Short description: Toggle the logo that appears on screenshots on or off
+- Author(s):         TonWonton
+- More information:  https://github.com/TonWonton/HC_LogoRemover
 
 # HC_PovX v1.0.0
 - Short description: Adds first-person view in H scenes, check hotkeys in plugin settings
@@ -108,22 +123,22 @@
 - Author(s):         IllusionMods
 - More information:  https://github.com/IllusionMods/HC_Plugins
 
-# IllusionFixes_IL2CPP v21.0.1
+# IllusionFixes_IL2CPP v21.4
 - Short description: A collection of essential fixes and improvements
 - Author(s):         https://github.com/IllusionMods
 - More information:  https://github.com/IllusionMods/IllusionFixes
 
-# IllusionLaunchers_HoneyCome v3.4.1.36298
+# IllusionLaunchers_HoneyCome v3.4.1.22526
 - Short description: Custom game launcher
 - Author(s):         https://github.com/IllusionMods
 - More information:  https://github.com/IllusionMods/IllusionLaunchers
 
-# KKManager v0.23.0.0
+# KKManager v1.0.0.0
 - Short description: Manage and update mods, browse cards
 - Author(s):         https://github.com/IllusionMods
 - More information:  https://github.com/IllusionMods/KKManager
 
-# LoveMachine v3.14.0
+# LoveMachine v3.17.0
 - Short description: Adds support for some computer-controlled sex toys
 - Author(s):         Sauceke
 - More information:  https://github.com/Sauceke/LoveMachine
@@ -138,7 +153,7 @@
 - Author(s):         SpockBauru, ManlyMarco
 - More information:  https://github.com/SpockBauru/SpockPlugins_BepInEx
 
-# Runtime Unity Editor v5.2
+# Runtime Unity Editor v5.3.0
 - Short description: Debugging tool for applications made with Unity3D game engine (IL2CPP runtime)
 - Author(s):         ManlyMarco
 - More information:  https://github.com/ManlyMarco/RuntimeUnityEditor
@@ -147,6 +162,11 @@
 - Short description: Skip title screen in studio
 - Author(s):         IllusionMods
 - More information:  https://github.com/IllusionMods/HC_Plugins
+
+# Subtitles v0.0.2
+- Short description: Show subtitles for girl's voice in H-Scenes
+- Author(s):         ekibun
+- More information:  ???
 
 # Web Request Blocker v1.1.1
 - Short description: Fixes the game requiring internet connection to start
