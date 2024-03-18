@@ -28,6 +28,11 @@
 - Author(s):         Sabakan
 - More information:  ???
 
+# Custom intro voices v26
+- Short description: ambatukaaaaam
+- Author(s):         ManlyMarco
+- More information:  https://www.youtube.com/watch?v=SZBQ4lQFqvw
+
 # DisplayofThumbnails v0.1.0.1
 - Short description: Increase size of character and clothing save/load window in maker
 - Author(s):         サバカン
@@ -78,12 +83,12 @@
 - Author(s):         TonWonton
 - More information:  https://github.com/TonWonton/HC_HSceneCtrl
 
-# HC_BepisPlugins v19.4
+# HC_BepisPlugins v19.6
 - Short description: Essential plugins required by many other plugins to function
 - Author(s):         https://github.com/IllusionMods
 - More information:  https://github.com/IllusionMods/BepisPlugins
 
-# HC_FXsettings v1.3.1
+# HC_FXsettings v1.3.2
 - Short description: Edit Unity and Beautify post processing settings in HoneyCome through ConfigurationManager
 - Author(s):         https://github.com/TonWonton
 - More information:  https://github.com/TonWonton/HC_FXsettings
@@ -98,7 +103,7 @@
 - Author(s):         サバカン(Sabakan), TonWonton
 - More information:  https://github.com/TonWonton/HC_HSceneCtrl
 
-# HC_HSceneBreastJiggle v1.0.1
+# HC_HSceneBreastJiggle v1.1.0
 - Short description: Temporarily change breast softness and weight in H scenes
 - Author(s):         TonWonton
 - More information:  https://github.com/TonWonton/HC_HSceneCtrl
@@ -107,6 +112,11 @@
 - Short description: Toggle the logo that appears on screenshots on or off
 - Author(s):         TonWonton
 - More information:  https://github.com/TonWonton/HC_LogoRemover
+
+# HC_PlayerHCloth v0.0.1
+- Short description: Allows changing state of player clothes during H
+- Author(s):         ekibun
+- More information:  ???
 
 # HC_PovX v1.0.0
 - Short description: Adds first-person view in H scenes, check hotkeys in plugin settings
@@ -123,17 +133,17 @@
 - Author(s):         IllusionMods
 - More information:  https://github.com/IllusionMods/HC_Plugins
 
-# IllusionFixes_IL2CPP v21.4
+# IllusionFixes_IL2CPP v21.5
 - Short description: A collection of essential fixes and improvements
 - Author(s):         https://github.com/IllusionMods
 - More information:  https://github.com/IllusionMods/IllusionFixes
 
-# IllusionLaunchers_HoneyCome v3.4.1.22526
+# IllusionLaunchers_HoneyCome v3.4.1.36297
 - Short description: Custom game launcher
 - Author(s):         https://github.com/IllusionMods
 - More information:  https://github.com/IllusionMods/IllusionLaunchers
 
-# KKManager v1.0.0.0
+# KKManager v1.1.0.0
 - Short description: Manage and update mods, browse cards
 - Author(s):         https://github.com/IllusionMods
 - More information:  https://github.com/IllusionMods/KKManager
@@ -163,12 +173,17 @@
 - Author(s):         IllusionMods
 - More information:  https://github.com/IllusionMods/HC_Plugins
 
+# SliderUnlock v1.0.0
+- Short description: Unlocks slider ranges in maker(fragile and might break)
+- Author(s):         Quartermaster
+- More information:  ???
+
 # Subtitles v0.0.2
 - Short description: Show subtitles for girl's voice in H-Scenes
 - Author(s):         ekibun
 - More information:  ???
 
-# Web Request Blocker v1.1.1
+# Web Request Blocker v1.0.0
 - Short description: Fixes the game requiring internet connection to start
 - Author(s):         Unknown
 - More information:  Koikatsu Discord Server
