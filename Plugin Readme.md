@@ -1,4 +1,4 @@
-# BepInEx.ConfigurationManager v18.2.1
+# BepInEx.ConfigurationManager v18.3
 - Short description: Can change plugin settings. Press F1 to open
 - Author(s):         BepInEx (anonymous IL2CPP port)
 - More information:  https://github.com/BepInEx/BepInEx.ConfigurationManager
@@ -83,7 +83,7 @@
 - Author(s):         TonWonton
 - More information:  https://github.com/TonWonton/HC_HSceneCtrl
 
-# HC_BepisPlugins v19.6
+# HC_BepisPlugins v19.7
 - Short description: Essential plugins required by many other plugins to function
 - Author(s):         https://github.com/IllusionMods
 - More information:  https://github.com/IllusionMods/BepisPlugins
@@ -143,7 +143,7 @@
 - Author(s):         https://github.com/IllusionMods
 - More information:  https://github.com/IllusionMods/IllusionLaunchers
 
-# KKManager v1.1.0.0
+# KKManager v1.2.0.0
 - Short description: Manage and update mods, browse cards
 - Author(s):         https://github.com/IllusionMods
 - More information:  https://github.com/IllusionMods/KKManager

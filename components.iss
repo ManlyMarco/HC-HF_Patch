@@ -1,14 +1,14 @@
 [Components]
 Name: "BepInEx";                               Description: "BepInEx-Unity.IL2CPP win-x64 v6.0.0 be.682 (Plugin framework)"                        ; Types: full_en full extra_en extra custom bare; Flags: fixed
 Name: "BepInEx\MessageCenter";                 Description: "Message Center v0.7 (Allows plugins to show messages in top left corner of the game)" ; Types: full_en full extra extra_en
-Name: "BepInEx\ConfigurationManager_Il2Cpp";   Description: "BepInEx.ConfigurationManager v18.2.1 (Can change plugin settings. Press F1 to open)"  ; Types: full_en full extra extra_en
+Name: "BepInEx\ConfigurationManager_Il2Cpp";   Description: "BepInEx.ConfigurationManager v18.3 (Can change plugin settings. Press F1 to open)"    ; Types: full_en full extra extra_en
 Name: "BepInEx\BepInEx_SplashScreen_BepInEx6"; Description: "BepInEx.SplashScreen_BepInEx6 v2.2.0.0 (A loading screen on game startup with information about patchers and plugins being currently loaded)"; Types: full_en full extra extra_en
 ; -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Name: "IllusionLaunchers";                     Description: "IllusionLaunchers_HoneyCome v3.4.1.36297 (Custom game launcher)"                      ; Types: full_en full extra extra_en custom
-Name: "KKManager";                             Description: "KKManager v1.1.0.0 (Manage and update mods, browse cards)"                            ; Types: full_en full extra extra_en custom
+Name: "KKManager";                             Description: "KKManager v1.2.0.0 (Manage and update mods, browse cards)"                            ; Types: full_en full extra extra_en custom
 ; -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Name: "API";                                   Description: "APIs (Plugins required by other plugins and mods to function)"                        ; Types: full_en full extra extra_en custom bare; Flags: fixed
-Name: "API\HC_BepisPlugins";                   Description: "HC_BepisPlugins v19.6 (Essential plugins required by many other plugins to function)" ; Types: full_en full extra extra_en
+Name: "API\HC_BepisPlugins";                   Description: "HC_BepisPlugins v19.7 (Essential plugins required by many other plugins to function)" ; Types: full_en full extra extra_en
 ; -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Name: "AT";                                    Description: "XUnity Auto Translator v5.3.0 (Translation loader, automatic web translations)"       ; Types: full extra full_en extra_en custom
 Name: "AT\HC_HideLanguageSelector";            Description: "Hide language selection in title menu v1.1 (Prevents translation issues. Use the launcher to change language instead)"; Types: full_en full extra extra_en
