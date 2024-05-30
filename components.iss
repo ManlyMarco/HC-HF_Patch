@@ -1,5 +1,5 @@
 [Components]
-Name: "BepInEx";                               Description: "BepInEx-Unity.IL2CPP win-x64 v6.0.0 be.682 (Plugin framework)"                        ; Types: full_en full extra_en extra custom bare; Flags: fixed
+Name: "BepInEx";                               Description: "BepInEx-Unity.IL2CPP win-x64 v6.0.0 be.691 (Plugin framework)"                        ; Types: full_en full extra_en extra custom bare; Flags: fixed
 Name: "BepInEx\MessageCenter";                 Description: "Message Center v0.7 (Allows plugins to show messages in top left corner of the game)" ; Types: full_en full extra extra_en
 Name: "BepInEx\ConfigurationManager_Il2Cpp";   Description: "BepInEx.ConfigurationManager v18.3 (Can change plugin settings. Press F1 to open)"    ; Types: full_en full extra extra_en
 Name: "BepInEx\BepInEx_SplashScreen_BepInEx6"; Description: "BepInEx.SplashScreen_BepInEx6 v2.2.0.0 (A loading screen on game startup with information about patchers and plugins being currently loaded)"; Types: full_en full extra extra_en
@@ -27,7 +27,7 @@ Name: "Content\HC_SliderUnlock";               Description: "SliderUnlock v1.0.0
 #endif 
 ; -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Name: "FIX";                                   Description: "{cm:CompFIX}"                                                                         ; Types: extra extra_en
-Name: "FIX\IllusionFixes";                     Description: "IllusionFixes_IL2CPP v21.5 (A collection of essential fixes and improvements)"        ; Types: full_en full extra extra_en custom bare
+Name: "FIX\IllusionFixes";                     Description: "IllusionFixes_IL2CPP v21.5.1 (A collection of essential fixes and improvements)"      ; Types: full_en full extra extra_en custom bare
 Name: "FIX\WebRequestBlocker";                 Description: "Web Request Blocker v1.0.0 (Fixes the game requiring internet connection to start)"   ; Types: full_en full extra extra_en custom bare
 Name: "FIX\HC_Fix_CraftWindow";                Description: "Fix_CraftWindow v1.0.1 (Enlarge some studio menus to show more items)"                ; Types: full_en full extra extra_en
 ; -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -48,13 +48,13 @@ Name: "Feature\HC_Studio_TitleSkip";           Description: "Skip title screen i
 Name: "Feature\HC_Ahegao";                     Description: "HC_Ahegao v1.0.0 (Allows changing various parameters for orgasms and faces during H)" ; Types: extra extra_en
 Name: "Feature\HC_PlayerHCloth";               Description: "HC_PlayerHCloth v0.0.1 (Allows changing state of player clothes during H)"            ; Types: extra extra_en
 Name: "Feature\HC_Hair";                       Description: "HC_Hair v0.0.2 (When eyes are set to show on top of hair, do not draw them over the hair but instead make the hair partially transparent. Doesn't work on some modded hair)"
-Name: "Feature\LoveMachine";                   Description: "LoveMachine v3.17.0 (Adds support for some computer-controlled sex toys)"             
+Name: "Feature\LoveMachine";                   Description: "LoveMachine v3.18.0 (Adds support for some computer-controlled sex toys)"             
 ; -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Name: "MISC";                                  Description: "{cm:CompMISC}"                                                                        
 Name: "MISC\RuntimeUnityEditor_BepInEx6_IL2CPP"; Description: "Runtime Unity Editor v5.3.0 (Debugging tool for applications made with Unity3D game engine (IL2CPP runtime))"; Types: full_en full extra extra_en
-Name: "MISC\RuntimeUnityEditor\Trainer";       Description: "Cheat Tools v3.3.1.1 (Trainer, press F12 to open, it's in the bottom left corner)"    ; Types: full_en full extra_en extra
+Name: "MISC\RuntimeUnityEditor\Trainer";       Description: "Cheat Tools v3.3.2 (Trainer, press F12 to open, it's in the bottom left corner)"      ; Types: full_en full extra_en extra
 Name: "MISC\FullSave";                         Description: "Full Save (Save file with everything unlocked in main game. Overwrites your current progress!)"
-Name: "MISC\Memes";                            Description: "Custom intro voices v26 (ambatukaaaaam)"                                              ; Types: extra extra_en
+Name: "MISC\Memes";                            Description: "Custom intro voices v27 (ambatukaaaaam)"                                              ; Types: extra extra_en
 
 [Files]
 Source: "Input\_Plugins\_out\BepInEx-Unity.IL2CPP-win-x64\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs solidbreak; Components: BepInEx; Excludes: "manifest.xml"

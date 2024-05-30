@@ -8,7 +8,7 @@
 - Author(s):         BepInEx
 - More information:  https://github.com/BepInEx/BepInEx.SplashScreen
 
-# BepInEx-Unity.IL2CPP win-x64 v6.0.0 be.682
+# BepInEx-Unity.IL2CPP win-x64 v6.0.0 be.691
 - Short description: Plugin framework
 - Author(s):         https://github.com/BepInEx
 - More information:  https://github.com/BepInEx/BepInEx
@@ -18,7 +18,7 @@
 - Author(s):         Multiple
 - More information:  Koikatsu discord server
 
-# Cheat Tools v3.3.1.1
+# Cheat Tools v3.3.2
 - Short description: Trainer, press F12 to open, it's in the bottom left corner
 - Author(s):         ManlyMarco
 - More information:  https://github.com/ManlyMarco/IllusionCheatTools
@@ -28,7 +28,7 @@
 - Author(s):         Sabakan
 - More information:  ???
 
-# Custom intro voices v26
+# Custom intro voices v27
 - Short description: ambatukaaaaam
 - Author(s):         ManlyMarco
 - More information:  https://www.youtube.com/watch?v=SZBQ4lQFqvw
@@ -133,7 +133,7 @@
 - Author(s):         IllusionMods
 - More information:  https://github.com/IllusionMods/HC_Plugins
 
-# IllusionFixes_IL2CPP v21.5
+# IllusionFixes_IL2CPP v21.5.1
 - Short description: A collection of essential fixes and improvements
 - Author(s):         https://github.com/IllusionMods
 - More information:  https://github.com/IllusionMods/IllusionFixes
@@ -148,7 +148,7 @@
 - Author(s):         https://github.com/IllusionMods
 - More information:  https://github.com/IllusionMods/KKManager
 
-# LoveMachine v3.17.0
+# LoveMachine v3.18.0
 - Short description: Adds support for some computer-controlled sex toys
 - Author(s):         Sauceke
 - More information:  https://github.com/Sauceke/LoveMachine
