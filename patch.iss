@@ -7,7 +7,7 @@
 ;-------------Full game name for naming patch itself and desktop icons
 #define NAME "HoneyCome"
 ;---------------------------------------------Current HF Patch version
-#define VERSION "1.9"
+#define VERSION "1.10"
 ;--Don't include any files in the build to make it go fast for testing
 ;#define DEBUG
 ;---Skip file verification for easier testing, COMMENT OUT FOR RELEASE
@@ -280,6 +280,11 @@ external 'RemoveModsExceptModpacks@files:HelperLib.dll stdcall';
 function DolceInstalled(): Boolean;
 begin
   Result := FileExists(ExpandConstant('{app}\DigitalCraft\DigitalCraft.exe'));
+end;
+
+function DolceNotInstalled(): Boolean;
+begin
+  Result := not FileExists(ExpandConstant('{app}\DigitalCraft\DigitalCraft.exe'));
 end;
 
 function GetDefaultDirName(Param: string): string;

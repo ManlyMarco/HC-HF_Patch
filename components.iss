@@ -1,5 +1,5 @@
 [Components]
-Name: "BepInEx";                               Description: "BepInEx-Unity.IL2CPP win-x64 v6.0.0 be.691 (Plugin framework)"                        ; Types: full_en full extra_en extra custom bare; Flags: fixed
+Name: "BepInEx";                               Description: "BepInEx-Unity.IL2CPP win-x64 v6.0.0 be.692 (Plugin framework)"                        ; Types: full_en full extra_en extra custom bare; Flags: fixed
 Name: "BepInEx\MessageCenter";                 Description: "Message Center v0.7 (Allows plugins to show messages in top left corner of the game)" ; Types: full_en full extra extra_en
 Name: "BepInEx\ConfigurationManager_Il2Cpp";   Description: "BepInEx.ConfigurationManager v18.3 (Can change plugin settings. Press F1 to open)"    ; Types: full_en full extra extra_en
 Name: "BepInEx\BepInEx_SplashScreen_BepInEx6"; Description: "BepInEx.SplashScreen_BepInEx6 v2.2.0.0 (A loading screen on game startup with information about patchers and plugins being currently loaded)"; Types: full_en full extra extra_en
@@ -10,7 +10,7 @@ Name: "KKManager";                             Description: "KKManager v1.2.0.0 
 Name: "API";                                   Description: "APIs (Plugins required by other plugins and mods to function)"                        ; Types: full_en full extra extra_en custom bare; Flags: fixed
 Name: "API\HC_BepisPlugins";                   Description: "HC_BepisPlugins v19.7 (Essential plugins required by many other plugins to function)" ; Types: full_en full extra extra_en
 ; -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-Name: "AT";                                    Description: "XUnity Auto Translator v5.3.0 (Translation loader, automatic web translations)"       ; Types: full extra full_en extra_en custom
+Name: "AT";                                    Description: "XUnity Auto Translator v5.3.1 (Translation loader, automatic web translations)"       ; Types: full extra full_en extra_en custom
 Name: "AT\HC_HideLanguageSelector";            Description: "Hide language selection in title menu v1.1 (Prevents translation issues. Use the launcher to change language instead)"; Types: full_en full extra extra_en
 Name: "AT\HC_Studio_HideLanguageSelector";     Description: "Hide language selection in studio title menu v1.0 (Prevents translation issues. Use the launcher to change language instead)"; Types: full_en full extra extra_en
 ; Name: "AT\TL";                                 Description: "{cm:CompTL}"                                                                          ; Types: full_en extra_en
@@ -23,7 +23,7 @@ Name: "UNC\UncensorHardmod";                   Description: "Hardmod Uncensor 20
 Name: "Content";                               Description: "Additional content (Needed to properly load most character cards and scenes)"         ; Types: full_en full extra extra_en
 Name: "Content\Hardmods";                      Description: "Hardmod pack 2024/02/20 (Numerous clothing and accessory mods. Can't be uninstalled!)"; Types: extra extra_en
 Name: "Content\Hardmods\HardmodCards";         Description: "Character and outfit cards (A lot of extra cards that came included with the hardmods. Will fill up your character list!)"
-Name: "Content\HC_SliderUnlock";               Description: "SliderUnlock v1.0.0 (Unlocks slider ranges in maker(fragile and might break))"        
+Name: "Content\HC_SliderUnlock";               Description: "SliderUnlock v1.0.69 (Unlocks slider ranges in maker(fragile and might break))"       ; Types: full_en full extra extra_en
 #endif 
 ; -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Name: "FIX";                                   Description: "{cm:CompFIX}"                                                                         ; Types: extra extra_en
@@ -37,6 +37,7 @@ Name: "Feature\MuteInBackground";              Description: "Mute In Background 
 Name: "Feature\HC_HGaugeAndSpeedCtrl";         Description: "HC_HGaugeAndSpeedCtrl v1.2.0 (Modifies how H scene gauges, speeds and climaxes work, check plugin settings)"; Types: full_en full extra extra_en
 Name: "Feature\HC_HSceneBreastJiggle";         Description: "HC_HSceneBreastJiggle v1.1.0 (Temporarily change breast softness and weight in H scenes)"; Types: full_en full extra extra_en
 Name: "Feature\HC_LogoRemover";                Description: "HC_LogoRemover v1.0.0 (Toggle the logo that appears on screenshots on or off)"        ; Types: full_en full extra extra_en
+Name: "Feature\HC_StudioCharaSort";            Description: "Studio Character Sort v1.1.0 (Change default sort order of cards in studio)"          ; Types: full_en full extra extra_en
 Name: "Feature\GraphicsSettings";              Description: "Graphics Settings v0.7 (More graphics settings, access from plugin settings)"         ; Types: extra extra_en
 Name: "Feature\HC_FXsettings";                 Description: "HC_FXsettings v1.3.2 (Edit Unity and Beautify post processing settings in HoneyCome through ConfigurationManager)"; Types: extra extra_en
 Name: "Feature\HC_FixationalEyeMovement";      Description: "FixationalEyeMovement v1.0.1.1 (Makes eyes slightly move around to mimic eyes focusing on different things)"; Types: extra extra_en
@@ -54,7 +55,7 @@ Name: "MISC";                                  Description: "{cm:CompMISC}"
 Name: "MISC\RuntimeUnityEditor_BepInEx6_IL2CPP"; Description: "Runtime Unity Editor v5.3.0 (Debugging tool for applications made with Unity3D game engine (IL2CPP runtime))"; Types: full_en full extra extra_en
 Name: "MISC\RuntimeUnityEditor\Trainer";       Description: "Cheat Tools v3.3.2 (Trainer, press F12 to open, it's in the bottom left corner)"      ; Types: full_en full extra_en extra
 Name: "MISC\FullSave";                         Description: "Full Save (Save file with everything unlocked in main game. Overwrites your current progress!)"
-Name: "MISC\Memes";                            Description: "Custom intro voices v27 (ambatukaaaaam)"                                              ; Types: extra extra_en
+Name: "MISC\Memes";                            Description: "Custom intro voices v28.0 (shikanokonokokoshitantan)"                                 ; Types: extra extra_en
 
 [Files]
 Source: "Input\_Plugins\_out\BepInEx-Unity.IL2CPP-win-x64\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs solidbreak; Components: BepInEx; Excludes: "manifest.xml"
@@ -67,7 +68,8 @@ Source: "Input\_Plugins\_out\GraphicsSettingsIL2CPP_net6\*"; DestDir: "{app}"; F
 #ifndef LITE
 Source: "Input\_Plugins\_out\Hardmods\*";                   DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Content\Hardmods; Excludes: "manifest.xml"
 Source: "Input\_Plugins\_out\Hardmods_cards\*";             DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Content\Hardmods\HardmodCards; Excludes: "manifest.xml"
-Source: "Input\_Plugins\_out\HC_SliderUnlock\*";            DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Content\HC_SliderUnlock; Excludes: "manifest.xml"
+Source: "Input\_Plugins\_out\HC_SliderUnlock\*";            DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Content\HC_SliderUnlock; Excludes: "manifest.xml"; Check: DolceNotInstalled
+Source: "Input\_Plugins\_out\HC_SliderUnlock_Dolce\*";      DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Content\HC_SliderUnlock; Excludes: "manifest.xml"; Check: DolceInstalled
 #endif 
 Source: "Input\_Plugins\_out\HC_BepisPlugins\*";            DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: API\HC_BepisPlugins; Excludes: "manifest.xml"
 Source: "Input\_Plugins\_out\HC_CrossFader\*";              DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Feature\HC_CrossFader; Excludes: "manifest.xml"
@@ -91,6 +93,7 @@ Source: "Input\_Plugins\_out\MuteInBackgroundIL2CPP_net6\*"; DestDir: "{app}"; F
 Source: "Input\_Plugins\_out\HC_Ahegao\*";                  DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Feature\HC_Ahegao; Excludes: "manifest.xml"
 Source: "Input\_Plugins\_out\HC_LogoRemover\*";             DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Feature\HC_LogoRemover; Excludes: "manifest.xml"
 Source: "Input\_Plugins\_out\HC_PlayerHCloth\*";            DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Feature\HC_PlayerHCloth; Excludes: "manifest.xml"
+Source: "Input\_Plugins\_out\HC_StudioCharaSort\*";         DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Feature\HC_StudioCharaSort; Excludes: "manifest.xml"
 Source: "Input\_Plugins\_out\RuntimeUnityEditor_BepInEx6.IL2CPP\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: MISC\RuntimeUnityEditor_BepInEx6_IL2CPP; Excludes: "manifest.xml"
 Source: "Input\_Plugins\_out\HC_CheatTools\*";              DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: MISC\RuntimeUnityEditor\Trainer; Excludes: "manifest.xml"
 Source: "Input\_Plugins\_out\Memes\*";                      DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: MISC\Memes; Excludes: "manifest.xml"

@@ -8,7 +8,7 @@
 - Author(s):         BepInEx
 - More information:  https://github.com/BepInEx/BepInEx.SplashScreen
 
-# BepInEx-Unity.IL2CPP win-x64 v6.0.0 be.691
+# BepInEx-Unity.IL2CPP win-x64 v6.0.0 be.692
 - Short description: Plugin framework
 - Author(s):         https://github.com/BepInEx
 - More information:  https://github.com/BepInEx/BepInEx
@@ -28,8 +28,8 @@
 - Author(s):         Sabakan
 - More information:  ???
 
-# Custom intro voices v27
-- Short description: ambatukaaaaam
+# Custom intro voices v28.0
+- Short description: shikanokonokokoshitantan
 - Author(s):         ManlyMarco
 - More information:  https://www.youtube.com/watch?v=SZBQ4lQFqvw
 
@@ -173,10 +173,20 @@
 - Author(s):         IllusionMods
 - More information:  https://github.com/IllusionMods/HC_Plugins
 
-# SliderUnlock v1.0.0
+# SliderUnlock v1.0.69
 - Short description: Unlocks slider ranges in maker(fragile and might break)
 - Author(s):         Quartermaster
 - More information:  ???
+
+# SliderUnlock v1.0.69
+- Short description: Unlocks slider ranges in maker(fragile and might break)
+- Author(s):         Quartermaster
+- More information:  ???
+
+# Studio Character Sort v1.1.0
+- Short description: Change default sort order of cards in studio
+- Author(s):         https://github.com/kkykkykky/
+- More information:  https://github.com/kkykkykky/StudioCharaSort
 
 # Subtitles v0.0.2
 - Short description: Show subtitles for girl's voice in H-Scenes
@@ -188,7 +198,7 @@
 - Author(s):         Unknown
 - More information:  Koikatsu Discord Server
 
-# XUnity Auto Translator v5.3.0
+# XUnity Auto Translator v5.3.1
 - Short description: Translation loader, automatic web translations
 - Author(s):         https://github.com/bbepis
 - More information:  https://github.com/bbepis/XUnity.AutoTranslator
