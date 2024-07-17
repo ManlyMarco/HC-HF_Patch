@@ -5,7 +5,7 @@ Name: "BepInEx\ConfigurationManager_Il2Cpp";   Description: "BepInEx.Configurati
 Name: "BepInEx\BepInEx_SplashScreen_BepInEx6"; Description: "BepInEx.SplashScreen_BepInEx6 v2.2.0.0 (A loading screen on game startup with information about patchers and plugins being currently loaded)"; Types: full_en full extra extra_en
 ; -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Name: "IllusionLaunchers";                     Description: "IllusionLaunchers_HoneyCome v3.4.1.36297 (Custom game launcher)"                      ; Types: full_en full extra extra_en custom
-Name: "KKManager";                             Description: "KKManager v1.2.0.0 (Manage and update mods, browse cards)"                            ; Types: full_en full extra extra_en custom
+Name: "KKManager";                             Description: "KKManager v1.3.0.0 (Manage and update mods, browse cards)"                            ; Types: full_en full extra extra_en custom
 ; -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Name: "API";                                   Description: "APIs (Plugins required by other plugins and mods to function)"                        ; Types: full_en full extra extra_en custom bare; Flags: fixed
 Name: "API\HC_BepisPlugins";                   Description: "HC_BepisPlugins v19.7 (Essential plugins required by many other plugins to function)" ; Types: full_en full extra extra_en
@@ -21,13 +21,13 @@ Name: "UNC\UncensorHardmod";                   Description: "Hardmod Uncensor 20
 ; -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #ifndef LITE
 Name: "Content";                               Description: "Additional content (Needed to properly load most character cards and scenes)"         ; Types: full_en full extra extra_en
-Name: "Content\Hardmods";                      Description: "Hardmod pack 2024/02/20 (Numerous clothing and accessory mods. Can't be uninstalled!)"; Types: extra extra_en
+Name: "Content\Hardmods";                      Description: "Hardmod pack 2024/07/17 (Numerous clothing and accessory mods. Can't be uninstalled!)"; Types: extra extra_en
 Name: "Content\Hardmods\HardmodCards";         Description: "Character and outfit cards (A lot of extra cards that came included with the hardmods. Will fill up your character list!)"
 Name: "Content\HC_SliderUnlock";               Description: "SliderUnlock v1.0.69 (Unlocks slider ranges in maker(fragile and might break))"       ; Types: full_en full extra extra_en
 #endif 
 ; -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Name: "FIX";                                   Description: "{cm:CompFIX}"                                                                         ; Types: extra extra_en
-Name: "FIX\IllusionFixes";                     Description: "IllusionFixes_IL2CPP v21.5.1 (A collection of essential fixes and improvements)"      ; Types: full_en full extra extra_en custom bare
+Name: "FIX\IllusionFixes";                     Description: "IllusionFixes_IL2CPP v21.5.2 (A collection of essential fixes and improvements)"      ; Types: full_en full extra extra_en custom bare
 Name: "FIX\WebRequestBlocker";                 Description: "Web Request Blocker v1.0.0 (Fixes the game requiring internet connection to start)"   ; Types: full_en full extra extra_en custom bare
 Name: "FIX\HC_Fix_CraftWindow";                Description: "Fix_CraftWindow v1.0.1 (Enlarge some studio menus to show more items)"                ; Types: full_en full extra extra_en
 ; -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -49,13 +49,13 @@ Name: "Feature\HC_Studio_TitleSkip";           Description: "Skip title screen i
 Name: "Feature\HC_Ahegao";                     Description: "HC_Ahegao v1.0.0 (Allows changing various parameters for orgasms and faces during H)" ; Types: extra extra_en
 Name: "Feature\HC_PlayerHCloth";               Description: "HC_PlayerHCloth v0.0.1 (Allows changing state of player clothes during H)"            ; Types: extra extra_en
 Name: "Feature\HC_Hair";                       Description: "HC_Hair v0.0.2 (When eyes are set to show on top of hair, do not draw them over the hair but instead make the hair partially transparent. Doesn't work on some modded hair)"
-Name: "Feature\LoveMachine";                   Description: "LoveMachine v3.18.0 (Adds support for some computer-controlled sex toys)"             
+Name: "Feature\LoveMachine";                   Description: "LoveMachine v3.19.0 (Adds support for some computer-controlled sex toys)"             
 ; -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Name: "MISC";                                  Description: "{cm:CompMISC}"                                                                        
 Name: "MISC\RuntimeUnityEditor_BepInEx6_IL2CPP"; Description: "Runtime Unity Editor v5.3.0 (Debugging tool for applications made with Unity3D game engine (IL2CPP runtime))"; Types: full_en full extra extra_en
 Name: "MISC\RuntimeUnityEditor\Trainer";       Description: "Cheat Tools v3.3.2 (Trainer, press F12 to open, it's in the bottom left corner)"      ; Types: full_en full extra_en extra
 Name: "MISC\FullSave";                         Description: "Full Save (Save file with everything unlocked in main game. Overwrites your current progress!)"
-Name: "MISC\Memes";                            Description: "Custom intro voices v28.0 (shikanokonokokoshitantan)"                                 ; Types: extra extra_en
+Name: "MISC\Memes";                            Description: "Custom intro voices v29.0 (What the fuck is that)"                                    ; Types: extra extra_en
 
 [Files]
 Source: "Input\_Plugins\_out\BepInEx-Unity.IL2CPP-win-x64\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs solidbreak; Components: BepInEx; Excludes: "manifest.xml"

@@ -28,8 +28,8 @@
 - Author(s):         Sabakan
 - More information:  ???
 
-# Custom intro voices v28.0
-- Short description: shikanokonokokoshitantan
+# Custom intro voices v29.0
+- Short description: What the fuck is that
 - Author(s):         ManlyMarco
 - More information:  https://www.youtube.com/watch?v=SZBQ4lQFqvw
 
@@ -68,7 +68,7 @@
 - Author(s):         SpockBauru, ManlyMarco
 - More information:  https://github.com/SpockBauru/SpockPlugins_BepInEx
 
-# Hardmod pack 2024/02/20
+# Hardmod pack 2024/07/17
 - Short description: Numerous clothing and accessory mods. Can't be uninstalled!
 - Author(s):         Multiple
 - More information:  Koikatsu discord server
@@ -133,7 +133,7 @@
 - Author(s):         IllusionMods
 - More information:  https://github.com/IllusionMods/HC_Plugins
 
-# IllusionFixes_IL2CPP v21.5.1
+# IllusionFixes_IL2CPP v21.5.2
 - Short description: A collection of essential fixes and improvements
 - Author(s):         https://github.com/IllusionMods
 - More information:  https://github.com/IllusionMods/IllusionFixes
@@ -143,12 +143,12 @@
 - Author(s):         https://github.com/IllusionMods
 - More information:  https://github.com/IllusionMods/IllusionLaunchers
 
-# KKManager v1.2.0.0
+# KKManager v1.3.0.0
 - Short description: Manage and update mods, browse cards
 - Author(s):         https://github.com/IllusionMods
 - More information:  https://github.com/IllusionMods/KKManager
 
-# LoveMachine v3.18.0
+# LoveMachine v3.19.0
 - Short description: Adds support for some computer-controlled sex toys
 - Author(s):         Sauceke
 - More information:  https://github.com/Sauceke/LoveMachine
