@@ -1,14 +1,14 @@
 [Components]
-Name: "BepInEx";                               Description: "BepInEx-Unity.IL2CPP win-x64 v6.0.0 be.692 (Plugin framework)"                        ; Types: full_en full extra_en extra custom bare; Flags: fixed
+Name: "BepInEx";                               Description: "BepInEx-Unity.IL2CPP win-x64 v6.0.0 be.697 (Plugin framework)"                        ; Types: full_en full extra_en extra custom bare; Flags: fixed
 Name: "BepInEx\MessageCenter";                 Description: "Message Center v0.7 (Allows plugins to show messages in top left corner of the game)" ; Types: full_en full extra extra_en
 Name: "BepInEx\ConfigurationManager_Il2Cpp";   Description: "BepInEx.ConfigurationManager v18.3 (Can change plugin settings. Press F1 to open)"    ; Types: full_en full extra extra_en
 Name: "BepInEx\BepInEx_SplashScreen_BepInEx6"; Description: "BepInEx.SplashScreen_BepInEx6 v2.2.0.0 (A loading screen on game startup with information about patchers and plugins being currently loaded)"; Types: full_en full extra extra_en
 ; -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Name: "IllusionLaunchers";                     Description: "IllusionLaunchers_HoneyCome v3.4.1.36297 (Custom game launcher)"                      ; Types: full_en full extra extra_en custom
-Name: "KKManager";                             Description: "KKManager v1.3.0.0 (Manage and update mods, browse cards)"                            ; Types: full_en full extra extra_en custom
+Name: "KKManager";                             Description: "KKManager v1.3.1.0 (Manage and update mods, browse cards)"                            ; Types: full_en full extra extra_en custom
 ; -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Name: "API";                                   Description: "APIs (Plugins required by other plugins and mods to function)"                        ; Types: full_en full extra extra_en custom bare; Flags: fixed
-Name: "API\HC_BepisPlugins";                   Description: "HC_BepisPlugins v19.7 (Essential plugins required by many other plugins to function)" ; Types: full_en full extra extra_en
+Name: "API\HC_BepisPlugins";                   Description: "HC_BepisPlugins v20.0 (Essential plugins required by many other plugins to function)" ; Types: full_en full extra extra_en
 ; -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Name: "AT";                                    Description: "XUnity Auto Translator v5.3.1 (Translation loader, automatic web translations)"       ; Types: full extra full_en extra_en custom
 Name: "AT\HC_HideLanguageSelector";            Description: "Hide language selection in title menu v1.1 (Prevents translation issues. Use the launcher to change language instead)"; Types: full_en full extra extra_en
@@ -27,7 +27,7 @@ Name: "Content\HC_SliderUnlock";               Description: "SliderUnlock v1.0.6
 #endif 
 ; -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Name: "FIX";                                   Description: "{cm:CompFIX}"                                                                         ; Types: extra extra_en
-Name: "FIX\IllusionFixes";                     Description: "IllusionFixes_IL2CPP v21.5.2 (A collection of essential fixes and improvements)"      ; Types: full_en full extra extra_en custom bare
+Name: "FIX\IllusionFixes";                     Description: "IllusionFixes_IL2CPP v21.6 (A collection of essential fixes and improvements)"        ; Types: full_en full extra extra_en custom bare
 Name: "FIX\WebRequestBlocker";                 Description: "Web Request Blocker v1.0.0 (Fixes the game requiring internet connection to start)"   ; Types: full_en full extra extra_en custom bare
 Name: "FIX\HC_Fix_CraftWindow";                Description: "Fix_CraftWindow v1.0.1 (Enlarge some studio menus to show more items)"                ; Types: full_en full extra extra_en
 ; -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------

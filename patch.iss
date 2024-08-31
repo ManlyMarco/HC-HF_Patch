@@ -7,7 +7,7 @@
 ;-------------Full game name for naming patch itself and desktop icons
 #define NAME "HoneyCome"
 ;---------------------------------------------Current HF Patch version
-#define VERSION "1.11"
+#define VERSION "1.12"
 ;--Don't include any files in the build to make it go fast for testing
 ;#define DEBUG
 ;---Skip file verification for easier testing, COMMENT OUT FOR RELEASE
@@ -73,10 +73,10 @@ Source: "Plugin Readme.md";               DestDir: "{app}"
 Source: "Input\_Patch\1_base\*";                   DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Patch;
 Source: "Input\_Patch\2_1215-full\*";              DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Patch;
 Source: "Input\_Patch\4_dolce_diff\*";             DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Patch; Check: DolceInstalled
-Source: "Input\_Patch\5_dolce_0524-full\*";        DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Patch; Check: DolceInstalled
+Source: "Input\_Patch\5_dolce_0823-full\*";        DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Patch; Check: DolceInstalled
 Source: "Input\_Patch\8_man\*";                    DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Patch;
 Source: "Input\_Patch\9_unhollowed-1215\*";        DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Patch;
-Source: "Input\_Patch\9_unhollowed-dolce_0524\*";  DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Patch; Check: DolceInstalled
+Source: "Input\_Patch\9_unhollowed-dolce_0823\*";  DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Patch; Check: DolceInstalled
 #endif
 
 ; -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
