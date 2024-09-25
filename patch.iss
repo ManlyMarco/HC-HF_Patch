@@ -179,11 +179,13 @@ Type: filesandordirs; Name: "{app}\BepInEx\unity-libs"; Components: BepInEx
 Type: filesandordirs; Name: "{app}\BepInEx\dummy"; Components: BepInEx
 Type: filesandordirs; Name: "{app}\mono"; Components: BepInEx
 Type: filesandordirs; Name: "{app}\dotnet"; Components: BepInEx
+Type: files; Name: "{app}\hid.dll"; Components: BepInEx
 Type: files; Name: "{app}\version.dll"; Components: BepInEx
 Type: files; Name: "{app}\winhttp.dll"; Components: BepInEx
 Type: files; Name: "{app}\doorstop_config.ini"; Components: BepInEx
 Type: filesandordirs; Name: "{app}\DigitalCraft\BepInEx"; Components: BepInEx
 Type: filesandordirs; Name: "{app}\DigitalCraft\dotnet"; Components: BepInEx
+Type: files; Name: "{app}\DigitalCraft\hid.dll"; Components: BepInEx
 Type: files; Name: "{app}\DigitalCraft\version.dll"; Components: BepInEx
 Type: files; Name: "{app}\DigitalCraft\winhttp.dll"; Components: BepInEx
 Type: files; Name: "{app}\DigitalCraft\doorstop_config.ini"; Components: BepInEx
@@ -214,14 +216,17 @@ Type: files;          Name: "{app}\BepInEx\plugins\WebRequestBlocker.dl_"; Compo
 Root: HKCU; Subkey: "Software\ILLGAMES"
 Root: HKCU; Subkey: "Software\ILLGAMES\HoneyCome"
 Root: HKCU; Subkey: "Software\ILLGAMES\HoneyCome"; ValueType: string; ValueName: "INSTALLDIR_HFP"; ValueData: "{app}\"
+Root: HKCU; Subkey: "Software\ILLGAMES\HoneyCome"; ValueType: string; ValueName: "INSTALLDIR"; ValueData: "{app}\"; Tasks: regfix
+Root: HKCU; Subkey: "Software\ILLGAMES\HoneyCome"; ValueType: string; ValueName: "PRODUCTNAME"; ValueData: "ハニカム"; Tasks: regfix
 
 [Tasks]
 Name: desktopicon; Description: "{cm:TaskIcon}"; Flags: unchecked
+Name: regfix; Description: "Fix game registry (fixes DigitalCraft not detecting HC cards)"
 Name: delete; Description: "{cm:TaskDelete}";
 ;Name: delete\Sidemods; Description: "{cm:TaskDeleteSide}"
 Name: delete\Plugins; Description: "{cm:TaskDeletePlugins}";
 Name: delete\Config; Description: "{cm:TaskDeletePluginSettings}"; Flags: unchecked
-;Name: delete\scripts; Description: "Delete old scripts"
+Name: delete\scripts; Description: "Delete old scripts (ScriptLoader, frida)"
 Name: delete\Listfiles; Description: "{cm:TaskDeleteLst}"; Flags: unchecked
 ;Name: fixSideloaderDupes; Description: "{cm:TaskSideDupes}";
 
@@ -335,6 +340,8 @@ begin
   // After install completes
   if (CurStep = ssPostInstall) then
   begin
+    DeleteFile(ExpandConstant('{app}\changelog.txt'));
+    
     // Delete Japanese versions of cards and bgs if English versions are installed (only those with different names)
     //if IsComponentSelected('AT\TL\EnglishTranslation\UserData') then
     //    RemoveJapaneseCards(ExpandConstant('{app}'));
@@ -422,6 +429,7 @@ begin
       or FileExists(ExpandConstant('{app}\AI-Syoujyo.exe'))
       or FileExists(ExpandConstant('{app}\AI-Shoujo.exe'))
       or FileExists(ExpandConstant('{app}\RoomGirl.exe'))
+      or FileExists(ExpandConstant('{app}\SamabakeScramble.exe'))
       or FileExists(ExpandConstant('{app}\HoneySelect2.exe'))) then
       begin
         MsgBox(ExpandConstant('{cm:MsgDifferentGameDetected}'), mbError, MB_OK);
@@ -518,6 +526,7 @@ begin
       Exec('taskkill', '/F /IM HoneyCome.exe', ExpandConstant('{app}'), SW_HIDE, ewWaitUntilTerminated, ResultCode);
       Exec('taskkill', '/F /IM HoneyComeccp.exe', ExpandConstant('{app}'), SW_HIDE, ewWaitUntilTerminated, ResultCode);
       Exec('taskkill', '/F /IM DigitalCraft.exe', ExpandConstant('{app}'), SW_HIDE, ewWaitUntilTerminated, ResultCode);
+      Exec('taskkill', '/F /IM UnityCrashHandler64.exe', ExpandConstant('{app}'), SW_HIDE, ewWaitUntilTerminated, ResultCode);
       Exec('taskkill', '/F /IM InitSetting.exe', ExpandConstant('{app}'), SW_HIDE, ewWaitUntilTerminated, ResultCode);
       Exec('taskkill', '/F /IM KKManager.exe', ExpandConstant('{app}'), SW_HIDE, ewWaitUntilTerminated, ResultCode);
       Exec('taskkill', '/F /IM StandaloneUpdater.exe', ExpandConstant('{app}'), SW_HIDE, ewWaitUntilTerminated, ResultCode);
@@ -576,8 +585,13 @@ begin
     //if (IsTaskSelected('delete\Listfiles')) then
     //  RemoveNonstandardListfiles(ExpandConstant('{app}'));
     
-    if (IsTaskSelected('delete\scripts')) then
+    if (IsTaskSelected('delete\scripts')) then begin
       DelTree(ExpandConstant('{app}\scripts'), True, True, True);
+      DelTree(ExpandConstant('{app}\frida-scripts'), True, True, True);
+      DeleteFile(ExpandConstant('{app}\dxgi.dll'));
+      DeleteFile(ExpandConstant('{app}\frida-gadget.config'));
+      DeleteFile(ExpandConstant('{app}\frida-gadget.dll'));
+    end;
 
     SetConfigDefaults(ExpandConstant('{app}'));
   end;
