@@ -3,12 +3,12 @@
 - Author(s):         BepInEx (anonymous IL2CPP port)
 - More information:  https://github.com/BepInEx/BepInEx.ConfigurationManager
 
-# BepInEx.SplashScreen_BepInEx6 v2.2.0.0
+# BepInEx.SplashScreen_BepInEx6 v2.2.1.0
 - Short description: A loading screen on game startup with information about patchers and plugins being currently loaded
 - Author(s):         BepInEx
 - More information:  https://github.com/BepInEx/BepInEx.SplashScreen
 
-# BepInEx-Unity.IL2CPP win-x64 v6.0.0 be.692
+# BepInEx-Unity.IL2CPP win-x64 v6.0.0 be.697
 - Short description: Plugin framework
 - Author(s):         https://github.com/BepInEx
 - More information:  https://github.com/BepInEx/BepInEx
@@ -83,7 +83,7 @@
 - Author(s):         TonWonton
 - More information:  https://github.com/TonWonton/HC_HSceneCtrl
 
-# HC_BepisPlugins v19.7
+# HC_BepisPlugins v20.0
 - Short description: Essential plugins required by many other plugins to function
 - Author(s):         https://github.com/IllusionMods
 - More information:  https://github.com/IllusionMods/BepisPlugins
@@ -133,7 +133,7 @@
 - Author(s):         IllusionMods
 - More information:  https://github.com/IllusionMods/HC_Plugins
 
-# IllusionFixes_IL2CPP v21.5.2
+# IllusionFixes_IL2CPP v21.6
 - Short description: A collection of essential fixes and improvements
 - Author(s):         https://github.com/IllusionMods
 - More information:  https://github.com/IllusionMods/IllusionFixes
@@ -143,7 +143,7 @@
 - Author(s):         https://github.com/IllusionMods
 - More information:  https://github.com/IllusionMods/IllusionLaunchers
 
-# KKManager v1.3.0.0
+# KKManager v1.4.1.0
 - Short description: Manage and update mods, browse cards
 - Author(s):         https://github.com/IllusionMods
 - More information:  https://github.com/IllusionMods/KKManager
@@ -163,7 +163,7 @@
 - Author(s):         SpockBauru, ManlyMarco
 - More information:  https://github.com/SpockBauru/SpockPlugins_BepInEx
 
-# Runtime Unity Editor v5.3.0
+# Runtime Unity Editor v5.4.1
 - Short description: Debugging tool for applications made with Unity3D game engine (IL2CPP runtime)
 - Author(s):         ManlyMarco
 - More information:  https://github.com/ManlyMarco/RuntimeUnityEditor
@@ -198,7 +198,7 @@
 - Author(s):         Unknown
 - More information:  Koikatsu Discord Server
 
-# XUnity Auto Translator v5.3.1
+# XUnity Auto Translator v5.4.0
 - Short description: Translation loader, automatic web translations
 - Author(s):         https://github.com/bbepis
 - More information:  https://github.com/bbepis/XUnity.AutoTranslator
