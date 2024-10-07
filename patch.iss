@@ -19,11 +19,11 @@
 #include "Assets\Header.iss"
 [Setup]
 #ifndef LITE
-AppName=HF Patch for HoneyCome
-OutputBaseFilename=HoneyCome HF Patch v{#VERSION}
+AppName=HF Patch for HoneyCome and DigitalCraft
+OutputBaseFilename=HoneyCome & DigitalCraft HF Patch v{#VERSION}
 #else
 AppName=HF Patch for HoneyCome (Light Version)
-OutputBaseFilename=HoneyCome HF Patch v{#VERSION} Light Version
+OutputBaseFilename=HoneyCome & DigitalCraft HF Patch v{#VERSION} Light Version
 #endif
 ArchitecturesInstallIn64BitMode=x64
 CloseApplications=yes
@@ -70,13 +70,17 @@ Source: "HelperLib.dll";                  DestDir: "{app}";                     
 #ifndef DEBUG
 Source: "Plugin Readme.md";               DestDir: "{app}"
 ; -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-Source: "Input\_Patch\1_base\*";                   DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Patch;
-Source: "Input\_Patch\2_1215-full\*";              DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Patch;
-Source: "Input\_Patch\4_dolce_diff\*";             DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Patch; Check: DolceInstalled
-Source: "Input\_Patch\5_dolce_0925-full\*";        DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Patch; Check: DolceInstalled
-Source: "Input\_Patch\8_man\*";                    DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Patch;
-Source: "Input\_Patch\9_unhollowed-1215\*";        DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Patch;
-Source: "Input\_Patch\9_unhollowed-dolce_0925\*";  DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Patch; Check: DolceInstalled
+Source: "Input\_Patch\1_base\*";                   DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Patch; Check: HoneyComeInstalled
+Source: "Input\_Patch\2_1215-full\*";              DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Patch; Check: HoneyComeInstalled
+Source: "Input\_Patch\4_dolce_diff\*";             DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Patch; Check: HoneyComeInstalled and DolceInstalled
+Source: "Input\_Patch\5_dolce_0925-full\*";        DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Patch; Check: HoneyComeInstalled and DolceInstalled
+Source: "Input\_Patch\8_man\*";                    DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Patch; Check: HoneyComeInstalled
+Source: "Input\_Patch\9_unhollowed-1215\*";        DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Patch; Check: HoneyComeInstalled
+Source: "Input\_Patch\9_unhollowed-dolce_0925\*";  DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Patch; Check: HoneyComeInstalled and DolceInstalled
+
+//todo stand-alone studio, needs any updates? probably shouldn't install hardmod pack??
+Source: "Input\_Patch\9_unhollowed-studio_0927\*";  DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Patch; Check: DigitalCraftInstalled and not HoneyComeInstalled
+
 #endif
 
 ; -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -86,7 +90,7 @@ Source: "Input\_Patch\9_unhollowed-dolce_0925\*";  DestDir: "{app}"; Flags: igno
 [Files]
 #ifndef DEBUG
 Source: "Input\BepInEx_config\*";         DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs solidbreak; Components: BepInEx
-Source: "Input\BepInEx_config_dolce\*";   DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs solidbreak; Components: BepInEx; Check: DolceInstalled
+Source: "Input\BepInEx_config_studio\*";  DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs solidbreak; Components: BepInEx; Check: DigitalCraftInstalled
 ;Source: "Input\BepInEx_Dev\*";     DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs;            Components: BepInEx\Dev
 Source: "Input\Default_configs\*"; DestDir: "{app}\BepInEx\config"; Flags: ignoreversion recursesubdirs onlyifdoesntexist; Components: BepInEx
 ;-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -214,10 +218,14 @@ Type: files;          Name: "{app}\BepInEx\plugins\WebRequestBlocker.dl_"; Compo
 
 [Registry]
 Root: HKCU; Subkey: "Software\ILLGAMES"
-Root: HKCU; Subkey: "Software\ILLGAMES\HoneyCome"
-Root: HKCU; Subkey: "Software\ILLGAMES\HoneyCome"; ValueType: string; ValueName: "INSTALLDIR_HFP"; ValueData: "{app}\"
-Root: HKCU; Subkey: "Software\ILLGAMES\HoneyCome"; ValueType: string; ValueName: "INSTALLDIR"; ValueData: "{app}\"; Tasks: regfix
-Root: HKCU; Subkey: "Software\ILLGAMES\HoneyCome"; ValueType: string; ValueName: "PRODUCTNAME"; ValueData: "ハニカム"; Tasks: regfix
+Root: HKCU; Subkey: "Software\ILLGAMES\HoneyCome"; Check: HoneyComeInstalled
+Root: HKCU; Subkey: "Software\ILLGAMES\HoneyCome"; Check: HoneyComeInstalled; ValueType: string; ValueName: "INSTALLDIR_HFP"; ValueData: "{app}\"
+Root: HKCU; Subkey: "Software\ILLGAMES\HoneyCome"; Check: HoneyComeInstalled; ValueType: string; ValueName: "INSTALLDIR"; ValueData: "{app}\"; Tasks: regfix
+Root: HKCU; Subkey: "Software\ILLGAMES\HoneyCome"; Check: HoneyComeInstalled; ValueType: string; ValueName: "PRODUCTNAME"; ValueData: "ハニカム"; Tasks: regfix
+Root: HKCU; Subkey: "Software\ILLGAMES\DigitalCraft"; Check: DigitalCraftInstalled
+Root: HKCU; Subkey: "Software\ILLGAMES\DigitalCraft"; Check: DigitalCraftInstalled; ValueType: string; ValueName: "INSTALLDIR_HFP"; ValueData: "{app}\"
+Root: HKCU; Subkey: "Software\ILLGAMES\DigitalCraft"; Check: DigitalCraftInstalled; ValueType: string; ValueName: "INSTALLDIR"; ValueData: "{app}\"; Tasks: regfix
+Root: HKCU; Subkey: "Software\ILLGAMES\DigitalCraft"; Check: DigitalCraftInstalled; ValueType: string; ValueName: "PRODUCTNAME"; ValueData: "DigitalCraft"; Tasks: regfix
 
 [Tasks]
 Name: desktopicon; Description: "{cm:TaskIcon}"; Flags: unchecked
@@ -282,6 +290,16 @@ external 'RemoveSideloaderDuplicates@files:HelperLib.dll stdcall';
 procedure RemoveModsExceptModpacks(path: String);
 external 'RemoveModsExceptModpacks@files:HelperLib.dll stdcall';
 
+function HoneyComeInstalled(): Boolean;
+begin
+  result := FileExists(ExpandConstant('{app}\HoneyCome_Data\resources.assets')) or FileExists(ExpandConstant('{app}\HoneyComeccp_Data\resources.assets'));
+end;
+
+function DigitalCraftInstalled(): Boolean;
+begin
+  Result := FileExists(ExpandConstant('{app}\DigitalCraft\DigitalCraft.exe'));
+end;
+
 function DolceInstalled(): Boolean;
 begin
   Result := FileExists(ExpandConstant('{app}\DigitalCraft\DigitalCraft.exe'));
@@ -297,6 +315,8 @@ var
   str: WideString;
 begin
   FindInstallLocation(ExpandConstant('{src}'), 'HoneyCome', 'HoneyComeccp', str);
+  if(str = 'C:\Path to the installed game') then
+      FindInstallLocation(ExpandConstant('{src}'), 'DigitalCraft', 'DigitalCraft', str);
   Result := str;
 end;
 
@@ -350,7 +370,7 @@ begin
     //if IsTaskSelected('fixSideloaderDupes') then
     //    RemoveSideloaderDuplicates(ExpandConstant('{app}'));
     
-    if DolceInstalled() then
+    if DigitalCraftInstalled() then
         FileCopy(ExpandConstant('{app}\winhttp.dll'), ExpandConstant('{app}\DigitalCraft\winhttp.dll'), false);
 
     FixConfig(ExpandConstant('{app}'));
@@ -388,7 +408,7 @@ begin
 
   if (CurPageID = wpSelectDir) then
   begin
-    if (not FileExists(ExpandConstant('{app}\HoneyCome_Data\resources.assets')) and not FileExists(ExpandConstant('{app}\HoneyComeccp_Data\resources.assets'))) then
+    if (not HoneyComeInstalled() and not DigitalCraftInstalled()) then
     begin
       if(SuppressibleMsgBox(ExpandConstant('{cm:MsgExeNotFound}'), mbError, MB_YESNO, 0) = IDNO) then
         Result := False;
@@ -441,7 +461,7 @@ begin
     begin
       if (FileExists(ExpandConstant('{app}\DigitalCraft.exe'))) then
       begin
-        MsgBox('It looks like the Studio is installed to the same directory as the game, most likely breaking the game install. Studio executable should be in a "DigitalCraft" subfolder. You will have to reinstall the game and run this patch again.', mbError, MB_OK);
+        MsgBox('It looks like the Studio is installed to the same directory as the game, most likely breaking the game install. Studio executable should be in a "DigitalCraft" subfolder, next to the "abdata" folder. You will have to reinstall the game and run this patch again.', mbError, MB_OK);
         Result := False;
       end
     end;
