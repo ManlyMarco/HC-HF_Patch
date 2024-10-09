@@ -468,24 +468,38 @@ begin
 
     if Result = True then
     begin
-      // Check for file corruptions
-      if (not FileExists(ExpandConstant('{app}\abdata\animator\00\female\00.unity3d'))
-      or not FileExists(ExpandConstant('{app}\abdata\sound\setting\sound3dsettingdata\00.unity3d'))
-      or not FileExists(ExpandConstant('{app}\abdata\sound\setting\soundsettingdata\00.unity3d'))) then
+      if (HoneyComeInstalled()) then
       begin
-        MsgBox(ExpandConstant('{cm:MsgMissingGameFiles}'), mbError, MB_OK);
-        Result := False;
+        // Check for file corruptions
+        if (not FileExists(ExpandConstant('{app}\abdata\animator\00\female\00.unity3d'))
+        or not FileExists(ExpandConstant('{app}\abdata\sound\setting\sound3dsettingdata\00.unity3d'))
+        or not FileExists(ExpandConstant('{app}\abdata\sound\setting\soundsettingdata\00.unity3d'))) then
+        begin
+          MsgBox(ExpandConstant('{cm:MsgMissingGameFiles}'), mbError, MB_OK);
+          Result := False;
+        end
+        else
+        begin
+          // Check for missing paid DLC
+          if not DolceInstalled() then
+          begin
+            SuppressibleMsgBox(ExpandConstant('{cm:MsgMissingDLC1}'), mbInformation, MB_OK, 0);
+          end;
+        end;
       end
       else
       begin
-        // Check for missing paid DLC
-        if not DolceInstalled() then
+        // Check for file corruptions
+        if (not FileExists(ExpandConstant('{app}\abdata\craft\anime\000_00.unity3d'))
+        or not FileExists(ExpandConstant('{app}\abdata\sound\setting\sound3dsettingdata\00.unity3d'))
+        or not FileExists(ExpandConstant('{app}\abdata\sound\setting\soundsettingdata\00.unity3d'))) then
         begin
-          SuppressibleMsgBox(ExpandConstant('{cm:MsgMissingDLC1}'), mbInformation, MB_OK, 0);
+          MsgBox(ExpandConstant('{cm:MsgMissingGameFiles}'), mbError, MB_OK);
+          Result := False;
         end;
       end;
     end;
-
+      
     if Result = True then
     begin
       // Check for extracted zipmods
