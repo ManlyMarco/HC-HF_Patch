@@ -18,7 +18,7 @@
 - Author(s):         Multiple
 - More information:  Koikatsu discord server
 
-# Cheat Tools v3.3.2
+# Cheat Tools v3.5
 - Short description: Trainer, press F12 to open, it's in the bottom left corner
 - Author(s):         ManlyMarco
 - More information:  https://github.com/ManlyMarco/IllusionCheatTools
@@ -68,8 +68,8 @@
 - Author(s):         SpockBauru, ManlyMarco
 - More information:  https://github.com/SpockBauru/SpockPlugins_BepInEx
 
-# Hardmod pack 2024/07/17
-- Short description: Numerous clothing and accessory mods. Can't be uninstalled!
+# Hardmod pack 2024/10/09
+- Short description: Numerous clothing and accessory mods. Can't be uninstalled, can cause issues!
 - Author(s):         Multiple
 - More information:  Koikatsu discord server
 
@@ -163,7 +163,7 @@
 - Author(s):         SpockBauru, ManlyMarco
 - More information:  https://github.com/SpockBauru/SpockPlugins_BepInEx
 
-# Runtime Unity Editor v5.4.1
+# Runtime Unity Editor v5.5.1
 - Short description: Debugging tool for applications made with Unity3D game engine (IL2CPP runtime)
 - Author(s):         ManlyMarco
 - More information:  https://github.com/ManlyMarco/RuntimeUnityEditor
@@ -172,16 +172,6 @@
 - Short description: Skip title screen in studio
 - Author(s):         IllusionMods
 - More information:  https://github.com/IllusionMods/HC_Plugins
-
-# SliderUnlock v1.0.69
-- Short description: Unlocks slider ranges in maker(fragile and might break)
-- Author(s):         Quartermaster
-- More information:  ???
-
-# SliderUnlock v1.0.69
-- Short description: Unlocks slider ranges in maker(fragile and might break)
-- Author(s):         Quartermaster
-- More information:  ???
 
 # Studio Character Sort v1.1.0
 - Short description: Change default sort order of cards in studio

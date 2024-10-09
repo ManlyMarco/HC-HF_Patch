@@ -21,9 +21,9 @@ Name: "UNC\UncensorHardmod";                   Description: "Hardmod Uncensor 20
 ; -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #ifndef LITE
 Name: "Content";                               Description: "Additional content (Needed to properly load most character cards and scenes)"         ; Types: full_en full extra extra_en
-Name: "Content\Hardmods";                      Description: "Hardmod pack 2024/07/17 (Numerous clothing and accessory mods. Can't be uninstalled!)"; Types: extra extra_en
+Name: "Content\Hardmods";                      Description: "Hardmod pack 2024/10/09 (Numerous clothing and accessory mods. Can't be uninstalled, can cause issues!)"
 Name: "Content\Hardmods\HardmodCards";         Description: "Character and outfit cards (A lot of extra cards that came included with the hardmods. Will fill up your character list!)"
-;Name: "Content\HC_SliderUnlock";               Description: "SliderUnlock v1.0.69 (Unlocks slider ranges in maker(fragile and might break))"       ; Types: full_en full extra extra_en
+; Name: "Content\HC_SliderUnlock";               Description: "SliderUnlock v1.0.69 (Unlocks slider ranges in maker(fragile and might break))"       ; Types: full_en full extra extra_en
 #endif 
 ; -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Name: "FIX";                                   Description: "{cm:CompFIX}"                                                                         ; Types: extra extra_en
@@ -52,8 +52,8 @@ Name: "Feature\HC_Hair";                       Description: "HC_Hair v0.0.2 (Whe
 Name: "Feature\LoveMachine";                   Description: "LoveMachine v3.19.0 (Adds support for some computer-controlled sex toys)"             
 ; -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Name: "MISC";                                  Description: "{cm:CompMISC}"                                                                        
-Name: "MISC\RuntimeUnityEditor_BepInEx6_IL2CPP"; Description: "Runtime Unity Editor v5.4.1 (Debugging tool for applications made with Unity3D game engine (IL2CPP runtime))"; Types: full_en full extra extra_en
-Name: "MISC\RuntimeUnityEditor\Trainer";       Description: "Cheat Tools v3.3.2 (Trainer, press F12 to open, it's in the bottom left corner)"      ; Types: full_en full extra_en extra
+Name: "MISC\RuntimeUnityEditor_BepInEx6_IL2CPP"; Description: "Runtime Unity Editor v5.5.1 (Debugging tool for applications made with Unity3D game engine (IL2CPP runtime))"; Types: full_en full extra extra_en
+Name: "MISC\RuntimeUnityEditor\Trainer";       Description: "Cheat Tools v3.5 (Trainer, press F12 to open, it's in the bottom left corner)"        ; Types: full_en full extra_en extra
 Name: "MISC\FullSave";                         Description: "Full Save (Save file with everything unlocked in main game. Overwrites your current progress!)"
 Name: "MISC\Memes";                            Description: "Custom intro voices v29.0 (What the fuck is that)"                                    ; Types: extra extra_en
 
@@ -68,8 +68,8 @@ Source: "Input\_Plugins\_out\GraphicsSettingsIL2CPP_net6\*"; DestDir: "{app}"; F
 #ifndef LITE
 Source: "Input\_Plugins\_out\Hardmods\*";                   DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Content\Hardmods; Excludes: "manifest.xml"
 Source: "Input\_Plugins\_out\Hardmods_cards\*";             DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Content\Hardmods\HardmodCards; Excludes: "manifest.xml"
-;Source: "Input\_Plugins\_out\HC_SliderUnlock\*";            DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Content\HC_SliderUnlock; Excludes: "manifest.xml"; Check: DolceNotInstalled
-;Source: "Input\_Plugins\_out\HC_SliderUnlock_Dolce\*";      DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Content\HC_SliderUnlock; Excludes: "manifest.xml"; Check: DolceInstalled  // will need to deal  with standaolne DigitalCraftInstalled too
+; Source: "Input\_Plugins\_out\HC_SliderUnlock\*";            DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Content\HC_SliderUnlock; Excludes: "manifest.xml"; Check: DolceNotInstalled
+; Source: "Input\_Plugins\_out\HC_SliderUnlock_Dolce\*";      DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Content\HC_SliderUnlock; Excludes: "manifest.xml"; Check: DolceInstalled  // will need to deal  with standaolne DigitalCraftInstalled too
 #endif 
 Source: "Input\_Plugins\_out\HC_BepisPlugins\*";            DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: API\HC_BepisPlugins; Excludes: "manifest.xml"
 Source: "Input\_Plugins\_out\HC_CrossFader\*";              DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Feature\HC_CrossFader; Excludes: "manifest.xml"

@@ -7,7 +7,7 @@
 ;-------------Full game name for naming patch itself and desktop icons
 #define NAME "HoneyCome"
 ;---------------------------------------------Current HF Patch version
-#define VERSION "1.13"
+#define VERSION "1.14"
 ;--Don't include any files in the build to make it go fast for testing
 ;#define DEBUG
 ;---Skip file verification for easier testing, COMMENT OUT FOR RELEASE
@@ -138,6 +138,7 @@ Type: files; Name: "{app}\BepInEx\plugins\ConfigurationManager.dll";            
 Type: files; Name: "{app}\BepInEx\plugins\BepInEx.KeyboardShortcut.dll";            Components: BepInEx\ConfigurationManager_Il2Cpp
 Type: files; Name: "{app}\abdata\list\characustom\300_50_tofusalomoto.unity3d";     Components: Content\Hardmods
 Type: files; Name: "{app}\abdata\list\characustom\1600_*";                          Components: Content\Hardmods
+Type: filesandordirs; Name: "{app}\abdata\chara\TekitoMOD";                        Components: Content\Hardmods
 
 ; Clean up old patches and packs
 Type: files; Name: "{app}\start.bat"
