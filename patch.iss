@@ -7,7 +7,7 @@
 ;-------------Full game name for naming patch itself and desktop icons
 #define NAME "HoneyCome"
 ;---------------------------------------------Current HF Patch version
-#define VERSION "1.14"
+#define VERSION "1.14.1"
 ;--Don't include any files in the build to make it go fast for testing
 ;#define DEBUG
 ;---Skip file verification for easier testing, COMMENT OUT FOR RELEASE
@@ -291,9 +291,10 @@ external 'RemoveSideloaderDuplicates@files:HelperLib.dll stdcall';
 procedure RemoveModsExceptModpacks(path: String);
 external 'RemoveModsExceptModpacks@files:HelperLib.dll stdcall';
 
+// During installation HoneyCome_Data and HoneyComeccp_Data are removed so can't be relied on
 function HoneyComeInstalled(): Boolean;
 begin
-  result := FileExists(ExpandConstant('{app}\HoneyCome_Data\resources.assets')) or FileExists(ExpandConstant('{app}\HoneyComeccp_Data\resources.assets'));
+  result := FileExists(ExpandConstant('{app}\abdata\hscene\obiparamator\000_01.unity3d'));
 end;
 
 function DigitalCraftInstalled(): Boolean;
@@ -409,7 +410,7 @@ begin
 
   if (CurPageID = wpSelectDir) then
   begin
-    if (not HoneyComeInstalled() and not DigitalCraftInstalled()) then
+    if (not FileExists(ExpandConstant('{app}\HoneyCome_Data\resources.assets')) and not FileExists(ExpandConstant('{app}\HoneyComeccp_Data\resources.assets')) and not DigitalCraftInstalled()) then
     begin
       if(SuppressibleMsgBox(ExpandConstant('{cm:MsgExeNotFound}'), mbError, MB_YESNO, 0) = IDNO) then
         Result := False;
