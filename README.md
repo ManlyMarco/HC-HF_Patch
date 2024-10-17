@@ -47,7 +47,6 @@ Here are answers to some of the most commonly asked questions, please check them
 - There is no warranty on this patch or on any of the included mods. You are installing this patch at your own risk. The base game and by extension this patch are not suitable for minors. If you are under 18 years old you can not use this patch. The base game and this patch contain only characters of age 18 or higher. The creator of this patch is not responsible for creations of its users and prohibits any unlawful use of this software.
 
 ### Specific to the HoneyCome patch
-- Some mods may not be installed to the stand-alone studio as they are not compatible (mostly affects hardmods).
 - The mod updater doesn't work yet since very few mods were created so far (also there is no zipmod/sideloader support).
 - There is only one uncensor available so far. If you want to disable it you will have to install the patch again with the uncensor unchecked.
 - Some mods may not be installed to the stand-alone studio as they are not compatible (mostly affects hardmods).
@@ -58,4 +57,4 @@ Here are answers to some of the most commonly asked questions, please check them
 - If you don’t want your friends to see you play this game, after installing this patch you will be able to start it directly from the game directory and Steam won’t see it.
 
 ## How to build
-At least Visual Studio 2017 is needed for the helper library and latest unicode Inno Setup compiler is needed for the patch itself. All necessary mods have to be placed inside correct subfolders of the Input directory to compile. Because of massive size, they are not included here.
+At least Visual Studio 2017 is needed for the helper library and the latest unicode Inno Setup compiler is needed for the patch itself. All necessary mods have to be placed inside correct subfolders of the Input directory to compile. Because of massive size, they are not included here.
