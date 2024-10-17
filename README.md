@@ -47,6 +47,7 @@ Here are answers to some of the most commonly asked questions, please check them
 - There is no warranty on this patch or on any of the included mods. You are installing this patch at your own risk. The base game and by extension this patch are not suitable for minors. If you are under 18 years old you can not use this patch. The base game and this patch contain only characters of age 18 or higher. The creator of this patch is not responsible for creations of its users and prohibits any unlawful use of this software.
 
 ### Specific to the HoneyCome patch
+- If you can't see HC or SVS cards in studio (DigitalCraft) you may need to fix that particular game's registry keys. HC Patch v1.13+ and SVS Patch v1.2+ will fix the registry keys by default.
 - The mod updater doesn't work yet since very few mods were created so far (also there is no zipmod/sideloader support).
 - There is only one uncensor available so far. If you want to disable it you will have to install the patch again with the uncensor unchecked.
 - Some mods may not be installed to the stand-alone studio as they are not compatible (mostly affects hardmods).
