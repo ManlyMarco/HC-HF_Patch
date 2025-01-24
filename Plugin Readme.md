@@ -1,8 +1,3 @@
-# BepInEx.ConfigurationManager v18.3
-- Short description: Can change plugin settings. Press F1 to open
-- Author(s):         BepInEx (anonymous IL2CPP port)
-- More information:  https://github.com/BepInEx/BepInEx.ConfigurationManager
-
 # BepInEx.SplashScreen_BepInEx6 v2.2.1.0
 - Short description: A loading screen on game startup with information about patchers and plugins being currently loaded
 - Author(s):         BepInEx
@@ -22,6 +17,11 @@
 - Short description: Trainer, press F12 to open, it's in the bottom left corner
 - Author(s):         ManlyMarco
 - More information:  https://github.com/ManlyMarco/IllusionCheatTools
+
+# Configuration Manager v18.4
+- Short description: Can change plugin settings. Press F1 to open
+- Author(s):         BepInEx
+- More information:  https://github.com/BepInEx/BepInEx.ConfigurationManager
 
 # CrossFader v0.1.2
 - Short description: Replaces fades between animations with animated transitions
@@ -133,7 +133,7 @@
 - Author(s):         IllusionMods
 - More information:  https://github.com/IllusionMods/HC_Plugins
 
-# IllusionFixes_IL2CPP v21.6
+# IllusionFixes_IL2CPP v22.0.2
 - Short description: A collection of essential fixes and improvements
 - Author(s):         https://github.com/IllusionMods
 - More information:  https://github.com/IllusionMods/IllusionFixes
@@ -143,15 +143,25 @@
 - Author(s):         https://github.com/IllusionMods
 - More information:  https://github.com/IllusionMods/IllusionLaunchers
 
-# KKManager v1.4.1.0
+# JumpLister v1.1
+- Short description: Adds useful options to the game's Jump List in taskbar right-click menu
+- Author(s):         ManlyMarco
+- More information:  https://github.com/ManlyMarco/JumpLister
+
+# KKManager v1.4.2.0
 - Short description: Manage and update mods, browse cards
 - Author(s):         https://github.com/IllusionMods
 - More information:  https://github.com/IllusionMods/KKManager
 
-# LoveMachine v3.19.0
+# LoveMachine v3.20.0
 - Short description: Adds support for some computer-controlled sex toys
 - Author(s):         Sauceke
 - More information:  https://github.com/Sauceke/LoveMachine
+
+# LoveMachine DC v3.20.0
+- Short description: Adds support for some computer-controlled sex toys in studio
+- Author(s):         Sauceke
+- More information:  https://sauceke.github.io/LoveMachine
 
 # Message Center v0.7
 - Short description: Allows plugins to show messages in top left corner of the game
@@ -172,6 +182,11 @@
 - Short description: Skip title screen in studio
 - Author(s):         IllusionMods
 - More information:  https://github.com/IllusionMods/HC_Plugins
+
+# SliderUnlock v1.0.69
+- Short description: Unlocks slider ranges in maker and studio(fragile and might break)
+- Author(s):         Quartermaster
+- More information:  ???
 
 # Studio Character Sort v1.1.0
 - Short description: Change default sort order of cards in studio
