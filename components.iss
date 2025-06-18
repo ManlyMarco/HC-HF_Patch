@@ -1,16 +1,16 @@
 [Components]
 Name: "BepInEx";                               Description: "BepInEx-Unity.IL2CPP win-x64 v6.0.0 be.697 (Plugin framework)"                        ; Types: full_en full extra_en extra custom bare; Flags: fixed
 Name: "BepInEx\MessageCenter";                 Description: "Message Center v0.7 (Allows plugins to show messages in top left corner of the game)" ; Types: full_en full extra extra_en
-Name: "BepInEx\ConfigurationManager_Il2Cpp";   Description: "Configuration Manager v18.4 (Can change plugin settings. Press F1 to open)"           ; Types: full_en full extra extra_en
-Name: "BepInEx\BepInEx_SplashScreen_BepInEx6"; Description: "BepInEx.SplashScreen_BepInEx6 v2.2.1.0 (A loading screen on game startup with information about patchers and plugins being currently loaded)"; Types: full_en full extra extra_en
+Name: "BepInEx\ConfigurationManager_Il2Cpp";   Description: "Configuration Manager v18.4.1 (Can change plugin settings. Press F1 to open)"         ; Types: full_en full extra extra_en
+Name: "BepInEx\BepInEx_SplashScreen_BepInEx6"; Description: "BepInEx.SplashScreen_BepInEx6 v3.0.0.0 (A loading screen on game startup with information about patchers and plugins being currently loaded)"; Types: full_en full extra extra_en
 ; -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Name: "IllusionLaunchers";                     Description: "IllusionLaunchers_HoneyCome v3.4.1.36297 (Custom game launcher)"                      ; Types: full_en full extra extra_en custom
 Name: "KKManager";                             Description: "KKManager v1.4.2.0 (Manage and update mods, browse cards)"                            ; Types: full_en full extra extra_en custom
 ; -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Name: "API";                                   Description: "APIs (Plugins required by other plugins and mods to function)"                        ; Types: full_en full extra extra_en custom bare; Flags: fixed
-Name: "API\HC_BepisPlugins";                   Description: "HC_BepisPlugins v20.0 (Essential plugins required by many other plugins to function)" ; Types: full_en full extra extra_en
+Name: "API\HC_BepisPlugins";                   Description: "HC_BepisPlugins v20.1 (Essential plugins required by many other plugins to function)" ; Types: full_en full extra extra_en
 ; -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-Name: "AT";                                    Description: "XUnity Auto Translator v5.4.0 (Translation loader, automatic web translations)"       ; Types: full extra full_en extra_en custom
+Name: "AT";                                    Description: "XUnity Auto Translator v5.4.5 (Translation loader, automatic web translations)"       ; Types: full extra full_en extra_en custom
 Name: "AT\HC_HideLanguageSelector";            Description: "Hide language selection in title menu v1.1 (Prevents translation issues. Use the launcher to change language instead)"; Types: full_en full extra extra_en
 Name: "AT\HC_Studio_HideLanguageSelector";     Description: "Hide language selection in studio title menu v1.0 (Prevents translation issues. Use the launcher to change language instead)"; Types: full_en full extra extra_en
 ; Name: "AT\TL";                                 Description: "{cm:CompTL}"                                                                          ; Types: full_en extra_en
@@ -54,11 +54,16 @@ Name: "Feature\HC_Hair";                       Description: "HC_Hair v0.0.2 (Whe
 Name: "Feature\LoveMachine";                   Description: "LoveMachine v3.20.0 (Adds support for some computer-controlled sex toys)"             
 Name: "Feature\LoveMachine_DC";                Description: "LoveMachine DC v3.20.0 (Adds support for some computer-controlled sex toys in studio)"
 ; -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Name: "DigitalCraft";                          Description: "Plugins only compatible with DigitalCraft"                                            
+Name: "DigitalCraft\SardineTail";              Description: "SardineTail v1.0.3.0 (Fundamental plugin to develop soft mods for DigitalCraft)"      ; Types: extra extra_en
+Name: "DigitalCraft\SardineHead";              Description: "SVS_SardineHead v1.0.0.0 (Runtime texture and material modifier tool for character creator)"; Types: extra extra_en
+Name: "DigitalCraft\Fishbone";                 Description: "Fishbone v2.0.2 (Plugin api to serialize and deserialize character or coordinate bound extension data)"; Types: extra extra_en
+; -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Name: "MISC";                                  Description: "{cm:CompMISC}"                                                                        
-Name: "MISC\RuntimeUnityEditor_BepInEx6_IL2CPP"; Description: "Runtime Unity Editor v5.5.1 (Debugging tool for applications made with Unity3D game engine (IL2CPP runtime))"; Types: full_en full extra extra_en
-Name: "MISC\RuntimeUnityEditor\Trainer";       Description: "Cheat Tools v3.5 (Trainer, press F12 to open, it's in the bottom left corner)"        ; Types: full_en full extra_en extra
+Name: "MISC\RuntimeUnityEditor_BepInEx6_IL2CPP"; Description: "Runtime Unity Editor v6.0 (Debugging tool for applications made with Unity3D game engine (IL2CPP runtime))"; Types: full_en full extra extra_en
+Name: "MISC\RuntimeUnityEditor\Trainer";       Description: "Cheat Tools v3.6 (Trainer, press F12 to open, it's in the bottom left corner)"        ; Types: full_en full extra_en extra
 Name: "MISC\FullSave";                         Description: "Full Save (Save file with everything unlocked in main game. Overwrites your current progress!)"
-Name: "MISC\Memes";                            Description: "Custom intro voices v29.0 (What the fuck is that)"                                    ; Types: extra extra_en
+Name: "MISC\Memes";                            Description: "Custom intro voices v31.0 (Bau to the brainrot)"                                      ; Types: extra extra_en
 
 [Files]
 Source: "Input\_Plugins\_out\BepInEx-Unity.IL2CPP-win-x64\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs solidbreak; Components: BepInEx; Excludes: "manifest.xml"
@@ -107,3 +112,6 @@ Source: "Input\_Plugins\_out\Uncensor_Hardmod_zodgame\*";   DestDir: "{app}"; Fl
 Source: "Input\_Plugins\_out\WebRequestBlocker\*";          DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: FIX\WebRequestBlocker; Excludes: "manifest.xml"
 Source: "Input\_Plugins\_out\XUnity.AutoTranslator\*";      DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: AT; Excludes: "manifest.xml"
 Source: "Input\_Plugins\_out\HC_Subtitles\*";               DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: AT\TL\HC_Subtitles; Excludes: "manifest.xml"
+Source: "Input\_Plugins\_out\DC-Fishbone\*";                DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: DigitalCraft\Fishbone; Excludes: "manifest.xml"; Check: DigitalCraftInstalled
+Source: "Input\_Plugins\_out\DC-SardineHead\*";             DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: DigitalCraft\SardineHead; Excludes: "manifest.xml"; Check: DigitalCraftInstalled
+Source: "Input\_Plugins\_out\DC-SardineTail\*";             DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: DigitalCraft\SardineTail; Excludes: "manifest.xml"; Check: DigitalCraftInstalled

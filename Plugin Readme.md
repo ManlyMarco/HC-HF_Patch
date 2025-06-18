@@ -1,4 +1,4 @@
-# BepInEx.SplashScreen_BepInEx6 v2.2.1.0
+# BepInEx.SplashScreen_BepInEx6 v3.0.0.0
 - Short description: A loading screen on game startup with information about patchers and plugins being currently loaded
 - Author(s):         BepInEx
 - More information:  https://github.com/BepInEx/BepInEx.SplashScreen
@@ -13,12 +13,12 @@
 - Author(s):         Multiple
 - More information:  Koikatsu discord server
 
-# Cheat Tools v3.5
+# Cheat Tools v3.6
 - Short description: Trainer, press F12 to open, it's in the bottom left corner
 - Author(s):         ManlyMarco
 - More information:  https://github.com/ManlyMarco/IllusionCheatTools
 
-# Configuration Manager v18.4
+# Configuration Manager v18.4.1
 - Short description: Can change plugin settings. Press F1 to open
 - Author(s):         BepInEx
 - More information:  https://github.com/BepInEx/BepInEx.ConfigurationManager
@@ -28,8 +28,8 @@
 - Author(s):         Sabakan
 - More information:  ???
 
-# Custom intro voices v29.0
-- Short description: What the fuck is that
+# Custom intro voices v31.0
+- Short description: Bau to the brainrot
 - Author(s):         ManlyMarco
 - More information:  https://www.youtube.com/watch?v=SZBQ4lQFqvw
 
@@ -47,6 +47,11 @@
 - Short description: Enable resizing of game window
 - Author(s):         SpockBauru, ManlyMarco
 - More information:  https://github.com/SpockBauru/SpockPlugins_BepInEx
+
+# Fishbone v2.0.2
+- Short description: Plugin api to serialize and deserialize character or coordinate bound extension data
+- Author(s):         MaybeSamigroup
+- More information:  https://github.com/MaybeSamigroup/SVS-Fishbone
 
 # Fix_CraftWindow v1.0.1
 - Short description: Enlarge some studio menus to show more items
@@ -83,7 +88,7 @@
 - Author(s):         TonWonton
 - More information:  https://github.com/TonWonton/HC_HSceneCtrl
 
-# HC_BepisPlugins v20.0
+# HC_BepisPlugins v20.1
 - Short description: Essential plugins required by many other plugins to function
 - Author(s):         https://github.com/IllusionMods
 - More information:  https://github.com/IllusionMods/BepisPlugins
@@ -173,10 +178,15 @@
 - Author(s):         SpockBauru, ManlyMarco
 - More information:  https://github.com/SpockBauru/SpockPlugins_BepInEx
 
-# Runtime Unity Editor v5.5.1
+# Runtime Unity Editor v6.0
 - Short description: Debugging tool for applications made with Unity3D game engine (IL2CPP runtime)
 - Author(s):         ManlyMarco
 - More information:  https://github.com/ManlyMarco/RuntimeUnityEditor
+
+# SardineTail v1.0.3.0
+- Short description: Fundamental plugin to develop soft mods for DigitalCraft
+- Author(s):         MaybeSamigroup
+- More information:  https://github.com/MaybeSamigroup/SVS-SardineTail
 
 # Skip title screen in studio v1.0
 - Short description: Skip title screen in studio
@@ -198,12 +208,17 @@
 - Author(s):         ekibun
 - More information:  ???
 
+# SVS_SardineHead v1.0.0.0
+- Short description: Runtime texture and material modifier tool for character creator
+- Author(s):         MaybeSamigroup
+- More information:  https://github.com/MaybeSamigroup/SVS-SardineHead
+
 # Web Request Blocker v1.0.0
 - Short description: Fixes the game requiring internet connection to start
 - Author(s):         Unknown
 - More information:  Koikatsu Discord Server
 
-# XUnity Auto Translator v5.4.0
+# XUnity Auto Translator v5.4.5
 - Short description: Translation loader, automatic web translations
 - Author(s):         https://github.com/bbepis
 - More information:  https://github.com/bbepis/XUnity.AutoTranslator
