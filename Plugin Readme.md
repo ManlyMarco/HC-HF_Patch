@@ -3,7 +3,7 @@
 - Author(s):         BepInEx
 - More information:  https://github.com/BepInEx/BepInEx.SplashScreen
 
-# BepInEx-Unity.IL2CPP win-x64 v6.0.0 be.697
+# BepInEx-Unity.IL2CPP win-x64 v6.0.0-be.752
 - Short description: Plugin framework
 - Author(s):         https://github.com/BepInEx
 - More information:  https://github.com/BepInEx/BepInEx
@@ -28,8 +28,8 @@
 - Author(s):         Sabakan
 - More information:  ???
 
-# Custom intro voices v31.0
-- Short description: Bau to the brainrot
+# Custom intro voices v33.0
+- Short description: Being a gooner is my job
 - Author(s):         ManlyMarco
 - More information:  https://www.youtube.com/watch?v=SZBQ4lQFqvw
 
@@ -48,7 +48,7 @@
 - Author(s):         SpockBauru, ManlyMarco
 - More information:  https://github.com/SpockBauru/SpockPlugins_BepInEx
 
-# Fishbone v2.0.2
+# Fishbone v3.1.5
 - Short description: Plugin api to serialize and deserialize character or coordinate bound extension data
 - Author(s):         MaybeSamigroup
 - More information:  https://github.com/MaybeSamigroup/SVS-Fishbone
@@ -62,6 +62,11 @@
 - Short description: Makes eyes slightly move around to mimic eyes focusing on different things
 - Author(s):         サバカン
 - More information:  Koikatsu discord server
+
+# FPS Counter v3.3.1
+- Short description: Useful for performance testing
+- Author(s):         https://github.com/ManlyMarco
+- More information:  https://github.com/ManlyMarco/FPSCounter
 
 # Full Save
 - Short description: Save file with everything unlocked in main game. Overwrites your current progress!
@@ -88,7 +93,7 @@
 - Author(s):         TonWonton
 - More information:  https://github.com/TonWonton/HC_HSceneCtrl
 
-# HC_BepisPlugins v20.1
+# HC_BepisPlugins v21.1.2.1
 - Short description: Essential plugins required by many other plugins to function
 - Author(s):         https://github.com/IllusionMods
 - More information:  https://github.com/IllusionMods/BepisPlugins
@@ -128,17 +133,17 @@
 - Author(s):         Ported to HC by anonymous
 - More information:  https://github.com/bogus-things/RG_PovX
 
-# Hide language selection in studio title menu v1.0
+# Hide language selection in studio title menu v1.0.0.1
 - Short description: Prevents translation issues. Use the launcher to change language instead
 - Author(s):         IllusionMods
 - More information:  https://github.com/IllusionMods/HC_Plugins
 
-# Hide language selection in title menu v1.1
+# Hide language selection in title menu v1.1.0.1
 - Short description: Prevents translation issues. Use the launcher to change language instead
 - Author(s):         IllusionMods
 - More information:  https://github.com/IllusionMods/HC_Plugins
 
-# IllusionFixes_IL2CPP v22.0.2
+# IllusionFixes_IL2CPP v22.1
 - Short description: A collection of essential fixes and improvements
 - Author(s):         https://github.com/IllusionMods
 - More information:  https://github.com/IllusionMods/IllusionFixes
@@ -153,17 +158,17 @@
 - Author(s):         ManlyMarco
 - More information:  https://github.com/ManlyMarco/JumpLister
 
-# KKManager v1.4.2.0
+# KKManager v1.7.0.0
 - Short description: Manage and update mods, browse cards
 - Author(s):         https://github.com/IllusionMods
 - More information:  https://github.com/IllusionMods/KKManager
 
-# LoveMachine v3.20.0
+# LoveMachine v4.1.0
 - Short description: Adds support for some computer-controlled sex toys
 - Author(s):         Sauceke
 - More information:  https://github.com/Sauceke/LoveMachine
 
-# LoveMachine DC v3.20.0
+# LoveMachine DC v4.1.0
 - Short description: Adds support for some computer-controlled sex toys in studio
 - Author(s):         Sauceke
 - More information:  https://sauceke.github.io/LoveMachine
@@ -178,17 +183,17 @@
 - Author(s):         SpockBauru, ManlyMarco
 - More information:  https://github.com/SpockBauru/SpockPlugins_BepInEx
 
-# Runtime Unity Editor v6.0
+# Runtime Unity Editor v6.3
 - Short description: Debugging tool for applications made with Unity3D game engine (IL2CPP runtime)
 - Author(s):         ManlyMarco
 - More information:  https://github.com/ManlyMarco/RuntimeUnityEditor
 
-# SardineTail v1.0.3.0
+# SardineTail v2.1.12
 - Short description: Fundamental plugin to develop soft mods for DigitalCraft
 - Author(s):         MaybeSamigroup
 - More information:  https://github.com/MaybeSamigroup/SVS-SardineTail
 
-# Skip title screen in studio v1.0
+# Skip title screen in studio v1.0.0.1
 - Short description: Skip title screen in studio
 - Author(s):         IllusionMods
 - More information:  https://github.com/IllusionMods/HC_Plugins
@@ -208,7 +213,7 @@
 - Author(s):         ekibun
 - More information:  ???
 
-# SVS_SardineHead v1.0.0.0
+# SVS_SardineHead v2.1.1
 - Short description: Runtime texture and material modifier tool for character creator
 - Author(s):         MaybeSamigroup
 - More information:  https://github.com/MaybeSamigroup/SVS-SardineHead
@@ -218,7 +223,7 @@
 - Author(s):         Unknown
 - More information:  Koikatsu Discord Server
 
-# XUnity Auto Translator v5.4.5
+# XUnity Auto Translator v5.5
 - Short description: Translation loader, automatic web translations
 - Author(s):         https://github.com/bbepis
 - More information:  https://github.com/bbepis/XUnity.AutoTranslator

@@ -1,18 +1,18 @@
 [Components]
-Name: "BepInEx";                               Description: "BepInEx-Unity.IL2CPP win-x64 v6.0.0 be.697 (Plugin framework)"                        ; Types: full_en full extra_en extra custom bare; Flags: fixed
+Name: "BepInEx";                               Description: "BepInEx-Unity.IL2CPP win-x64 v6.0.0-be.752 (Plugin framework)"                        ; Types: full_en full extra_en extra custom bare; Flags: fixed
 Name: "BepInEx\MessageCenter";                 Description: "Message Center v0.7 (Allows plugins to show messages in top left corner of the game)" ; Types: full_en full extra extra_en
 Name: "BepInEx\ConfigurationManager_Il2Cpp";   Description: "Configuration Manager v18.4.1 (Can change plugin settings. Press F1 to open)"         ; Types: full_en full extra extra_en
 Name: "BepInEx\BepInEx_SplashScreen_BepInEx6"; Description: "BepInEx.SplashScreen_BepInEx6 v3.0.0.0 (A loading screen on game startup with information about patchers and plugins being currently loaded)"; Types: full_en full extra extra_en
 ; -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Name: "IllusionLaunchers";                     Description: "IllusionLaunchers_HoneyCome v3.4.1.36297 (Custom game launcher)"                      ; Types: full_en full extra extra_en custom
-Name: "KKManager";                             Description: "KKManager v1.4.2.0 (Manage and update mods, browse cards)"                            ; Types: full_en full extra extra_en custom
+Name: "KKManager";                             Description: "KKManager v1.7.0.0 (Manage and update mods, browse cards)"                            ; Types: full_en full extra extra_en custom
 ; -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Name: "API";                                   Description: "APIs (Plugins required by other plugins and mods to function)"                        ; Types: full_en full extra extra_en custom bare; Flags: fixed
-Name: "API\HC_BepisPlugins";                   Description: "HC_BepisPlugins v20.1 (Essential plugins required by many other plugins to function)" ; Types: full_en full extra extra_en
+Name: "API\HC_BepisPlugins";                   Description: "HC_BepisPlugins v21.1.2.1 (Essential plugins required by many other plugins to function)"; Types: full_en full extra extra_en
 ; -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-Name: "AT";                                    Description: "XUnity Auto Translator v5.4.5 (Translation loader, automatic web translations)"       ; Types: full extra full_en extra_en custom
-Name: "AT\HC_HideLanguageSelector";            Description: "Hide language selection in title menu v1.1 (Prevents translation issues. Use the launcher to change language instead)"; Types: full_en full extra extra_en
-Name: "AT\HC_Studio_HideLanguageSelector";     Description: "Hide language selection in studio title menu v1.0 (Prevents translation issues. Use the launcher to change language instead)"; Types: full_en full extra extra_en
+Name: "AT";                                    Description: "XUnity Auto Translator v5.5 (Translation loader, automatic web translations)"         ; Types: full extra full_en extra_en custom
+Name: "AT\HC_HideLanguageSelector";            Description: "Hide language selection in title menu v1.1.0.1 (Prevents translation issues. Use the launcher to change language instead)"; Types: full_en full extra extra_en
+Name: "AT\HC_Studio_HideLanguageSelector";     Description: "Hide language selection in studio title menu v1.0.0.1 (Prevents translation issues. Use the launcher to change language instead)"; Types: full_en full extra extra_en
 ; Name: "AT\TL";                                 Description: "{cm:CompTL}"                                                                          ; Types: full_en extra_en
 Name: "AT\TL\HC_Subtitles";                    Description: "Subtitles v0.0.2 (Show subtitles for girl's voice in H-Scenes)"                       ; Types: full extra full_en extra_en custom
 ; -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -28,7 +28,7 @@ Name: "Content\HC_SliderUnlock";               Description: "SliderUnlock v1.0.6
 #endif 
 ; -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Name: "FIX";                                   Description: "{cm:CompFIX}"                                                                         ; Types: extra extra_en
-Name: "FIX\IllusionFixes";                     Description: "IllusionFixes_IL2CPP v22.0.2 (A collection of essential fixes and improvements)"      ; Types: full_en full extra extra_en custom bare
+Name: "FIX\IllusionFixes";                     Description: "IllusionFixes_IL2CPP v22.1 (A collection of essential fixes and improvements)"        ; Types: full_en full extra extra_en custom bare
 Name: "FIX\WebRequestBlocker";                 Description: "Web Request Blocker v1.0.0 (Fixes the game requiring internet connection to start)"   ; Types: full_en full extra extra_en custom bare
 Name: "FIX\HC_Fix_CraftWindow";                Description: "Fix_CraftWindow v1.0.1 (Enlarge some studio menus to show more items)"                ; Types: full_en full extra extra_en
 ; -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -47,23 +47,24 @@ Name: "Feature\HC_DisplayofThumbnails";        Description: "DisplayofThumbnails
 Name: "Feature\EnableResize";                  Description: "Enable Resize v0.7 (Enable resizing of game window)"                                  ; Types: extra extra_en
 Name: "Feature\EnableFullScreenToggle";        Description: "Enable Full Screen Toggle v0.7 (Allow toggling full screen with Alt+Enter)"           ; Types: extra extra_en
 Name: "Feature\HC_CrossFader";                 Description: "CrossFader v0.1.2 (Replaces fades between animations with animated transitions)"      ; Types: extra extra_en
-Name: "Feature\HC_Studio_TitleSkip";           Description: "Skip title screen in studio v1.0 (Skip title screen in studio)"                       ; Types: extra extra_en
+Name: "Feature\HC_Studio_TitleSkip";           Description: "Skip title screen in studio v1.0.0.1 (Skip title screen in studio)"                   ; Types: extra extra_en
 Name: "Feature\HC_Ahegao";                     Description: "HC_Ahegao v1.0.0 (Allows changing various parameters for orgasms and faces during H)" ; Types: extra extra_en
 Name: "Feature\HC_PlayerHCloth";               Description: "HC_PlayerHCloth v0.0.1 (Allows changing state of player clothes during H)"            ; Types: extra extra_en
 Name: "Feature\HC_Hair";                       Description: "HC_Hair v0.0.2 (When eyes are set to show on top of hair, do not draw them over the hair but instead make the hair partially transparent. Doesn't work on some modded hair)"
-Name: "Feature\LoveMachine";                   Description: "LoveMachine v3.20.0 (Adds support for some computer-controlled sex toys)"             
-Name: "Feature\LoveMachine_DC";                Description: "LoveMachine DC v3.20.0 (Adds support for some computer-controlled sex toys in studio)"
+Name: "Feature\LoveMachine";                   Description: "LoveMachine v4.1.0 (Adds support for some computer-controlled sex toys)"              
+Name: "Feature\LoveMachine_DC";                Description: "LoveMachine DC v4.1.0 (Adds support for some computer-controlled sex toys in studio)" 
 ; -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Name: "DigitalCraft";                          Description: "Plugins only compatible with DigitalCraft"                                            
-Name: "DigitalCraft\SardineTail";              Description: "SardineTail v1.0.3.0 (Fundamental plugin to develop soft mods for DigitalCraft)"      ; Types: extra extra_en
-Name: "DigitalCraft\SardineHead";              Description: "SVS_SardineHead v1.0.0.0 (Runtime texture and material modifier tool for character creator)"; Types: extra extra_en
-Name: "DigitalCraft\Fishbone";                 Description: "Fishbone v2.0.2 (Plugin api to serialize and deserialize character or coordinate bound extension data)"; Types: extra extra_en
+Name: "DigitalCraft\SardineTail";              Description: "SardineTail v2.1.12 (Fundamental plugin to develop soft mods for DigitalCraft)"       ; Types: extra extra_en
+Name: "DigitalCraft\SardineHead";              Description: "SVS_SardineHead v2.1.1 (Runtime texture and material modifier tool for character creator)"; Types: extra extra_en
+Name: "DigitalCraft\Fishbone";                 Description: "Fishbone v3.1.5 (Plugin api to serialize and deserialize character or coordinate bound extension data)"; Types: extra extra_en
 ; -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Name: "MISC";                                  Description: "{cm:CompMISC}"                                                                        
-Name: "MISC\RuntimeUnityEditor_BepInEx6_IL2CPP"; Description: "Runtime Unity Editor v6.0 (Debugging tool for applications made with Unity3D game engine (IL2CPP runtime))"; Types: full_en full extra extra_en
+Name: "MISC\RuntimeUnityEditor_BepInEx6_IL2CPP"; Description: "Runtime Unity Editor v6.3 (Debugging tool for applications made with Unity3D game engine (IL2CPP runtime))"; Types: full_en full extra extra_en
 Name: "MISC\RuntimeUnityEditor\Trainer";       Description: "Cheat Tools v3.6 (Trainer, press F12 to open, it's in the bottom left corner)"        ; Types: full_en full extra_en extra
 Name: "MISC\FullSave";                         Description: "Full Save (Save file with everything unlocked in main game. Overwrites your current progress!)"
-Name: "MISC\Memes";                            Description: "Custom intro voices v31.0 (Bau to the brainrot)"                                      ; Types: extra extra_en
+Name: "MISC\Memes";                            Description: "Custom intro voices v33.0 (Being a gooner is my job)"                                 ; Types: extra extra_en
+Name: "MISC\FPS";                              Description: "FPS Counter v3.3.1 (Useful for performance testing)"                                  ; Types: full_en full extra extra_en
 
 [Files]
 Source: "Input\_Plugins\_out\BepInEx-Unity.IL2CPP-win-x64\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs solidbreak; Components: BepInEx; Excludes: "manifest.xml"
@@ -108,6 +109,7 @@ Source: "Input\_Plugins\_out\LoveMachine_for_HoneyCome_Digital_Craft\*"; DestDir
 Source: "Input\_Plugins\_out\RuntimeUnityEditor\*";         DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: MISC\RuntimeUnityEditor_BepInEx6_IL2CPP; Excludes: "manifest.xml"
 Source: "Input\_Plugins\_out\HC_CheatTools\*";              DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: MISC\RuntimeUnityEditor\Trainer; Excludes: "manifest.xml"
 Source: "Input\_Plugins\_out\Memes\*";                      DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: MISC\Memes; Excludes: "manifest.xml"
+Source: "Input\_Plugins\_out\FPSCounter_Bep6\*";            DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: MISC\FPS; Excludes: "manifest.xml"
 Source: "Input\_Plugins\_out\Uncensor_Hardmod_zodgame\*";   DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: UNC\UncensorHardmod; Excludes: "manifest.xml"
 Source: "Input\_Plugins\_out\WebRequestBlocker\*";          DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: FIX\WebRequestBlocker; Excludes: "manifest.xml"
 Source: "Input\_Plugins\_out\XUnity.AutoTranslator\*";      DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: AT; Excludes: "manifest.xml"
