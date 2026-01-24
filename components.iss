@@ -24,7 +24,7 @@ Name: "Content";                               Description: "Additional content 
 Name: "Content\Hardmods";                      Description: "Hardmod pack 2024/10/09 (Numerous clothing and accessory mods. Can't be uninstalled, can cause issues!)"
 Name: "Content\Hardmods\HardmodCards";         Description: "Character and outfit cards (A lot of extra cards that came included with the hardmods. Will fill up your character list!)"
 ; Name: "Content\HC_SliderUnlock";               Description: "SliderUnlock v1.0.69 (Unlocks slider ranges in maker(fragile and might break))"       ; Types: full_en full extra extra_en
-Name: "Content\HC_SliderUnlock";               Description: "SliderUnlock v1.0.69 (Unlocks slider ranges in maker and studio(fragile and might break))"; Types: full_en full extra extra_en
+Name: "Content\HC_SliderUnlock";               Description: "SliderUnlock v99.9.9 (Unlocks slider ranges in maker and studio(fragile and might break))"; Types: full_en full extra extra_en
 #endif 
 ; -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Name: "FIX";                                   Description: "{cm:CompFIX}"                                                                         ; Types: extra extra_en
@@ -51,20 +51,23 @@ Name: "Feature\HC_Studio_TitleSkip";           Description: "Skip title screen i
 Name: "Feature\HC_Ahegao";                     Description: "HC_Ahegao v1.0.0 (Allows changing various parameters for orgasms and faces during H)" ; Types: extra extra_en
 Name: "Feature\HC_PlayerHCloth";               Description: "HC_PlayerHCloth v0.0.1 (Allows changing state of player clothes during H)"            ; Types: extra extra_en
 Name: "Feature\HC_Hair";                       Description: "HC_Hair v0.0.2 (When eyes are set to show on top of hair, do not draw them over the hair but instead make the hair partially transparent. Doesn't work on some modded hair)"
-Name: "Feature\LoveMachine";                   Description: "LoveMachine v4.1.0 (Adds support for some computer-controlled sex toys)"              
-Name: "Feature\LoveMachine_DC";                Description: "LoveMachine DC v4.1.0 (Adds support for some computer-controlled sex toys in studio)" 
+Name: "Feature\LoveMachine";                   Description: "LoveMachine v4.2.1 (Adds support for some computer-controlled sex toys)"              
 ; -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Name: "DigitalCraft";                          Description: "Plugins only compatible with DigitalCraft"                                            
+Name: "DigitalCraft\DC_SliderUnlock";          Description: "SliderUnlock for DC v99.9.9 (Unlocks slider ranges in maker and studio(fragile and might break))"; Types: full_en full extra extra_en
 Name: "DigitalCraft\SardineTail";              Description: "SardineTail v2.1.12 (Fundamental plugin to develop soft mods for DigitalCraft)"       ; Types: extra extra_en
 Name: "DigitalCraft\SardineHead";              Description: "SVS_SardineHead v2.1.1 (Runtime texture and material modifier tool for character creator)"; Types: extra extra_en
 Name: "DigitalCraft\Fishbone";                 Description: "Fishbone v3.1.5 (Plugin api to serialize and deserialize character or coordinate bound extension data)"; Types: extra extra_en
+Name: "DigitalCraft\MMDPlugin";                Description: "Swdz_MMD_Plugin v1.1.3 (Allows loading MMD animations)"                               
+Name: "DigitalCraft\LoveMachine_DC";           Description: "LoveMachine DC v4.2.1 (Adds support for some computer-controlled sex toys in studio)" 
+Name: "DigitalCraft\CharaFilter";              Description: "DC_CharaFilter v0.0.7 (Character/coordinate card filter for DigitalCraft)"            
 ; -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Name: "MISC";                                  Description: "{cm:CompMISC}"                                                                        
 Name: "MISC\RuntimeUnityEditor_BepInEx6_IL2CPP"; Description: "Runtime Unity Editor v6.3 (Debugging tool for applications made with Unity3D game engine (IL2CPP runtime))"; Types: full_en full extra extra_en
 Name: "MISC\RuntimeUnityEditor\Trainer";       Description: "Cheat Tools v3.6 (Trainer, press F12 to open, it's in the bottom left corner)"        ; Types: full_en full extra_en extra
-Name: "MISC\FullSave";                         Description: "Full Save (Save file with everything unlocked in main game. Overwrites your current progress!)"
-Name: "MISC\Memes";                            Description: "Custom intro voices v33.0 (Being a gooner is my job)"                                 ; Types: extra extra_en
 Name: "MISC\FPS";                              Description: "FPS Counter v3.3.1 (Useful for performance testing)"                                  ; Types: full_en full extra extra_en
+Name: "MISC\Memes";                            Description: "Custom intro voices v34.0 (Gitgoon)"                                                  ; Types: extra extra_en
+Name: "MISC\FullSave";                         Description: "Full Save (Save file with everything unlocked in main game. Overwrites your current progress!)"
 
 [Files]
 Source: "Input\_Plugins\_out\BepInEx-Unity.IL2CPP-win-x64\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs solidbreak; Components: BepInEx; Excludes: "manifest.xml"
@@ -77,7 +80,7 @@ Source: "Input\_Plugins\_out\GraphicsSettingsIL2CPP\*";     DestDir: "{app}"; Fl
 #ifndef LITE
 Source: "Input\_Plugins\_out\Hardmods\*";                   DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Content\Hardmods; Excludes: "manifest.xml"
 Source: "Input\_Plugins\_out\Hardmods_cards\*";             DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Content\Hardmods\HardmodCards; Excludes: "manifest.xml"
-Source: "Input\_Plugins\_out\HC_SliderUnlock\*";            DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Content\HC_SliderUnlock; Excludes: "manifest.xml"
+Source: "Input\_Plugins\_out\HC_SliderUnlocker\*";            DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Content\HC_SliderUnlock; Excludes: "manifest.xml"
 ; Source: "Input\_Plugins\_out\HC_SliderUnlock\*";            DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Content\HC_SliderUnlock; Excludes: "manifest.xml"; Check: DolceNotInstalled
 ; Source: "Input\_Plugins\_out\HC_SliderUnlock_Dolce\*";      DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Content\HC_SliderUnlock; Excludes: "manifest.xml"; Check: DolceInstalled  // will need to deal  with standaolne DigitalCraftInstalled too
 #endif 
@@ -105,7 +108,6 @@ Source: "Input\_Plugins\_out\HC_LogoRemover\*";             DestDir: "{app}"; Fl
 Source: "Input\_Plugins\_out\HC_PlayerHCloth\*";            DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Feature\HC_PlayerHCloth; Excludes: "manifest.xml"
 Source: "Input\_Plugins\_out\HC_StudioCharaSort\*";         DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Feature\HC_StudioCharaSort; Excludes: "manifest.xml"
 Source: "Input\_Plugins\_out\HCSVS_JumpLister\*";           DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Feature\JumpLister; Excludes: "manifest.xml"
-Source: "Input\_Plugins\_out\LoveMachine_for_HoneyCome_Digital_Craft\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Feature\LoveMachine_DC; Excludes: "manifest.xml"
 Source: "Input\_Plugins\_out\RuntimeUnityEditor\*";         DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: MISC\RuntimeUnityEditor_BepInEx6_IL2CPP; Excludes: "manifest.xml"
 Source: "Input\_Plugins\_out\HC_CheatTools\*";              DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: MISC\RuntimeUnityEditor\Trainer; Excludes: "manifest.xml"
 Source: "Input\_Plugins\_out\Memes\*";                      DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: MISC\Memes; Excludes: "manifest.xml"
@@ -117,3 +119,7 @@ Source: "Input\_Plugins\_out\HC_Subtitles\*";               DestDir: "{app}"; Fl
 Source: "Input\_Plugins\_out\DC-Fishbone\*";                DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: DigitalCraft\Fishbone; Excludes: "manifest.xml"; Check: DigitalCraftInstalled
 Source: "Input\_Plugins\_out\DC-SardineHead\*";             DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: DigitalCraft\SardineHead; Excludes: "manifest.xml"; Check: DigitalCraftInstalled
 Source: "Input\_Plugins\_out\DC-SardineTail\*";             DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: DigitalCraft\SardineTail; Excludes: "manifest.xml"; Check: DigitalCraftInstalled
+Source: "Input\_Plugins\_out\DC_CharaFilter\*";             DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: DigitalCraft\CharaFilter; Excludes: "manifest.xml"
+Source: "Input\_Plugins\_out\DC_SliderUnlocker\*";          DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: DigitalCraft\DC_SliderUnlock; Excludes: "manifest.xml"
+Source: "Input\_Plugins\_out\LoveMachine_for_HoneyCome_Digital_Craft\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: DigitalCraft\LoveMachine_DC; Excludes: "manifest.xml"
+Source: "Input\_Plugins\_out\MMDPlugin\*";                  DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: DigitalCraft\MMDPlugin; Excludes: "manifest.xml"

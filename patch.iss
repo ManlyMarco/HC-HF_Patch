@@ -7,7 +7,7 @@
 ;-------------Full game name for naming patch itself and desktop icons
 #define NAME "HoneyCome"
 ;---------------------------------------------Current HF Patch version
-#define VERSION "1.17"
+#define VERSION "1.18"
 ;--Don't include any files in the build to make it go fast for testing
 ;#define DEBUG
 ;---Skip file verification for easier testing, COMMENT OUT FOR RELEASE
@@ -74,14 +74,14 @@ Source: "Plugin Readme.md";               DestDir: "{app}"
 Source: "Input\_Patch\1_base\*";                   DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Patch; Check: HoneyComeInstalled
 Source: "Input\_Patch\2_1215-full\*";              DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Patch; Check: HoneyComeInstalled
 Source: "Input\_Patch\4_dolce_diff\*";             DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Patch; Check: HoneyComeInstalled and DolceInstalled
-Source: "Input\_Patch\5_dolce_1121-full\*";        DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Patch; Check: HoneyComeInstalled and DolceInstalled
+Source: "Input\_Patch\5_dolce_0123-full\*";        DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Patch; Check: HoneyComeInstalled and DolceInstalled
 Source: "Input\_Patch\8_man\*";                    DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Patch; Check: HoneyComeInstalled
 Source: "Input\_Patch\9_unhollowed-1215\*";        DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Patch; Check: HoneyComeInstalled
-Source: "Input\_Patch\9_unhollowed-dolce_1121\*";  DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Patch; Check: HoneyComeInstalled and DolceInstalled
+Source: "Input\_Patch\9_unhollowed-dolce_0123\*";  DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Patch; Check: HoneyComeInstalled and DolceInstalled
 
 //todo stand-alone studio, needs any updates? probably shouldn't install hardmod pack??
-Source: "Input\_Patch\6_craft_1121\*";             DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Patch; Check: DigitalCraftInstalled and not HoneyComeInstalled
-Source: "Input\_Patch\9_unhollowed-studio_1121\*";  DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Patch; Check: DigitalCraftInstalled and not HoneyComeInstalled
+Source: "Input\_Patch\6_craft_0123\*";             DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Patch; Check: DigitalCraftInstalled and not HoneyComeInstalled
+Source: "Input\_Patch\9_unhollowed-studio_0123\*";  DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Patch; Check: DigitalCraftInstalled and not HoneyComeInstalled
 
 #endif
 
