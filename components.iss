@@ -23,8 +23,7 @@ Name: "UNC\UncensorHardmod";                   Description: "Hardmod Uncensor 20
 Name: "Content";                               Description: "Additional content (Needed to properly load most character cards and scenes)"         ; Types: full_en full extra extra_en
 Name: "Content\Hardmods";                      Description: "Hardmod pack 2024/10/09 (Numerous clothing and accessory mods. Can't be uninstalled, can cause issues!)"
 Name: "Content\Hardmods\HardmodCards";         Description: "Character and outfit cards (A lot of extra cards that came included with the hardmods. Will fill up your character list!)"
-; Name: "Content\HC_SliderUnlock";               Description: "SliderUnlock v1.0.69 (Unlocks slider ranges in maker(fragile and might break))"       ; Types: full_en full extra extra_en
-Name: "Content\HC_SliderUnlock";               Description: "SliderUnlock v99.9.9 (Unlocks slider ranges in maker and studio(fragile and might break))"; Types: full_en full extra extra_en
+Name: "Content\HC_SliderUnlock";               Description: "SliderUnlock v1.0.1 (Unlocks slider ranges in maker and studio(fragile and might break))"; Types: full_en full extra extra_en
 #endif 
 ; -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Name: "FIX";                                   Description: "{cm:CompFIX}"                                                                         ; Types: extra extra_en
@@ -51,15 +50,15 @@ Name: "Feature\HC_Studio_TitleSkip";           Description: "Skip title screen i
 Name: "Feature\HC_Ahegao";                     Description: "HC_Ahegao v1.0.0 (Allows changing various parameters for orgasms and faces during H)" ; Types: extra extra_en
 Name: "Feature\HC_PlayerHCloth";               Description: "HC_PlayerHCloth v0.0.1 (Allows changing state of player clothes during H)"            ; Types: extra extra_en
 Name: "Feature\HC_Hair";                       Description: "HC_Hair v0.0.2 (When eyes are set to show on top of hair, do not draw them over the hair but instead make the hair partially transparent. Doesn't work on some modded hair)"
-Name: "Feature\LoveMachine";                   Description: "LoveMachine v4.2.1 (Adds support for some computer-controlled sex toys)"              
+Name: "Feature\LoveMachine";                   Description: "LoveMachine v4.2.1 (Adds support for some computer-controlled sex toys in the game and studio)"
 ; -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Name: "DigitalCraft";                          Description: "Plugins only compatible with DigitalCraft"                                            
-Name: "DigitalCraft\DC_SliderUnlock";          Description: "SliderUnlock for DC v99.9.9 (Unlocks slider ranges in maker and studio(fragile and might break))"; Types: full_en full extra extra_en
+;Name: "DigitalCraft\DC_SliderUnlock";          Description: "SliderUnlock for DC v1.0.1 (Unlocks slider ranges in studio(fragile and might break))"; Types: full_en full extra extra_en
 Name: "DigitalCraft\SardineTail";              Description: "SardineTail v2.1.12 (Fundamental plugin to develop soft mods for DigitalCraft)"       ; Types: extra extra_en
 Name: "DigitalCraft\SardineHead";              Description: "SVS_SardineHead v2.1.1 (Runtime texture and material modifier tool for character creator)"; Types: extra extra_en
 Name: "DigitalCraft\Fishbone";                 Description: "Fishbone v3.1.5 (Plugin api to serialize and deserialize character or coordinate bound extension data)"; Types: extra extra_en
-Name: "DigitalCraft\MMDPlugin";                Description: "Swdz_MMD_Plugin v1.1.3 (Allows loading MMD animations)"                               
-Name: "DigitalCraft\LoveMachine_DC";           Description: "LoveMachine DC v4.2.1 (Adds support for some computer-controlled sex toys in studio)" 
+; Name: "DigitalCraft\MMDPlugin";                Description: "Swdz_MMD_Plugin v1.1.3 (Allows loading MMD animations)"
+;Name: "DigitalCraft\LoveMachine_DC";           Description: "LoveMachine DC v4.2.1 (Adds support for some computer-controlled sex toys in studio)" 
 Name: "DigitalCraft\CharaFilter";              Description: "DC_CharaFilter v0.0.7 (Character/coordinate card filter for DigitalCraft)"            
 ; -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Name: "MISC";                                  Description: "{cm:CompMISC}"                                                                        
@@ -80,7 +79,8 @@ Source: "Input\_Plugins\_out\GraphicsSettingsIL2CPP\*";     DestDir: "{app}"; Fl
 #ifndef LITE
 Source: "Input\_Plugins\_out\Hardmods\*";                   DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Content\Hardmods; Excludes: "manifest.xml"
 Source: "Input\_Plugins\_out\Hardmods_cards\*";             DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Content\Hardmods\HardmodCards; Excludes: "manifest.xml"
-Source: "Input\_Plugins\_out\HC_SliderUnlocker\*";            DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Content\HC_SliderUnlock; Excludes: "manifest.xml"
+Source: "Input\_Plugins\_out\HC_SliderUnlocker\*";          DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Content\HC_SliderUnlock; Excludes: "manifest.xml"
+Source: "Input\_Plugins\_out\DC_SliderUnlocker\*";          DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Content\HC_SliderUnlock; Excludes: "manifest.xml"; Check: DigitalCraftInstalled
 ; Source: "Input\_Plugins\_out\HC_SliderUnlock\*";            DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Content\HC_SliderUnlock; Excludes: "manifest.xml"; Check: DolceNotInstalled
 ; Source: "Input\_Plugins\_out\HC_SliderUnlock_Dolce\*";      DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Content\HC_SliderUnlock; Excludes: "manifest.xml"; Check: DolceInstalled  // will need to deal  with standaolne DigitalCraftInstalled too
 #endif 
@@ -101,6 +101,7 @@ Source: "Input\_Plugins\_out\IllusionFixes\*";              DestDir: "{app}"; Fl
 Source: "Input\_Plugins\_out\IllusionLaunchers_HoneyCome\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: IllusionLaunchers; Excludes: "manifest.xml"
 Source: "Input\_Plugins\_out\KKManager\*";                  DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: KKManager; Excludes: "manifest.xml"
 Source: "Input\_Plugins\_out\LoveMachine_for_HoneyCome\*";  DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Feature\LoveMachine; Excludes: "manifest.xml"
+Source: "Input\_Plugins\_out\LoveMachine_for_HoneyCome_Digital_Craft\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Feature\LoveMachine; Excludes: "manifest.xml"; Check: DigitalCraftInstalled
 Source: "Input\_Plugins\_out\MessageCenterIL2CPP\*";        DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: BepInEx\MessageCenter; Excludes: "manifest.xml"
 Source: "Input\_Plugins\_out\MuteInBackgroundIL2CPP\*";     DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Feature\MuteInBackground; Excludes: "manifest.xml"
 Source: "Input\_Plugins\_out\HC_Ahegao\*";                  DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Feature\HC_Ahegao; Excludes: "manifest.xml"
@@ -119,7 +120,5 @@ Source: "Input\_Plugins\_out\HC_Subtitles\*";               DestDir: "{app}"; Fl
 Source: "Input\_Plugins\_out\DC-Fishbone\*";                DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: DigitalCraft\Fishbone; Excludes: "manifest.xml"; Check: DigitalCraftInstalled
 Source: "Input\_Plugins\_out\DC-SardineHead\*";             DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: DigitalCraft\SardineHead; Excludes: "manifest.xml"; Check: DigitalCraftInstalled
 Source: "Input\_Plugins\_out\DC-SardineTail\*";             DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: DigitalCraft\SardineTail; Excludes: "manifest.xml"; Check: DigitalCraftInstalled
-Source: "Input\_Plugins\_out\DC_CharaFilter\*";             DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: DigitalCraft\CharaFilter; Excludes: "manifest.xml"
-Source: "Input\_Plugins\_out\DC_SliderUnlocker\*";          DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: DigitalCraft\DC_SliderUnlock; Excludes: "manifest.xml"
-Source: "Input\_Plugins\_out\LoveMachine_for_HoneyCome_Digital_Craft\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: DigitalCraft\LoveMachine_DC; Excludes: "manifest.xml"
-Source: "Input\_Plugins\_out\MMDPlugin\*";                  DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: DigitalCraft\MMDPlugin; Excludes: "manifest.xml"
+Source: "Input\_Plugins\_out\DC_CharaFilter\*";             DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: DigitalCraft\CharaFilter; Excludes: "manifest.xml"; Check: DigitalCraftInstalled
+; Source: "Input\_Plugins\_out\MMDPlugin\*";                  DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: DigitalCraft\MMDPlugin; Excludes: "manifest.xml"; Check: DigitalCraftInstalled

@@ -169,14 +169,14 @@
 - More information:  https://github.com/IllusionMods/KKManager
 
 # LoveMachine v4.2.1
-- Short description: Adds support for some computer-controlled sex toys
+- Short description: Adds support for some computer-controlled sex toys in the game and studio
 - Author(s):         Sauceke
 - More information:  https://github.com/Sauceke/LoveMachine
 
-# LoveMachine DC v4.2.1
-- Short description: Adds support for some computer-controlled sex toys in studio
+# LoveMachine v4.2.1
+- Short description: Adds support for some computer-controlled sex toys in the game and studio
 - Author(s):         Sauceke
-- More information:  https://sauceke.github.io/LoveMachine
+- More information:  https://github.com/Sauceke/LoveMachine
 
 # Message Center v0.7
 - Short description: Allows plugins to show messages in top left corner of the game
@@ -205,13 +205,13 @@
 
 # SliderUnlock v99.9.9
 - Short description: Unlocks slider ranges in maker and studio(fragile and might break)
-- Author(s):         Quartermaster
-- More information:  ???
+- Author(s):         y0soro
+- More information:  https://github.com/y0soro/ILL_Plugins/releases
 
-# SliderUnlock for DC v99.9.9
+# SliderUnlock v99.9.9
 - Short description: Unlocks slider ranges in maker and studio(fragile and might break)
-- Author(s):         Quartermaster
-- More information:  ???
+- Author(s):         y0soro
+- More information:  https://github.com/y0soro/ILL_Plugins/releases
 
 # Studio Character Sort v1.1.0
 - Short description: Change default sort order of cards in studio
@@ -227,11 +227,6 @@
 - Short description: Runtime texture and material modifier tool for character creator
 - Author(s):         MaybeSamigroup
 - More information:  https://github.com/MaybeSamigroup/SVS-SardineHead
-
-# Swdz_MMD_Plugin v1.1.3
-- Short description: Allows loading MMD animations
-- Author(s):         Sawadaz
-- More information:  https://www.pixiv.net/artworks/138545637
 
 # Web Request Blocker v1.0.0
 - Short description: Fixes the game requiring internet connection to start
