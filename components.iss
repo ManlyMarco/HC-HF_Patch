@@ -13,7 +13,7 @@ Name: "API\HC_BepisPlugins";                   Description: "HC_BepisPlugins v21
 Name: "AT";                                    Description: "XUnity Auto Translator v5.5 (Translation loader, automatic web translations)"         ; Types: full extra full_en extra_en custom
 Name: "AT\HC_HideLanguageSelector";            Description: "Hide language selection in title menu v1.1.0.1 (Prevents translation issues. Use the launcher to change language instead)"; Types: full_en full extra extra_en
 Name: "AT\HC_Studio_HideLanguageSelector";     Description: "Hide language selection in studio title menu v1.0.0.1 (Prevents translation issues. Use the launcher to change language instead)"; Types: full_en full extra extra_en
-; Name: "AT\TL";                                 Description: "{cm:CompTL}"                                                                          ; Types: full_en extra_en
+Name: "AT\TL";                                 Description: "{cm:CompTL}"                                                                          ; Types: full_en extra_en
 Name: "AT\TL\HC_Subtitles";                    Description: "Subtitles v0.0.2 (Show subtitles for girl's voice in H-Scenes)"                       ; Types: full extra full_en extra_en custom
 ; -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Name: "UNC";                                   Description: "{cm:CompUNC}"                                                                         ; Types: full_en full extra extra_en
@@ -62,9 +62,10 @@ Name: "DigitalCraft\Fishbone";                 Description: "Fishbone v3.1.5 (Pl
 Name: "DigitalCraft\CharaFilter";              Description: "DC_CharaFilter v0.0.7 (Character/coordinate card filter for DigitalCraft)"            
 ; -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Name: "MISC";                                  Description: "{cm:CompMISC}"                                                                        
+Name: "MISC\FIX";                              Description: "Fix game registry (fixes DigitalCraft not detecting HC)"                              ; Types: full_en full extra extra_en
+Name: "MISC\FPS";                              Description: "FPS Counter v3.3.1 (Useful for performance testing)"                                  ; Types: full_en full extra extra_en
 Name: "MISC\RuntimeUnityEditor_BepInEx6_IL2CPP"; Description: "Runtime Unity Editor v6.3 (Debugging tool for applications made with Unity3D game engine (IL2CPP runtime))"; Types: full_en full extra extra_en
 Name: "MISC\RuntimeUnityEditor\Trainer";       Description: "Cheat Tools v3.6 (Trainer, press F12 to open, it's in the bottom left corner)"        ; Types: full_en full extra_en extra
-Name: "MISC\FPS";                              Description: "FPS Counter v3.3.1 (Useful for performance testing)"                                  ; Types: full_en full extra extra_en
 Name: "MISC\Memes";                            Description: "Custom intro voices v34.0 (Gitgoon)"                                                  ; Types: extra extra_en
 Name: "MISC\FullSave";                         Description: "Full Save (Save file with everything unlocked in main game. Overwrites your current progress!)"
 
