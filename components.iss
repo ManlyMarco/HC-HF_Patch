@@ -4,13 +4,13 @@ Name: "BepInEx\MessageCenter";                 Description: "Message Center v0.7
 Name: "BepInEx\ConfigurationManager_Il2Cpp";   Description: "Configuration Manager v18.4.1 (Can change plugin settings. Press F1 to open)"         ; Types: full_en full extra extra_en
 Name: "BepInEx\BepInEx_SplashScreen_BepInEx6"; Description: "BepInEx.SplashScreen_BepInEx6 v3.0.0.0 (A loading screen on game startup with information about patchers and plugins being currently loaded)"; Types: full_en full extra extra_en
 ; -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-Name: "IllusionLaunchers";                     Description: "IllusionLaunchers_HoneyCome v3.4.1.36297 (Custom game launcher)"                      ; Types: full_en full extra extra_en custom
-Name: "KKManager";                             Description: "KKManager v1.7.0.0 (Manage and update mods, browse cards)"                            ; Types: full_en full extra extra_en custom
+Name: "IllusionLaunchers";                     Description: "IllusionLaunchers_HoneyCome v3.5.0.0 (Custom game launcher)"                          ; Types: full_en full extra extra_en custom
+Name: "KKManager";                             Description: "KKManager v1.9.0.0 (Manage and update mods, browse cards)"                            ; Types: full_en full extra extra_en custom
 ; -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Name: "API";                                   Description: "APIs (Plugins required by other plugins and mods to function)"                        ; Types: full_en full extra extra_en custom bare; Flags: fixed
 Name: "API\HC_BepisPlugins";                   Description: "HC_BepisPlugins v21.1.2.1 (Essential plugins required by many other plugins to function)"; Types: full_en full extra extra_en
 ; -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-Name: "AT";                                    Description: "XUnity Auto Translator v5.5 (Translation loader, automatic web translations)"         ; Types: full extra full_en extra_en custom
+Name: "AT";                                    Description: "XUnity Auto Translator v5.5.1 (Translation loader, automatic web translations)"       ; Types: full extra full_en extra_en custom
 Name: "AT\HC_HideLanguageSelector";            Description: "Hide language selection in title menu v1.1.0.1 (Prevents translation issues. Use the launcher to change language instead)"; Types: full_en full extra extra_en
 Name: "AT\HC_Studio_HideLanguageSelector";     Description: "Hide language selection in studio title menu v1.0.0.1 (Prevents translation issues. Use the launcher to change language instead)"; Types: full_en full extra extra_en
 Name: "AT\TL";                                 Description: "{cm:CompTL}"                                                                          ; Types: full_en extra_en
@@ -23,7 +23,9 @@ Name: "UNC\UncensorHardmod";                   Description: "Hardmod Uncensor 20
 Name: "Content";                               Description: "Additional content (Needed to properly load most character cards and scenes)"         ; Types: full_en full extra extra_en
 Name: "Content\Hardmods";                      Description: "Hardmod pack 2024/10/09 (Numerous clothing and accessory mods. Can't be uninstalled, can cause issues!)"
 Name: "Content\Hardmods\HardmodCards";         Description: "Character and outfit cards (A lot of extra cards that came included with the hardmods. Will fill up your character list!)"
-Name: "Content\HC_SliderUnlock";               Description: "SliderUnlock v1.0.1 (Unlocks slider ranges in maker and studio(fragile and might break))"; Types: full_en full extra extra_en
+Name: "Content\HC_SliderUnlock";               Description: "SliderUnlock v99.9.9 (Unlocks slider ranges in maker and studio(fragile and might break))"; Types: full_en full extra extra_en
+Name: "Content\Highheels";                     Description: "Swdz Highheels v1.0 (Automatically applies shoe-based height/ankle/toe settings, and save independent pose presets)"; Types: full_en full extra extra_en
+Name: "Content\VarietyOfScales";               Description: "VarietyOfScales v0.8.0 (Extends accessory slots)"                                     ; Types: full_en full extra extra_en
 #endif 
 ; -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Name: "FIX";                                   Description: "{cm:CompFIX}"                                                                         ; Types: extra extra_en
@@ -50,22 +52,23 @@ Name: "Feature\HC_Studio_TitleSkip";           Description: "Skip title screen i
 Name: "Feature\HC_Ahegao";                     Description: "HC_Ahegao v1.0.0 (Allows changing various parameters for orgasms and faces during H)" ; Types: extra extra_en
 Name: "Feature\HC_PlayerHCloth";               Description: "HC_PlayerHCloth v0.0.1 (Allows changing state of player clothes during H)"            ; Types: extra extra_en
 Name: "Feature\HC_Hair";                       Description: "HC_Hair v0.0.2 (When eyes are set to show on top of hair, do not draw them over the hair but instead make the hair partially transparent. Doesn't work on some modded hair)"
-Name: "Feature\LoveMachine";                   Description: "LoveMachine v4.2.1 (Adds support for some computer-controlled sex toys in the game and studio)"
+Name: "Feature\LoveMachine";                   Description: "LoveMachine v4.4.0 (Adds support for some computer-controlled sex toys in the game and studio)"
 ; -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Name: "DigitalCraft";                          Description: "Plugins only compatible with DigitalCraft"                                            
-;Name: "DigitalCraft\DC_SliderUnlock";          Description: "SliderUnlock for DC v1.0.1 (Unlocks slider ranges in studio(fragile and might break))"; Types: full_en full extra extra_en
+; Name: "DigitalCraft\DC_SliderUnlock";          Description: "SliderUnlock for DC v1.0.1 (Unlocks slider ranges in studio(fragile and might break))"; Types: full_en full extra extra_en
 Name: "DigitalCraft\SardineTail";              Description: "SardineTail v2.1.12 (Fundamental plugin to develop soft mods for DigitalCraft)"       ; Types: extra extra_en
 Name: "DigitalCraft\SardineHead";              Description: "SVS_SardineHead v2.1.1 (Runtime texture and material modifier tool for character creator)"; Types: extra extra_en
 Name: "DigitalCraft\Fishbone";                 Description: "Fishbone v3.1.5 (Plugin api to serialize and deserialize character or coordinate bound extension data)"; Types: extra extra_en
 ; Name: "DigitalCraft\MMDPlugin";                Description: "Swdz_MMD_Plugin v1.1.3 (Allows loading MMD animations)"
-;Name: "DigitalCraft\LoveMachine_DC";           Description: "LoveMachine DC v4.2.1 (Adds support for some computer-controlled sex toys in studio)" 
-Name: "DigitalCraft\CharaFilter";              Description: "DC_CharaFilter v0.0.7 (Character/coordinate card filter for DigitalCraft)"            
+; Name: "DigitalCraft\LoveMachine_DC";           Description: "LoveMachine DC v4.2.1 (Adds support for some computer-controlled sex toys in studio)"
+Name: "DigitalCraft\CharaFilter";              Description: "DC_CharaFilter v0.0.8 (Character/coordinate card filter for DigitalCraft)"            
+Name: "DigitalCraft\BlendshapeManager";        Description: "Blendshape Manager DC v1.0.0 (Allow checking, adjusting and managing Blendshapes on Characters)"; Types: full_en full extra extra_en
 ; -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Name: "MISC";                                  Description: "{cm:CompMISC}"                                                                        
 Name: "MISC\FIX";                              Description: "Fix game registry (fixes DigitalCraft not detecting HC)"                              ; Types: full_en full extra extra_en
 Name: "MISC\FPS";                              Description: "FPS Counter v3.3.1 (Useful for performance testing)"                                  ; Types: full_en full extra extra_en
 Name: "MISC\RuntimeUnityEditor_BepInEx6_IL2CPP"; Description: "Runtime Unity Editor v6.3 (Debugging tool for applications made with Unity3D game engine (IL2CPP runtime))"; Types: full_en full extra extra_en
-Name: "MISC\RuntimeUnityEditor\Trainer";       Description: "Cheat Tools v3.6 (Trainer, press F12 to open, it's in the bottom left corner)"        ; Types: full_en full extra_en extra
+Name: "MISC\RuntimeUnityEditor\Trainer";       Description: "Cheat Tools v3.6.1 (Trainer, press F12 to open, it's in the bottom left corner)"      ; Types: full_en full extra_en extra
 Name: "MISC\Memes";                            Description: "Custom intro voices v34.0 (Gitgoon)"                                                  ; Types: extra extra_en
 Name: "MISC\FullSave";                         Description: "Full Save (Save file with everything unlocked in main game. Overwrites your current progress!)"
 
@@ -82,6 +85,8 @@ Source: "Input\_Plugins\_out\Hardmods\*";                   DestDir: "{app}"; Fl
 Source: "Input\_Plugins\_out\Hardmods_cards\*";             DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Content\Hardmods\HardmodCards; Excludes: "manifest.xml"
 Source: "Input\_Plugins\_out\HC_SliderUnlocker\*";          DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Content\HC_SliderUnlock; Excludes: "manifest.xml"
 Source: "Input\_Plugins\_out\DC_SliderUnlocker\*";          DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Content\HC_SliderUnlock; Excludes: "manifest.xml"; Check: DigitalCraftInstalled
+Source: "Input\_Plugins\_out\DC_VarietyOfScales\*";         DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Content\VarietyOfScales; Excludes: "manifest.xml"
+Source: "Input\_Plugins\_out\Highheels\*";                  DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Content\Highheels; Excludes: "manifest.xml"
 ; Source: "Input\_Plugins\_out\HC_SliderUnlock\*";            DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Content\HC_SliderUnlock; Excludes: "manifest.xml"; Check: DolceNotInstalled
 ; Source: "Input\_Plugins\_out\HC_SliderUnlock_Dolce\*";      DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Content\HC_SliderUnlock; Excludes: "manifest.xml"; Check: DolceInstalled  // will need to deal  with standaolne DigitalCraftInstalled too
 #endif 
@@ -122,4 +127,5 @@ Source: "Input\_Plugins\_out\DC-Fishbone\*";                DestDir: "{app}"; Fl
 Source: "Input\_Plugins\_out\DC-SardineHead\*";             DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: DigitalCraft\SardineHead; Excludes: "manifest.xml"; Check: DigitalCraftInstalled
 Source: "Input\_Plugins\_out\DC-SardineTail\*";             DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: DigitalCraft\SardineTail; Excludes: "manifest.xml"; Check: DigitalCraftInstalled
 Source: "Input\_Plugins\_out\DC_CharaFilter\*";             DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: DigitalCraft\CharaFilter; Excludes: "manifest.xml"; Check: DigitalCraftInstalled
+Source: "Input\_Plugins\_out\DC_BlendshapeManager\*";       DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: DigitalCraft\BlendshapeManager; Excludes: "manifest.xml"
 ; Source: "Input\_Plugins\_out\MMDPlugin\*";                  DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: DigitalCraft\MMDPlugin; Excludes: "manifest.xml"; Check: DigitalCraftInstalled

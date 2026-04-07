@@ -7,11 +7,11 @@
 ;-------------Full game name for naming patch itself and desktop icons
 #define NAME "HoneyCome"
 ;---------------------------------------------Current HF Patch version
-#define VERSION "1.18"
+#define VERSION "1.19"
 ;-----------------------------------------Sideloader modpack directory
 ;#define GameDir N/A
 ;--Don't include any files in the build to make it go fast for testing
-#define DEBUG
+;#define DEBUG
 ;---Skip file verification for easier testing, COMMENT OUT FOR RELEASE
 ;#define NOVERIFY
 ;------------Don't include general, studio and map sideloader modpacks
@@ -48,7 +48,7 @@ LZMAUseSeparateProcess=yes
 ;Usual settings: 208576 273
 LZMADictionarySize=208576
 LZMANumFastBytes=273
-LZMANumBlockThreads=8
+LZMANumBlockThreads=16
 DiskSpanning=yes
 DiskSliceSize=4294967295
 
@@ -76,14 +76,14 @@ Name: "Patch";     Description: "Repair common issues";     Types: full_en full 
 Source: "Input\_Patch\1_base\*";                   DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Patch; Check: HoneyComeInstalled
 Source: "Input\_Patch\2_1215-full\*";              DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Patch; Check: HoneyComeInstalled
 Source: "Input\_Patch\4_dolce_diff\*";             DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Patch; Check: HoneyComeInstalled and DolceInstalled
-Source: "Input\_Patch\5_dolce_0123-full\*";        DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Patch; Check: HoneyComeInstalled and DolceInstalled
+Source: "Input\_Patch\5_dolce_0327-full\*";        DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Patch; Check: HoneyComeInstalled and DolceInstalled
 Source: "Input\_Patch\8_man\*";                    DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Patch; Check: HoneyComeInstalled
 Source: "Input\_Patch\9_unhollowed-1215\*";        DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Patch; Check: HoneyComeInstalled
-Source: "Input\_Patch\9_unhollowed-dolce_0123\*";  DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Patch; Check: HoneyComeInstalled and DolceInstalled
+Source: "Input\_Patch\9_unhollowed-dolce_0327\*";  DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Patch; Check: HoneyComeInstalled and DolceInstalled
 
 //todo stand-alone studio, needs any updates? probably shouldn't install hardmod pack??
-Source: "Input\_Patch\6_craft_0123\*";             DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Patch; Check: DigitalCraftInstalled and not HoneyComeInstalled
-Source: "Input\_Patch\9_unhollowed-studio_0123\*";  DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Patch; Check: DigitalCraftInstalled and not HoneyComeInstalled
+Source: "Input\_Patch\6_craft_0327\*";             DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Patch; Check: DigitalCraftInstalled and not HoneyComeInstalled
+Source: "Input\_Patch\9_unhollowed-studio_0327\*";  DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Patch; Check: DigitalCraftInstalled and not HoneyComeInstalled
 
 #endif
 
@@ -140,7 +140,7 @@ Type: filesandordirs; Name: "{app}\[UTILITY] KKManager"; Components: KKManager
 Type: files; Name: "{app}\BepInEx\patchers\IMGUIModule.Il2Cpp.CoreCLR.Patcher.dll"; Components: BepInEx\ConfigurationManager_Il2Cpp
 Type: files; Name: "{app}\BepInEx\plugins\ConfigurationManager.dll";                Components: BepInEx\ConfigurationManager_Il2Cpp
 Type: files; Name: "{app}\BepInEx\plugins\BepInEx.KeyboardShortcut.dll";            Components: BepInEx\ConfigurationManager_Il2Cpp
-Type: files; Name: "{app}\abdata\sardinetail.unity3d";                              Components: Content\Fishbone\SardineTail
+Type: files; Name: "{app}\abdata\sardinetail.unity3d";                              Components: DigitalCraft\SardineTail
 
 ; Clean up old modpacks
 Type: files; Name: "{app}\abdata\list\characustom\300_50_tofusalomoto.unity3d";     Components: Content\Hardmods
@@ -177,7 +177,7 @@ Type: files;          Name: "{app}\BepInEx\plugins\HC_HGaugeCtrl.dll"; Component
 Type: files;          Name: "{app}\BepInEx\plugins\WebRequestBlocker.dl_"; Components: FIX\WebRequestBlocker
 
 [Dirs]
-Name: {app}\sardines; Components: Content\Fishbone\SardineTail
+Name: {app}\sardines; Components: DigitalCraft\SardineTail
 
 [CustomMessages]
 MsgMissingDLC1=NOTICE - You are missing the optional "Dolce" expansion (2023-12-22 Paid DLC). It adds studio (DigitalCraft), 2 new personalities, new maps, new H positions, and new clothes.%n%nThis expansion is optional, the patch will work fine without it. If you want to use it, install it BEFORE running HF Patch.
@@ -207,12 +207,12 @@ Filename: "{app}\InitSetting.exe"; Description: "{cm:RunGame}"; Flags: postinsta
 ; The rest of regkeys is added in CommonRun.iss
 Root: HKCU; Subkey: "Software\ILLGAMES\HoneyCome"; Check: HoneyComeInstalled
 Root: HKCU; Subkey: "Software\ILLGAMES\HoneyCome"; Check: HoneyComeInstalled; ValueType: string; ValueName: "INSTALLDIR_HFP"; ValueData: "{app}\"
-Root: HKCU; Subkey: "Software\ILLGAMES\HoneyCome"; Check: HoneyComeInstalled; ValueType: string; ValueName: "INSTALLDIR"; ValueData: "{app}\"; Tasks: regfix
-Root: HKCU; Subkey: "Software\ILLGAMES\HoneyCome"; Check: HoneyComeInstalled; ValueType: string; ValueName: "PRODUCTNAME"; ValueData: "ハニカム"; Tasks: regfix
+Root: HKCU; Subkey: "Software\ILLGAMES\HoneyCome"; Check: HoneyComeInstalled; ValueType: string; ValueName: "INSTALLDIR"; ValueData: "{app}\"; Components: MISC\FIX
+Root: HKCU; Subkey: "Software\ILLGAMES\HoneyCome"; Check: HoneyComeInstalled; ValueType: string; ValueName: "PRODUCTNAME"; ValueData: "ハニカム"; Components: MISC\FIX
 Root: HKCU; Subkey: "Software\ILLGAMES\DigitalCraft"; Check: DigitalCraftInstalled
 Root: HKCU; Subkey: "Software\ILLGAMES\DigitalCraft"; Check: DigitalCraftInstalled; ValueType: string; ValueName: "INSTALLDIR_HFP"; ValueData: "{app}\"
-Root: HKCU; Subkey: "Software\ILLGAMES\DigitalCraft"; Check: DigitalCraftInstalled; ValueType: string; ValueName: "INSTALLDIR"; ValueData: "{app}\"; Tasks: regfix
-Root: HKCU; Subkey: "Software\ILLGAMES\DigitalCraft"; Check: DigitalCraftInstalled; ValueType: string; ValueName: "PRODUCTNAME"; ValueData: "DigitalCraft"; Tasks: regfix
+Root: HKCU; Subkey: "Software\ILLGAMES\DigitalCraft"; Check: DigitalCraftInstalled; ValueType: string; ValueName: "INSTALLDIR"; ValueData: "{app}\"; Components: MISC\FIX
+Root: HKCU; Subkey: "Software\ILLGAMES\DigitalCraft"; Check: DigitalCraftInstalled; ValueType: string; ValueName: "PRODUCTNAME"; ValueData: "DigitalCraft"; Components: MISC\FIX
 
 [Code]
 // --------------------------------------------------------------------------------------- Helper methods
