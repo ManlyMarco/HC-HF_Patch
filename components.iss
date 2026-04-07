@@ -73,6 +73,7 @@ Name: "MISC\Memes";                            Description: "Custom intro voices
 Name: "MISC\FullSave";                         Description: "Full Save (Save file with everything unlocked in main game. Overwrites your current progress!)"
 
 [Files]
+#ifndef DEBUG
 Source: "Input\_Plugins\_out\BepInEx-Unity.IL2CPP-win-x64\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs solidbreak; Components: BepInEx; Excludes: "manifest.xml"
 Source: "Input\_Plugins\_out\BepInEx.ConfigurationManager\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: BepInEx\ConfigurationManager_Il2Cpp; Excludes: "manifest.xml"
 Source: "Input\_Plugins\_out\BepInEx.SplashScreen\*";       DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: BepInEx\BepInEx_SplashScreen_BepInEx6; Excludes: "manifest.xml"
@@ -129,3 +130,7 @@ Source: "Input\_Plugins\_out\DC-SardineTail\*";             DestDir: "{app}"; Fl
 Source: "Input\_Plugins\_out\DC_CharaFilter\*";             DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: DigitalCraft\CharaFilter; Excludes: "manifest.xml"; Check: DigitalCraftInstalled
 Source: "Input\_Plugins\_out\DC_BlendshapeManager\*";       DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: DigitalCraft\BlendshapeManager; Excludes: "manifest.xml"
 ; Source: "Input\_Plugins\_out\MMDPlugin\*";                  DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: DigitalCraft\MMDPlugin; Excludes: "manifest.xml"; Check: DigitalCraftInstalled
+
+[Code]
+// Need to put this behind an empty Code category so that the automatic tool doesn't add new file items below this #endif
+#endif
