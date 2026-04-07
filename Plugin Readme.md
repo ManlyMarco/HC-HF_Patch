@@ -8,12 +8,17 @@
 - Author(s):         https://github.com/BepInEx
 - More information:  https://github.com/BepInEx/BepInEx
 
+# Blendshape Manager DC v1.0.0
+- Short description: Allow checking, adjusting and managing Blendshapes on Characters
+- Author(s):         Sawadz
+- More information:  https://github.com/a1415102876-alt/Blendshape_Manager
+
 # Character and outfit cards
 - Short description: A lot of extra cards that came included with the hardmods. Will fill up your character list!
 - Author(s):         Multiple
 - More information:  Koikatsu discord server
 
-# Cheat Tools v3.6
+# Cheat Tools v3.6.1
 - Short description: Trainer, press F12 to open, it's in the bottom left corner
 - Author(s):         ManlyMarco
 - More information:  https://github.com/ManlyMarco/IllusionCheatTools
@@ -33,7 +38,7 @@
 - Author(s):         ManlyMarco
 - More information:  https://www.youtube.com/watch?v=SZBQ4lQFqvw
 
-# DC_CharaFilter v0.0.7
+# DC_CharaFilter v0.0.8
 - Short description: Character/coordinate card filter for DigitalCraft
 - Author(s):         y0soro
 - More information:  https://github.com/y0soro/ILL_Plugins
@@ -53,7 +58,7 @@
 - Author(s):         SpockBauru, ManlyMarco
 - More information:  https://github.com/SpockBauru/SpockPlugins_BepInEx
 
-# Fishbone v3.1.5
+# Fishbone v4.0.0
 - Short description: Plugin api to serialize and deserialize character or coordinate bound extension data
 - Author(s):         MaybeSamigroup
 - More information:  https://github.com/MaybeSamigroup/SVS-Fishbone
@@ -153,7 +158,7 @@
 - Author(s):         https://github.com/IllusionMods
 - More information:  https://github.com/IllusionMods/IllusionFixes
 
-# IllusionLaunchers_HoneyCome v3.4.1.36297
+# IllusionLaunchers_HoneyCome v3.5.0.0
 - Short description: Custom game launcher
 - Author(s):         https://github.com/IllusionMods
 - More information:  https://github.com/IllusionMods/IllusionLaunchers
@@ -163,17 +168,17 @@
 - Author(s):         ManlyMarco
 - More information:  https://github.com/ManlyMarco/JumpLister
 
-# KKManager v1.7.0.0
+# KKManager v1.9.0.0
 - Short description: Manage and update mods, browse cards
 - Author(s):         https://github.com/IllusionMods
 - More information:  https://github.com/IllusionMods/KKManager
 
-# LoveMachine v4.2.1
+# LoveMachine v4.4.0
 - Short description: Adds support for some computer-controlled sex toys in the game and studio
 - Author(s):         Sauceke
 - More information:  https://github.com/Sauceke/LoveMachine
 
-# LoveMachine v4.2.1
+# LoveMachine v4.4.0
 - Short description: Adds support for some computer-controlled sex toys in the game and studio
 - Author(s):         Sauceke
 - More information:  https://github.com/Sauceke/LoveMachine
@@ -193,7 +198,7 @@
 - Author(s):         ManlyMarco
 - More information:  https://github.com/ManlyMarco/RuntimeUnityEditor
 
-# SardineTail v2.1.12
+# SardineTail v2.2.0
 - Short description: Fundamental plugin to develop soft mods for DigitalCraft
 - Author(s):         MaybeSamigroup
 - More information:  https://github.com/MaybeSamigroup/SVS-SardineTail
@@ -223,17 +228,27 @@
 - Author(s):         ekibun
 - More information:  ???
 
-# SVS_SardineHead v2.1.1
+# SVS_SardineHead v2.2.0
 - Short description: Runtime texture and material modifier tool for character creator
 - Author(s):         MaybeSamigroup
 - More information:  https://github.com/MaybeSamigroup/SVS-SardineHead
+
+# Swdz Highheels v1.0
+- Short description: Automatically applies shoe-based height/ankle/toe settings, and save independent pose presets
+- Author(s):         Sawadz
+- More information:  https://github.com/a1415102876-alt/SWDZ_HighHeels
+
+# VarietyOfScales v0.8.0
+- Short description: Extends accessory slots
+- Author(s):         MaybeSamigroup
+- More information:  https://github.com/MaybeSamigroup/SVS-VarietyOfScales
 
 # Web Request Blocker v1.0.0
 - Short description: Fixes the game requiring internet connection to start
 - Author(s):         Unknown
 - More information:  Koikatsu Discord Server
 
-# XUnity Auto Translator v5.5
+# XUnity Auto Translator v5.5.1
 - Short description: Translation loader, automatic web translations
 - Author(s):         https://github.com/bbepis
 - More information:  https://github.com/bbepis/XUnity.AutoTranslator
