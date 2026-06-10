@@ -1,4 +1,4 @@
-![HC_patch_preview](https://github.com/ManlyMarco/HC-HF_Patch/assets/39247311/f8f4e44e-28d8-46e0-be9f-e6c0877a983f)
+![preview](header.png)
 
 # HF Patch for HoneyCome and DigitalCraft!
 An unofficial patch for [HoneyCome](https://www.illgames.jp/product/honeycome/) (HoneyCome come come Party / ハニカム) and DigitalCraft (both as [part of Dolce](https://www.illgames.jp/product/honeycome_dolce/digitalcraft.php), and as [stand-alone](https://www.illgames.jp/product/digitalcraft_plain/)) with all free updates, fan-made English translations and essential mods. It will allow you to load all character cards and scenes and give you countless gameplay improvements while still keeping the original, uncluttered and clean feel of the game. All content is tested and fixed (or removed) as needed before each update. HF Patch can repair many common problems, try it if you have issues with your game or mod setup.
