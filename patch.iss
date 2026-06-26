@@ -11,7 +11,7 @@
 ;-----------------------------------------Sideloader modpack directory
 ;#define GameDir N/A
 ;--Don't include any files in the build to make it go fast for testing
-;#define DEBUG
+#define DEBUG
 ;---Skip file verification for easier testing, COMMENT OUT FOR RELEASE
 ;#define NOVERIFY
 ;------------Don't include general, studio and map sideloader modpacks
@@ -35,11 +35,11 @@
 
 [Setup]
 #ifndef LITE
-AppName=HF Patch for HoneyCome and DigitalCraft
-OutputBaseFilename=HoneyCome & DigitalCraft HF Patch v{#VERSION}
+AppName=HF Patch for HoneyCome
+OutputBaseFilename=HoneyCome HF Patch v{#VERSION}
 #else
 AppName=HF Patch for HoneyCome (Light Version)
-OutputBaseFilename=HoneyCome & DigitalCraft HF Patch v{#VERSION} Light Version
+OutputBaseFilename=HoneyCome HF Patch v{#VERSION} Light Version
 #endif
 
 ;lzma2/ultra64 | zip | lzma2/fast
@@ -81,10 +81,6 @@ Source: "Input\_Patch\8_man\*";                    DestDir: "{app}"; Flags: igno
 Source: "Input\_Patch\9_unhollowed-1215\*";        DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Patch; Check: HoneyComeInstalled
 Source: "Input\_Patch\9_unhollowed-dolce_0327\*";  DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Patch; Check: HoneyComeInstalled and DolceInstalled
 
-//todo stand-alone studio, needs any updates? probably shouldn't install hardmod pack??
-Source: "Input\_Patch\6_craft_0327\*";             DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Patch; Check: DigitalCraftInstalled and not HoneyComeInstalled
-Source: "Input\_Patch\9_unhollowed-studio_0327\*";  DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Patch; Check: DigitalCraftInstalled and not HoneyComeInstalled
-
 #endif
 
 ; -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -115,7 +111,6 @@ Type: filesandordirs; Name: "{app}\HoneyCome_Data\Managed"
 Type: filesandordirs; Name: "{app}\mono"; Components: BepInEx
 
 ; Will get replaced, makes sure there are no stale files left
-Type: filesandordirs; Name: "{app}\BepInEx\DigitalCraft"; Components: BepInEx
 Type: filesandordirs; Name: "{app}\BepInEx\HoneyCome"; Components: BepInEx
 
 ; Clean up old translations
@@ -140,20 +135,11 @@ Type: filesandordirs; Name: "{app}\[UTILITY] KKManager"; Components: KKManager
 Type: files; Name: "{app}\BepInEx\patchers\IMGUIModule.Il2Cpp.CoreCLR.Patcher.dll"; Components: BepInEx\ConfigurationManager_Il2Cpp
 Type: files; Name: "{app}\BepInEx\plugins\ConfigurationManager.dll";                Components: BepInEx\ConfigurationManager_Il2Cpp
 Type: files; Name: "{app}\BepInEx\plugins\BepInEx.KeyboardShortcut.dll";            Components: BepInEx\ConfigurationManager_Il2Cpp
-Type: files; Name: "{app}\abdata\sardinetail.unity3d";                              Components: DigitalCraft\SardineTail
 
 ; Clean up old modpacks
 Type: files; Name: "{app}\abdata\list\characustom\300_50_tofusalomoto.unity3d";     Components: Content\Hardmods
 Type: files; Name: "{app}\abdata\list\characustom\1600_*";                          Components: Content\Hardmods
 Type: filesandordirs; Name: "{app}\abdata\chara\TekitoMOD";                         Components: Content\Hardmods
-
-Type: filesandordirs; Name: "{app}\DigitalCraft\BepInEx"; Components: BepInEx
-Type: filesandordirs; Name: "{app}\DigitalCraft\dotnet"; Components: BepInEx
-Type: files; Name: "{app}\DigitalCraft\hid.dll"; Components: BepInEx
-Type: files; Name: "{app}\DigitalCraft\version.dll"; Components: BepInEx
-Type: files; Name: "{app}\DigitalCraft\winhttp.dll"; Components: BepInEx
-Type: files; Name: "{app}\DigitalCraft\doorstop_config.ini"; Components: BepInEx
-Type: files; Name: "{app}\DigitalCraft\.doorstop_version"; Components: BepInEx
 
 ; Convert steam ver to global ver
 Type: filesandordirs; Name: "{app}\DefaultData";       Components: Patch; Check: IsUnconvertedSteam
@@ -175,9 +161,6 @@ Type: files;          Name: "{app}\BepInEx\plugins\HC_Hair_*"; Components: Featu
 Type: files;          Name: "{app}\BepInEx\plugins\HC_HGaugeCtrl.dll"; Components: Feature\HC_HGaugeAndSpeedCtrl
 ; Disabled by launcher
 Type: files;          Name: "{app}\BepInEx\plugins\WebRequestBlocker.dl_"; Components: FIX\WebRequestBlocker
-
-[Dirs]
-Name: {app}\sardines; Components: DigitalCraft\SardineTail
 
 [CustomMessages]
 MsgMissingDLC1=NOTICE - You are missing the optional "Dolce" expansion (2023-12-22 Paid DLC). It adds studio (DigitalCraft), 2 new personalities, new maps, new H positions, and new clothes.%n%nThis expansion is optional, the patch will work fine without it. If you want to use it, install it BEFORE running HF Patch.
@@ -209,10 +192,6 @@ Root: HKCU; Subkey: "Software\ILLGAMES\HoneyCome"; Check: HoneyComeInstalled
 Root: HKCU; Subkey: "Software\ILLGAMES\HoneyCome"; Check: HoneyComeInstalled; ValueType: string; ValueName: "INSTALLDIR_HFP"; ValueData: "{app}\"
 Root: HKCU; Subkey: "Software\ILLGAMES\HoneyCome"; Check: HoneyComeInstalled; ValueType: string; ValueName: "INSTALLDIR"; ValueData: "{app}\"; Components: MISC\FIX
 Root: HKCU; Subkey: "Software\ILLGAMES\HoneyCome"; Check: HoneyComeInstalled; ValueType: string; ValueName: "PRODUCTNAME"; ValueData: "ハニカム"; Components: MISC\FIX
-Root: HKCU; Subkey: "Software\ILLGAMES\DigitalCraft"; Check: DigitalCraftInstalled
-Root: HKCU; Subkey: "Software\ILLGAMES\DigitalCraft"; Check: DigitalCraftInstalled; ValueType: string; ValueName: "INSTALLDIR_HFP"; ValueData: "{app}\"
-Root: HKCU; Subkey: "Software\ILLGAMES\DigitalCraft"; Check: DigitalCraftInstalled; ValueType: string; ValueName: "INSTALLDIR"; ValueData: "{app}\"; Components: MISC\FIX
-Root: HKCU; Subkey: "Software\ILLGAMES\DigitalCraft"; Check: DigitalCraftInstalled; ValueType: string; ValueName: "PRODUCTNAME"; ValueData: "DigitalCraft"; Components: MISC\FIX
 
 [Code]
 // --------------------------------------------------------------------------------------- Helper methods
@@ -220,11 +199,6 @@ Root: HKCU; Subkey: "Software\ILLGAMES\DigitalCraft"; Check: DigitalCraftInstall
 function HoneyComeInstalled(): Boolean;
 begin
   result := FileExists(ExpandConstant('{app}\abdata\hscene\obiparamator\000_01.unity3d'));
-end;
-
-function DigitalCraftInstalled(): Boolean;
-begin
-  Result := FileExists(ExpandConstant('{app}\DigitalCraft\DigitalCraft.exe'));
 end;
 
 function DolceInstalled(): Boolean;
@@ -257,8 +231,7 @@ end;
 function OnInstallLocationTest(): Boolean; // Additional validity checks (.exe checks are already passed)
 begin
   if (not FileExists(ExpandConstant('{app}\HoneyCome_Data\resources.assets')) 
-  and not FileExists(ExpandConstant('{app}\HoneyComeccp_Data\resources.assets')) 
-  and not DigitalCraftInstalled()) then
+  and not FileExists(ExpandConstant('{app}\HoneyComeccp_Data\resources.assets'))) then
   begin
     // Cancel, there's file corruptions that we can't fix
     MsgBox(ExpandConstant('{cm:MsgMissingGameFiles}'), mbCriticalError, MB_OK);
@@ -338,6 +311,4 @@ end;
 
 procedure OnInstallCompleted(); // Final installation step, use to modify files installed by the patch
 begin
-  if DigitalCraftInstalled() then
-    FileCopy(ExpandConstant('{app}\winhttp.dll'), ExpandConstant('{app}\DigitalCraft\winhttp.dll'), false);
 end;

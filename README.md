@@ -1,11 +1,13 @@
 ![preview](header.png)
 
-# HF Patch for HoneyCome and DigitalCraft!
-An unofficial patch for [HoneyCome](https://www.illgames.jp/product/honeycome/) (HoneyCome come come Party / ハニカム) and DigitalCraft (both as [part of Dolce](https://www.illgames.jp/product/honeycome_dolce/digitalcraft.php), and as [stand-alone](https://www.illgames.jp/product/digitalcraft_plain/)) with all free updates, fan-made English translations and essential mods. It will allow you to load all character cards and scenes and give you countless gameplay improvements while still keeping the original, uncluttered and clean feel of the game. All content is tested and fixed (or removed) as needed before each update. HF Patch can repair many common problems, try it if you have issues with your game or mod setup.
+# HF Patch for HoneyCome!
+An unofficial patch for [HoneyCome](https://www.illgames.jp/product/honeycome/) (HoneyCome come come Party / ハニカム) with all free updates, fan-made English translations and essential mods. It will allow you to load all character cards and scenes and give you countless gameplay improvements while still keeping the original, uncluttered and clean feel of the game. All content is tested and fixed (or removed) as needed before each update. HF Patch can repair many common problems, try it if you have issues with your game or mod setup.
 
 Read the [full HF Patch manual](https://gist.github.com/ManlyMarco/31b78470b8e190686c7ed9686c237e3f) to learn more about what it is, what it does, how to use it, and how to solve common issues.
 
 HF Patch does not contain the full game, paid expansions or any other pirated content. You have to buy the game and expansions separately. You can buy the game [on Steam](https://store.steampowered.com/app/2543370/HoneyCome_come_come_party/), [on DLsite](https://www.dlsite.com/pro/work/=/product_id/VJ01000785.html) ([buy and download guide](https://youtu.be/gXhEcizjOLg)), or [on DMM](https://dlsoft.dmm.co.jp/detail/illgames_0001/) ([buy and download guide](https://youtu.be/SJ9OXedO3qI)). The Steam version has removed features by default, but after installing the patch it is the same as other versions.
+
+This patch does not cover DigitalCraft, you have to use [DC HF Patch](https://github.com/ManlyMarco/DC-HF_Patch) to mod DigitalCraft.
 
 If you only need the studio (e.g. for use with SVS) you can buy it stand-alone on [DLsite](https://www.dlsite.com/soft/work/=/product_id/VJ01002912.html) - it's effectively the same as the studio included with Dolce, however you will not be able to access any content from HoneyCome unless you have the game installed (same with content introduced in Dolce).
 
