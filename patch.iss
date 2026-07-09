@@ -7,11 +7,11 @@
 ;-------------Full game name for naming patch itself and desktop icons
 #define NAME "HoneyCome"
 ;---------------------------------------------Current HF Patch version
-#define VERSION "1.19"
+#define VERSION "2.0"
 ;-----------------------------------------Sideloader modpack directory
 ;#define GameDir N/A
 ;--Don't include any files in the build to make it go fast for testing
-#define DEBUG
+;#define DEBUG
 ;---Skip file verification for easier testing, COMMENT OUT FOR RELEASE
 ;#define NOVERIFY
 ;------------Don't include general, studio and map sideloader modpacks
@@ -76,10 +76,10 @@ Name: "Patch";     Description: "Repair common issues";     Types: full_en full 
 Source: "Input\_Patch\1_base\*";                   DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Patch; Check: HoneyComeInstalled
 Source: "Input\_Patch\2_1215-full\*";              DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Patch; Check: HoneyComeInstalled
 Source: "Input\_Patch\4_dolce_diff\*";             DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Patch; Check: HoneyComeInstalled and DolceInstalled
-Source: "Input\_Patch\5_dolce_0327-full\*";        DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Patch; Check: HoneyComeInstalled and DolceInstalled
+Source: "Input\_Patch\5_dolce_0515-full\*";        DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Patch; Check: HoneyComeInstalled and DolceInstalled
 Source: "Input\_Patch\8_man\*";                    DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Patch; Check: HoneyComeInstalled
 Source: "Input\_Patch\9_unhollowed-1215\*";        DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Patch; Check: HoneyComeInstalled
-Source: "Input\_Patch\9_unhollowed-dolce_0327\*";  DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Patch; Check: HoneyComeInstalled and DolceInstalled
+Source: "Input\_Patch\9_unhollowed-dolce_0515\*";  DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Patch; Check: HoneyComeInstalled and DolceInstalled
 
 #endif
 
@@ -90,7 +90,7 @@ Source: "Input\_Patch\9_unhollowed-dolce_0327\*";  DestDir: "{app}"; Flags: igno
 [Files]
 #ifndef DEBUG
 Source: "Input\BepInEx_config\*";         DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs solidbreak; Components: BepInEx
-Source: "Input\BepInEx_config_studio\*";  DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs solidbreak; Components: BepInEx; Check: DigitalCraftInstalled
+;Source: "Input\BepInEx_config_studio\*";  DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs solidbreak; Components: BepInEx; Check: DigitalCraftInstalled
 ;Source: "Input\BepInEx_Dev\*";           DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs;            Components: BepInEx\Dev
 Source: "Input\Default_configs\*";        DestDir: "{app}\BepInEx\config"; Flags: ignoreversion recursesubdirs onlyifdoesntexist; Components: BepInEx
 ;-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
