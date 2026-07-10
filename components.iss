@@ -54,16 +54,6 @@ Name: "Feature\HC_PlayerHCloth";               Description: "HC_PlayerHCloth v0.
 Name: "Feature\HC_Hair";                       Description: "HC_Hair v0.0.2 (When eyes are set to show on top of hair, do not draw them over the hair but instead make the hair partially transparent. Doesn't work on some modded hair)"
 Name: "Feature\LoveMachine";                   Description: "LoveMachine v4.4.0 (Adds support for some computer-controlled sex toys in the game and studio)"
 ; -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-Name: "DigitalCraft";                          Description: "Plugins only compatible with DigitalCraft"                                            
-; Name: "DigitalCraft\DC_SliderUnlock";          Description: "SliderUnlock for DC v1.0.1 (Unlocks slider ranges in studio(fragile and might break))"; Types: full_en full extra extra_en
-Name: "DigitalCraft\SardineTail";              Description: "SardineTail v2.2.0 (Fundamental plugin to develop soft mods for DigitalCraft)"        ; Types: extra extra_en
-Name: "DigitalCraft\SardineHead";              Description: "SVS_SardineHead v2.2.0 (Runtime texture and material modifier tool for character creator)"; Types: extra extra_en
-Name: "DigitalCraft\Fishbone";                 Description: "Fishbone v4.0.0 (Plugin api to serialize and deserialize character or coordinate bound extension data)"; Types: extra extra_en
-Name: "DigitalCraft\BlendshapeManager";        Description: "Blendshape Manager DC v1.0.0 (Allow checking, adjusting and managing Blendshapes on Characters)"; Types: extra extra_en
-; Name: "DigitalCraft\MMDPlugin";                Description: "Swdz_MMD_Plugin v1.1.3 (Allows loading MMD animations)"
-; Name: "DigitalCraft\LoveMachine_DC";           Description: "LoveMachine DC v4.2.1 (Adds support for some computer-controlled sex toys in studio)"
-Name: "DigitalCraft\CharaFilter";              Description: "DC_CharaFilter v0.0.8 (Character/coordinate card filter for DigitalCraft)"            
-; -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Name: "MISC";                                  Description: "{cm:CompMISC}"                                                                        
 Name: "MISC\FIX";                              Description: "Fix game registry (fixes DigitalCraft not detecting HC)"                              ; Types: full_en full extra extra_en
 Name: "MISC\FPS";                              Description: "FPS Counter v3.3.1 (Useful for performance testing)"                                  ; Types: full_en full extra extra_en
@@ -86,7 +76,6 @@ Source: "Input\_Plugins\_out\Hardmods\*";                   DestDir: "{app}"; Fl
 Source: "Input\_Plugins\_out\Hardmods_cards\*";             DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Content\Hardmods\HardmodCards; Excludes: "manifest.xml"
 Source: "Input\_Plugins\_out\HC_SliderUnlocker\*";          DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Content\HC_SliderUnlock; Excludes: "manifest.xml"
 Source: "Input\_Plugins\_out\Highheels\*";                  DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Content\Highheels; Excludes: "manifest.xml"
-Source: "Input\_Plugins\_out\DC_VarietyOfScales\*";         DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Content\VarietyOfScales; Excludes: "manifest.xml"
 ; Source: "Input\_Plugins\_out\HC_SliderUnlock_Dolce\*";      DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Content\HC_SliderUnlock; Excludes: "manifest.xml"; Check: DolceInstalled  // will need to deal  with standaolne DigitalCraftInstalled too
 #endif 
 Source: "Input\_Plugins\_out\HC_BepisPlugins\*";            DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: API\HC_BepisPlugins; Excludes: "manifest.xml"
@@ -121,11 +110,6 @@ Source: "Input\_Plugins\_out\Uncensor_Hardmod_zodgame\*";   DestDir: "{app}"; Fl
 Source: "Input\_Plugins\_out\WebRequestBlocker\*";          DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: FIX\WebRequestBlocker; Excludes: "manifest.xml"
 Source: "Input\_Plugins\_out\XUnity.AutoTranslator\*";      DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: AT; Excludes: "manifest.xml"
 Source: "Input\_Plugins\_out\HC_Subtitles\*";               DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: AT\TL\HC_Subtitles; Excludes: "manifest.xml"
-Source: "Input\_Plugins\_out\DC_BlendshapeManager\*";       DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: DigitalCraft\BlendshapeManager; Excludes: "manifest.xml"
-Source: "Input\_Plugins\_out\DC_CharaFilter\*";             DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: DigitalCraft\CharaFilter; Excludes: "manifest.xml"
-Source: "Input\_Plugins\_out\DC_Fishbone\*";                DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: DigitalCraft\Fishbone; Excludes: "manifest.xml"
-Source: "Input\_Plugins\_out\DC_SardineHead\*";             DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: DigitalCraft\SardineHead; Excludes: "manifest.xml"
-Source: "Input\_Plugins\_out\DC_SardineTail\*";             DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: DigitalCraft\SardineTail; Excludes: "manifest.xml"
 
 [Code]
 // Need to put this behind an empty Code category so that the automatic tool doesn't add new file items below this #endif
