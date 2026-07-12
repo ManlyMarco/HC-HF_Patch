@@ -7,7 +7,7 @@
 ;-------------Full game name for naming patch itself and desktop icons
 #define NAME "HoneyCome"
 ;---------------------------------------------Current HF Patch version
-#define VERSION "2.0"
+#define VERSION "2.1"
 ;-----------------------------------------Sideloader modpack directory
 ;#define GameDir N/A
 ;--Don't include any files in the build to make it go fast for testing
